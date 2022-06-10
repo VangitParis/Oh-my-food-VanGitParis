@@ -1,0 +1,25 @@
+{
+  "name": "oh-my-food-vangitparis",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass --watch ./sass/main.scss:./public/css/style.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/VangitParis/Oh-my-food-VanGitParis.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/VangitParis/Oh-my-food-VanGitParis/issues"
+  },
+  "homepage": "https://github.com/VangitParis/Oh-my-food-VanGitParis#readme",
+  "dependencies": {
+    "autoprefixer": "^10.4.7",
+    "postcss": "^8.4.14",
+    "postcss-cli": "^9.1.0",
+    "sass": "^1.52.3"
+  }
+}
