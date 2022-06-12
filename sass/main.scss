@@ -8,7 +8,8 @@ body .btn-accueil {
 body .description nav{
     display: flex;
     flex-direction: column;
-    margin-bottom: 20%;
+    justify-content: space-between;
+    align-items: center;
 }
 
 
@@ -16,8 +17,8 @@ body .restaurants a{
     width: 31%;
     height: auto;
     border-radius: 20px;
-    box-shadow: 5px 5px 5px 1px #f2f2f2;
-    background-color: white;
+    box-shadow: 15px 15px 15px 15px black;
+    background-color : white;
     margin-right: 2%;
 }
 body .restaurants a img {
