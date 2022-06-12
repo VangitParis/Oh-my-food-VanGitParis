@@ -12,7 +12,7 @@ body .description nav{
 }
 
 
-body.restaurants a{
+body .restaurants a{
     width: 31%;
     height: auto;
     border-radius: 20px;
@@ -20,25 +20,25 @@ body.restaurants a{
     background-color: white;
     margin-right: 2%;
 }
-body.restaurants a img {
+body .restaurants a img {
     border-radius: 15px 15px 0 0;
     object-fit: cover;
     width: 100%;
     height: 120px;
 }
-body.restaurants a figcaption{
+body .restaurants a figcaption{
     width: 100%;
     margin-left: 10px;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
 }
-body.restaurants a figcaption p{
+body .restaurants a figcaption p{
     font-weight: 400;
     margin-top: -9px;
     margin-bottom: 6px;
 }
-body.restaurants a figcaption i{
+body .restaurants a figcaption i{
     display: flex;
     justify-content:flex-end;
     align-items: center;
