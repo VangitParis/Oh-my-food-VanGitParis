@@ -10,7 +10,7 @@ body .description nav {
   margin-bottom: 20%;
 }
 
-body .restaurants a {
+body.restaurants a {
   width: 31%;
   height: auto;
   border-radius: 20px;
@@ -19,7 +19,7 @@ body .restaurants a {
   margin-right: 2%;
 }
 
-body .restaurants a img {
+body.restaurants a img {
   border-radius: 15px 15px 0 0;
   -o-object-fit: cover;
      object-fit: cover;
@@ -27,7 +27,7 @@ body .restaurants a img {
   height: 120px;
 }
 
-body .restaurants a figcaption {
+body.restaurants a figcaption {
   width: 100%;
   margin-left: 10px;
   display: flex;
@@ -35,13 +35,13 @@ body .restaurants a figcaption {
   justify-content: space-evenly;
 }
 
-body .restaurants a figcaption p {
+body.restaurants a figcaption p {
   font-weight: 400;
   margin-top: -9px;
   margin-bottom: 6px;
 }
 
-body .restaurants a figcaption i {
+body.restaurants a figcaption i {
   display: flex;
   justify-content: flex-end;
   align-items: center;
