@@ -9,9 +9,9 @@
         integrity="sha384-jLKHWM3JRmfMU0A5x5AkjWkw/EYfGUAGagvnfryNV3F9VqM98XiIH7VBGVoxVSc7" crossorigin="anonymous">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https : //fonts.googleapis.com/css2?family= Roboto +Slab:wght@100;200;400 & display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family= Shrikhand & display=swap">
-    <link rel="stylesheet" href="normalize.css">
+    <link href="https://fonts.googleapis.com/css2?family= Roboto +Slab:wght@100;200;400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Shrikhand&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="node_module/normalize.css">
     <link rel="stylesheet" href=".public/css/style.css">
     <link rel="icon" href="public/images/logo/ohmyfood@2x.svg" type="image/icon">
     <title>Ohmyfood</title>
@@ -23,9 +23,9 @@
     </header>
     <main>
         <section class="location">
-            <form method="get" action="#">
-                <i class="fa-solid fa-location-dot"></i>
-                <input type="text" name="recherche" id="search" placeholder="Paris, Belleville"/>
+            <form class="form"method="get" action="#">
+                <span class="iconegeo"><i class="fa-solid fa-location-dot"></i></span>
+                <span class="formtext">Paris, Belleville</span>
             </form>
             <h1>Réservez le menu qui <br> vous convient</h1>
             <p>Découvrez des restaurants d'exception, <br> sélectionnés par nos soins.</p>
@@ -35,22 +35,24 @@
             <h2>Fonctionnement</h2>
             <nav>
                 <ol>
-                    <li class="choixresto">1<i class="fa-solid fa-mobile-screen-button"></i>Choisissez un restaurant</li>
-                    <li class="compositionmenu">2<i class="fa-solid fa-list"></i>Composez votre menu</li>
-                    <li class="degustation">3<i class="fa-solid fa-store"></i>Dégustez au restaurant</li>
+                   <li class="choixresto">1 <button><i class="fa-solid fa-mobile-screen-button"></i>Choisissez un restaurant</li></button>
+                    <li class="compositionmenu">2<button><i class="fa-solid fa-list"></i>Composez votre menu</li></button>
+                    <li class="degustation">3<button><i class="fa-solid fa-store"></i>Dégustez au restaurant</li></button>
                 </ol>
             </nav>
         </section>
-        <section >
-            <h2>Restaurants</h2>
+        <section class="choixrestaurants">
+            <h2 class="titreacceuil">Restaurants</h2>
             <article class="restaurants">
                 <a href="Lapalettedugou%CC%82t.html">
                     <figure>
                         <img src="public/images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="La palette du goût">
                         <figcaption>
-                            <h3>La palette du goût</h3>
-                            <p>Ménilmontant</p>
-                            <i class="fa-thin fa-heart"></i>
+                            <div class="legende">
+                                <h3>La palette du goût</h3>
+                                <p>Ménilmontant</p>
+                            </div>
+                            <span class="coeur"><i class="fa-thin fa-heart"></i></span>
                         </figcaption>
                     </figure>
                 </a>
@@ -90,7 +92,7 @@
     </main>
     <footer>
         <nav>
-            <img src="public/images/logo/ohmyfood@2x.svg" alt="logo footer" />
+            <h3 class="textfooter">ohmyfood</h3>
             <ul>
                 <li><i class="fa-solid fa-utensils"></i>Proposer un restaurant</li>
                 <li><i class="fa-solid fa-handshake-angle"></i>Devenir partenaire</li>

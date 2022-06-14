@@ -6,4 +6,10 @@ section.location{
     justify-content: center;
     align-items: center;
     text-align: center;
+    background-color: adjust-hue($color: #f4efef, $degrees: 1);
+    height: 250px;
+    font-size: 13px;
+}
+.iconegeo{
+    margin-right: 15px;
 }

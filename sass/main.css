@@ -4,7 +4,7 @@ header, .flechelogo {
 }
 
 .logo {
-  width: 35%;
+  width: 50%;
 }
 
 svg.svg-inline--fa.fa-arrow-left {
@@ -16,8 +16,15 @@ footer {
   background-color: grey;
 }
 
-form {
-  margin-bottom: 10%;
+.form {
+  width: 100%;
+  height: 40px;
+  font-size: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 20px;
+  margin-top: -30px;
 }
 
 section.location {
@@ -27,6 +34,13 @@ section.location {
   justify-content: center;
   align-items: center;
   text-align: center;
+  background-color: #f4efef;
+  height: 250px;
+  font-size: 13px;
+}
+
+.iconegeo {
+  margin-right: 15px;
 }
 
 body .btn {
@@ -47,11 +61,11 @@ body .btn {
 }
 
 body {
-  font-family: "Roboto";
+  font-family: "Roboto", sans-serif;
 }
 
 .Titrepages {
-  font-family: Shrikhand;
+  font-family: "Shrikhand", sans-serif;
   font-style: italic;
   font-size: 20px;
 }

@@ -18,6 +18,7 @@
   "homepage": "https://github.com/VangitParis/Oh-my-food-VanGitParis#readme",
   "dependencies": {
     "autoprefixer": "^10.4.7",
+    "normalize.css": "^8.0.1",
     "postcss": "^8.4.14",
     "postcss-cli": "^9.1.0",
     "sass": "^1.52.3"

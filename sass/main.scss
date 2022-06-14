@@ -24,12 +24,12 @@ main li{
     
 }
 
-body .restaurants a{
-    width: 31%;
-    height: auto;
-    border-radius: 20px;
+
+.restaurants figure{
     background-color : white;
-    margin-right: 2%;
+    border-radius: 20px;
+    width: 90%;
+    margin-left: 15px;
 }
 body .restaurants a img {
     border-radius: 15px 15px 0 0;
@@ -38,24 +38,40 @@ body .restaurants a img {
     height: 120px;
 }
 body .restaurants a figcaption{
-    width: 100%;
+    width: 90%;
     margin-left: 10px;
+    height: 50px;
+    font-size: 12px;
     display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
+    justify-content: space-between;
+    align-items: center;
+   
 }
 body .restaurants a figcaption p{
     font-weight: 400;
     margin-top: -9px;
     margin-bottom: 6px;
 }
-body .restaurants a figcaption i{
+body .restaurants a figcaption .coeur{
     display: flex;
     justify-content:flex-end;
     align-items: center;
+}
+body .restaurants a figcaption .legende{
+    width: 90%;
 }
 
 .Titrespages{
     display: flex;
 
+}
+.choixrestaurants{
+    background-color:adjust-hue($color: #f4efef, $degrees: 1);
+    height: 950px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.titreacceuil{
+    margin-left: 3%;
 }
