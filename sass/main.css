@@ -1,7 +1,39 @@
-body .btn-accueil {
-  border-radius: 15px;
+header {
+  display: flex;
+  justify-content: center;
+}
+
+header img {
+  width: 35%;
+}
+
+footer {
+  background-color: grey;
+}
+
+form {
+  margin-bottom: 10%;
+}
+
+section.location {
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+h1, p {
+  text-align: center;
+  margin-top: 0;
+}
+
+body .btn {
+  border-radius: 50px;
   background-color: #9356DC;
   color: white;
+  padding: 10px 15px;
+  border-color: transparent;
 }
 
 body .description nav {
@@ -11,11 +43,17 @@ body .description nav {
   align-items: center;
 }
 
+main li {
+  text-decoration: none;
+  display: flex;
+  margin-bottom: 20%;
+  justify-content: space-around;
+}
+
 body .restaurants a {
   width: 31%;
   height: auto;
   border-radius: 20px;
-  box-shadow: 15px 15px 15px 15px black;
   background-color: white;
   margin-right: 2%;
 }
@@ -46,8 +84,4 @@ body .restaurants a figcaption i {
   display: flex;
   justify-content: flex-end;
   align-items: center;
-}
-
-footer {
-  background-color: grey;
 }/*# sourceMappingURL=main.css.map */

@@ -1,8 +1,9 @@
-body .btn-accueil {
-    border-radius: 15px;
-    background-color: #9356DC;
-    color: white;
-}
+@import "Layouts/header";
+@import "Layouts/footer";
+@import "Layouts/forms";
+@import "Pages/home";
+@import "Composants/buttons";
+
 
 
 body .description nav{
@@ -11,13 +12,18 @@ body .description nav{
     justify-content: space-between;
     align-items: center;
 }
-
+main li{
+    text-decoration: none;
+    display: flex;
+    margin-bottom: 20%;
+    justify-content:space-around;
+    
+}
 
 body .restaurants a{
     width: 31%;
     height: auto;
     border-radius: 20px;
-    box-shadow: 15px 15px 15px 15px black;
     background-color : white;
     margin-right: 2%;
 }
@@ -46,6 +52,3 @@ body .restaurants a figcaption i{
 }
 
 
-footer{
-    background-color: grey;
-}
