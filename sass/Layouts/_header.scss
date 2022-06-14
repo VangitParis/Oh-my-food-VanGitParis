@@ -1,8 +1,12 @@
-header{
+header, .flechelogo{
     display: flex;
-    justify-content: center;
+    justify-content:center;
 }
-
-header img{
+.logo{
     width: 35%;
 }
+svg.svg-inline--fa.fa-arrow-left{
+    display: flex;
+    justify-content: flex-start;
+}
+

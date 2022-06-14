@@ -1,10 +1,15 @@
-header {
+header, .flechelogo {
   display: flex;
   justify-content: center;
 }
 
-header img {
+.logo {
   width: 35%;
+}
+
+svg.svg-inline--fa.fa-arrow-left {
+  display: flex;
+  justify-content: flex-start;
 }
 
 footer {
@@ -21,11 +26,7 @@ section.location {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-}
-
-h1, p {
   text-align: center;
-  margin-top: 0;
 }
 
 body .btn {
@@ -34,6 +35,23 @@ body .btn {
   color: white;
   padding: 10px 15px;
   border-color: transparent;
+}
+
+.imgrestaurant {
+  width: 100%;
+  height: 260px;
+  object-fit: cover;
+  object-position: 20% 34%;
+}
+
+body {
+  font-family: "Roboto";
+}
+
+.Titrepages {
+  font-family: Shrikhand;
+  font-style: italic;
+  font-size: 20px;
 }
 
 body .description nav {
@@ -83,6 +101,10 @@ body .restaurants a figcaption i {
   display: flex;
   justify-content: flex-end;
   align-items: center;
+}
+
+.Titrespages {
+  display: flex;
 }
 
 /*# sourceMappingURL=style.css.map */

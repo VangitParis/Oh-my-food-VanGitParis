@@ -1,8 +1,12 @@
-@import "Layouts/header";
-@import "Layouts/footer";
-@import "Layouts/forms";
-@import "Pages/home";
-@import "Composants/buttons";
+@import "layouts/header";
+@import "layouts/footer";
+@import "layouts/forms";
+@import "pages/home";
+@import "composants/buttons";
+@import "utils/variables";
+@import "base/images","base/police";
+
+
 
 
 
@@ -51,4 +55,7 @@ body .restaurants a figcaption i{
     align-items: center;
 }
 
+.Titrespages{
+    display: flex;
 
+}
