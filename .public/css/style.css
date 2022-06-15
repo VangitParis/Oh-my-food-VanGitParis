@@ -1,6 +1,7 @@
 header, .flechelogo {
   display: flex;
-  justify-content: center;
+  justify-content: space-evenly;
+  align-items: center;
 }
 
 .logo {
@@ -91,75 +92,17 @@ section.location {
   height: 10px;
   display: flex;
   align-items: center;
+  justify-content: center;
   margin-right: 300px;
   position: absolute;
   margin-left: 3px;
-}
-
-body .btn {
-  border-radius: 50px;
-  background-color: #9356DC;
-  color: white;
-  padding: 10px 15px;
-  border-color: transparent;
-}
-
-.btnacceuil {
-  background-color: #F6F6F6;
-  border: 1px solid #F6F6F6;
-  padding: 25px;
-  width: 380px;
-  border-radius: 15px;
-  font-size: 18px;
-  font-weight: bold;
-  display: inline-flex;
-  align-items: center;
-  justify-content: space-around;
-  margin-right: -100px;
-  margin-left: -20px;
-}
-
-.imgrestaurant {
-  width: 100%;
-  height: 260px;
-  object-fit: cover;
-  object-position: 20% 34%;
-}
-
-body {
-  font-family: "Roboto", sans-serif;
-}
-
-.Titrepages {
-  font-family: "Shrikhand", sans-serif;
-  font-style: italic;
-  font-size: 20px;
-}
-
-body .description nav {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
-}
-
-main li {
-  text-decoration: none;
-  display: flex;
-  margin-bottom: 8%;
-  justify-content: space-around;
-  align-items: center;
-}
-
-a {
-  text-decoration: none;
 }
 
 .restaurants figure {
   background-color: white;
   border-radius: 20px;
   width: 90%;
-  margin-left: 15px;
+  margin: 20px 20px;
 }
 
 body .restaurants a img {
@@ -200,8 +143,109 @@ body .restaurants a figcaption .legende {
   margin-top: -5px;
 }
 
-.Titrespages {
+body .btn {
+  border-radius: 50px;
+  background-color: #9356DC;
+  color: white;
+  padding: 10px 15px;
+  border-color: transparent;
   display: flex;
+  align-items: center;
+}
+
+.btnacceuil {
+  background-color: #F6F6F6;
+  border: 1px solid #F6F6F6;
+  padding: 25px;
+  width: 380px;
+  border-radius: 15px;
+  font-size: 18px;
+  font-weight: bold;
+  display: inline-flex;
+  align-items: center;
+  justify-content: space-around;
+  margin-right: -100px;
+  margin-left: -20px;
+}
+
+.btnflecheretour {
+  border-color: transparent;
+  background-color: transparent;
+  font-size: 20px;
+}
+
+.menus button {
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  border-color: transparent;
+  border-radius: 20px;
+  margin: 20px 20px 20px 20px;
+}
+
+.commander {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  background-color: #F6F6F6;
+  height: 180px;
+  margin-left: 1px;
+}
+
+.imgrestaurant {
+  width: 100%;
+  height: 290px;
+  object-fit: cover;
+  object-position: 20% 48%;
+  margin-left: 0.5px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+body .description nav {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+main li {
+  text-decoration: none;
+  display: flex;
+  margin-bottom: 8%;
+  justify-content: space-around;
+  align-items: center;
+}
+
+a {
+  text-decoration: none;
+}
+
+.Titrepages {
+  font-family: "Shrikhand", sans-serif;
+  font-style: italic;
+  font-size: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #F6F6F6;
+  border: 1px solid #F6F6F6;
+  border-radius: 50px 50px 0 0px;
+  margin-top: -55px;
+  position: absolute;
+  width: 96%;
+  margin-left: 1px;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
 .choixrestaurants {
@@ -214,6 +258,38 @@ body .restaurants a figcaption .legende {
 
 .titreacceuil {
   margin-left: 2%;
+}
+
+.menus {
+  background-color: #F6F6F6;
+  margin-top: 40px;
+  font-size: 12px;
+  display: flex;
+  flex-direction: column;
+  margin-left: 1px;
+}
+
+.entrees {
+  display: flex;
+  flex-direction: column;
+}
+
+.plats {
+  display: flex;
+  flex-direction: column;
+}
+
+.desserts {
+  display: flex;
+  flex-direction: column;
+}
+
+article h2 {
+  margin-left: 10px;
+  font-weight: lighter;
+  border-bottom: 3px solid #99E2D0;
+  width: 11%;
+  padding-bottom: 5px;
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -4,13 +4,14 @@
 @import "pages/home";
 @import "composants/buttons";
 @import "utils/variables";
-@import "base/images","base/police";
+@import "base/images";
+*{
+    box-sizing: border-box;
+}
 
-$color-primary:#9356DC;
-$color-secondary:#FF79DA;
-$color-tertiary:#99E2D0;
-$color-backgroundform:#F6F6F6;
-
+body{
+    font-family: "Roboto",sans-serif;
+   }
 body .description nav{
     display: flex;
     flex-direction: column;
@@ -29,54 +30,25 @@ main li{
 a{
     text-decoration: none;
 }
-.restaurants figure{
-    background-color : white;
-    border-radius: 20px;
-    width: 90%;
-    margin-left: 15px;
-}
-body .restaurants a img {
-    border-radius: 15px 15px 0 0;
-    object-fit: cover;
-    width: 100%;
-    height: 210px;
-    object-position: 20% 63%;
-}
-body .restaurants a figcaption{
-    width: 90%;
-    margin-left: 10px;
-    height: 70px;
-    font-size: 12px;
+.Titrepages{
+    font-family: "Shrikhand",sans-serif;
+    font-style: italic;
+    font-size: 20px;
     display: flex;
+    align-items: center;
     justify-content: space-between;
-    align-items: center;
-    color: black;
-}
-body .restaurants a figcaption p{
-    font-weight: 100;
-    margin-bottom: 15px;
-    margin-top: -15px;
-
-}
-body .restaurants a figcaption .coeur{
-    display: flex;
-    justify-content:flex-end;
-    align-items: center;
-    font-size: large;
-}
-body .restaurants a figcaption .legende{
-    width: 90%;
-    font-size: 17px;
-    margin-top: -5px;
-
-}
-
-.Titrespages{
-    display: flex;
-
+    background-color:$color-background;
+    border: 1px solid $color-background;
+    border-radius: 50px 50px 0 0px;
+    margin-top: -55px;
+    position: absolute;
+    width: 96%;
+    margin-left: 1px;
+    padding-left: 20px;
+    padding-right: 20px;
 }
 .choixrestaurants{
-    background-color:$color-backgroundform;
+    background-color:$color-background;
     height: 1370px;
     display: flex;
     flex-direction: column;
@@ -84,4 +56,32 @@ body .restaurants a figcaption .legende{
 }
 .titreacceuil{
     margin-left: 2%;
+}
+
+.menus{
+    background-color: $color-background;
+    margin-top: 40px;
+    font-size: 12px;
+    display: flex;
+    flex-direction: column;
+    margin-left: 1px;
+}
+.entrees{
+    display: flex;
+    flex-direction: column;
+}
+.plats{
+    display: flex;
+    flex-direction: column;
+}
+.desserts{
+    display: flex;
+    flex-direction: column;
+}
+article h2{
+    margin-left: 10px;
+    font-weight: lighter;
+    border-bottom: 3px solid $color-tertiary;
+    width: 11%;
+    padding-bottom: 5px;
 }

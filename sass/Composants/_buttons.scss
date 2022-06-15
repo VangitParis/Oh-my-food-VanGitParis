@@ -4,10 +4,12 @@ body .btn {
     color: white;
     padding: 10px 15px;
     border-color: transparent;
+    display: flex;
+    align-items: center;
 }
 .btnacceuil{
-    background-color: #F6F6F6;
-    border: 1px solid#F6F6F6;
+    background-color:#F6F6F6;
+    border: 1px solid #F6F6F6;
     padding: 25px;
     width: 380px;
     border-radius: 15px;
@@ -18,4 +20,28 @@ body .btn {
     justify-content: space-around;
     margin-right: -100px;
     margin-left: -20px;
+}
+.btnflecheretour{
+    border-color: transparent;
+    background-color: transparent;
+    font-size: 20px;
+}
+.menus button{
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    border-color:transparent;
+    border-radius: 20px;
+    margin: 20px 20px 20px 20px;
+}
+.commander{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    background-color: #F6F6F6;
+    height: 180px;
+    margin-left: 1px;
 }
