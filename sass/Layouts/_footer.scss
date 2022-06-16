@@ -1,5 +1,6 @@
+@import "../utils/variables";
 footer{
-    background-color:#353535;
+    background-color:$color-backgroundfooter;
     color: white;
     padding: 20px;
 }

@@ -1,6 +1,7 @@
+@import "../utils/variables";
 body .btn {
     border-radius: 50px;
-    background-color: #9356DC;
+    background-color:$color-primary;
     color: white;
     padding: 10px 15px;
     border-color: transparent;
@@ -8,8 +9,8 @@ body .btn {
     align-items: center;
 }
 .btnacceuil{
-    background-color:#F6F6F6;
-    border: 1px solid #F6F6F6;
+    background-color:$color-background;
+    border: 1px solid $color-background;
     padding: 25px;
     width: 380px;
     border-radius: 15px;
@@ -17,23 +18,27 @@ body .btn {
     font-weight: bold;
     display: inline-flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-evenly;
     margin-right: -100px;
     margin-left: -20px;
+    height: 80px;
 }
 .btnflecheretour{
     border-color: transparent;
     background-color: transparent;
     font-size: 20px;
+    margin-left: -92px;
 }
 .menus button{
     background-color: white;
     display: flex;
     justify-content: space-between;
-    flex-direction: column;
+    flex-direction: row;
+    align-items: center;
     border-color:transparent;
     border-radius: 20px;
     margin: 20px 20px 20px 20px;
+    
 }
 .commander{
     display: flex;
@@ -41,7 +46,7 @@ body .btn {
     justify-content: center;
     margin-top: 0px;
     margin-bottom: 0px;
-    background-color: #F6F6F6;
+    background-color: $color-background;
     height: 180px;
     margin-left: 1px;
 }

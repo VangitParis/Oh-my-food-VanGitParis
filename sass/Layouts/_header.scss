@@ -1,11 +1,16 @@
-header, .flechelogo{
+.flechelogo{
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
     align-items: center;
 }
-.logo{
-    width: 50%;
+.titreheader{
+    font-size: 35px;
+    font-family: "Shrikhand",sans-serif;
+    margin-top: 0px;
+    height: 25px;
+   text-align: center;
 }
+
 svg.svg-inline--fa.fa-arrow-left{
     display: flex;
     justify-content: flex-start;
