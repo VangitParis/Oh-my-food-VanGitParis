@@ -6,17 +6,21 @@
   margin-left: 0.5px;
 }
 
-body .btn {
+.btn {
   border-radius: 50px;
-  background-color: #9356DC;
-  color: white;
-  padding: 10px 15px;
-  border-color: transparent;
+  background: linear-gradient(356deg, #9356DC, #FF79DA);
+  padding: 20px 20px;
+  border: transparent;
   display: flex;
   align-items: center;
+  font-size: 15.5px;
+  color: white;
+  opacity: 0.8;
+  font-weight: 500;
+  font-size: 20px;
 }
 
-.btnacceuil {
+.btnfonctionnement {
   background-color: #F6F6F6;
   border: 1px solid #F6F6F6;
   padding: 25px;
@@ -48,17 +52,6 @@ body .btn {
   border-color: transparent;
   border-radius: 20px;
   margin: 20px 20px 20px 20px;
-}
-
-.commander {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-top: 0px;
-  margin-bottom: 0px;
-  background-color: #F6F6F6;
-  height: 180px;
-  margin-left: 1px;
 }
 
 .flechelogo {
@@ -118,12 +111,13 @@ footer a {
 .form {
   width: 100%;
   height: 40px;
-  font-size: 15px;
+  font-size: 16px;
   display: flex;
   justify-content: center;
   align-items: center;
   margin-top: -30px;
   background-color: #EAEAEA;
+  text-align: center;
 }
 
 body .description nav {
@@ -141,8 +135,7 @@ section.location {
   align-items: center;
   text-align: center;
   background-color: #F6F6F6;
-  height: 240px;
-  font-size: 13px;
+  height: 285px;
 }
 
 .iconegeo {
@@ -208,7 +201,6 @@ body .restaurants a figcaption .coeur {
   display: flex;
   justify-content: flex-end;
   align-items: center;
-  font-size: large;
 }
 
 body .restaurants a figcaption .legende {
@@ -230,6 +222,10 @@ body .description nav {
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
+}
+
+h2 {
+  font-size: 24px;
 }
 
 main li {
@@ -309,6 +305,40 @@ article h2 {
 .fa-heart {
   height: 30px;
   margin-top: -10px;
+  border-width: thin;
+}
+
+.legende {
+  align-items: baseline;
+  display: flex;
+  flex-direction: column;
+  margin-top: -5px;
+  margin-bottom: 10px;
+  margin-left: 5px;
+  font-size: 15.5px;
+}
+
+.legende p {
+  margin-bottom: 0px;
+  margin-top: -12px;
+}
+
+.prix {
+  margin-right: 10px;
+  margin-bottom: -30px;
+  font-weight: bold;
+  font-size: 15.5px;
+}
+
+.commander {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  background-color: #F6F6F6;
+  height: 180px;
+  margin-left: 1px;
 }
 
 /*# sourceMappingURL=style.css.map */

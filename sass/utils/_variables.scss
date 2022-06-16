@@ -1,9 +1,19 @@
+//couleurs
 $color-primary: #9356DC;
 $color-secondary:#FF79DA;
 $color-tertiary:#99E2D0;
+$color-background-btn:linear-gradient(356deg,$color-primary,$color-secondary);
 $color-background:#F6F6F6;
 $color-backgroundform:#EAEAEA;
 $color-backgroundfooter:#353535;
-
+//polices
 $title-font:"Shrikhand",sans-serif;
 $body-font:"Roboto",sans-serif;
+//media-queries
+$small-screen: "screen and (max-width: 540px)";
+$large-screen: "screen and (min-width: 740px)";
+$tablet-screen:"screen and (min-width:741px) and (max-width:991px";
+$deskop-screen:"screen and (min-width:992px";
+//taille-polices
+$font-size-body:15.5px;
+$font-size-title:20px;

@@ -1,14 +1,20 @@
 @import "../utils/variables";
-body .btn {
+@import "../utils/mixins";
+
+.btn {
     border-radius: 50px;
-    background-color:$color-primary;
-    color: white;
-    padding: 10px 15px;
-    border-color: transparent;
+    background: $color-background-btn;
+    padding: 20px 20px;
+    border:transparent;
     display: flex;
     align-items: center;
+    font-size:$font-size-body;
+    color: white;
+    opacity: 0.8;
+    font-weight: 500;
+    font-size: 20px;
 }
-.btnacceuil{
+.btnfonctionnement{
     background-color:$color-background;
     border: 1px solid $color-background;
     padding: 25px;
@@ -40,13 +46,4 @@ body .btn {
     margin: 20px 20px 20px 20px;
     
 }
-.commander{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-top: 0px;
-    margin-bottom: 0px;
-    background-color: $color-background;
-    height: 180px;
-    margin-left: 1px;
-}
+
