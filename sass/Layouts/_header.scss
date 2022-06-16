@@ -2,13 +2,14 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    height: 60px;
 }
 .titreheader{
-    font-size: 35px;
+    font-size: 32px;
     font-family: $title-font;
     margin-top: 0px;
-    height: 25px;
-   text-align: center;
+    height: 20px;
+    text-align: center;
 }
 
 svg.svg-inline--fa.fa-arrow-left{

@@ -2,18 +2,16 @@
 @import "../utils/mixins";
 
 .btn {
-    border-radius: 50px;
-    background: $color-background-btn;
-    padding: 20px 20px;
-    border:transparent;
-    display: flex;
-    align-items: center;
-    font-size:$font-size-body;
+    @include button;
+    @include padding-button();
     color: white;
-    opacity: 0.8;
-    font-weight: 500;
-    font-size: 20px;
 }
+.btncommander{
+    @include button;
+    @include padding-button(15px 50px);
+    color: white;
+}
+
 .btnfonctionnement{
     background-color:$color-background;
     border: 1px solid $color-background;
@@ -33,7 +31,7 @@
     border-color: transparent;
     background-color: transparent;
     font-size: 20px;
-    margin-left: -92px;
+    margin-left: -100px;
 }
 .menus button{
     background-color: white;

@@ -1,2 +1,25 @@
 @import "../utils/variables";
 
+@mixin padding-button($paddingbutton:15px 20px){
+    padding: $paddingbutton;
+}
+@mixin button {
+    font: {
+        size: $font-size-body;
+    }
+    text: {
+        align-items: center;
+        font-weight: 500;
+        font-size: 15px;
+    }
+    border-radius: 50px;
+    margin-bottom: 50px;
+    background: $color-background-btn;
+    border:transparent;
+    display: flex;
+    opacity: 0.8;
+    @media #{$large-screen}{
+        display: inline-block;
+        float: right;
+    }
+}

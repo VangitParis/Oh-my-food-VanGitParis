@@ -6,17 +6,20 @@ body .description nav{
     align-items: center;
 }
 section.location{
-    margin-top: 10px;
+    margin-top: 60px;
+    margin-bottom: 30px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     text-align: center;
     background-color: $color-background;
-    height: 285px; 
-}
-.iconegeo{
-    margin-right: 15px;
+    height: 290px;
+    .textacceuil{
+        font-size: 16px;
+        margin-top: -10px;
+        margin-bottom: 25px;
+    } 
 }
 .description{
     display: flex;
@@ -24,22 +27,21 @@ section.location{
     justify-content: center;
     flex-direction: column;
     align-items: baseline;
+        span{
+            background-color: $color-primary;
+            padding: 13px;
+            border-radius: 50px;
+            color: white;
+            width: 2%;
+            height: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-right: 300px;
+            position: absolute;
+            margin-left: 3px;
 }
-.description span{
-    background-color: $color-primary;
-    padding: 13px;
-    border-radius: 50px;
-    color: white;
-    width: 2%;
-    height: 10px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-right: 300px;
-    position: absolute;
-    margin-left: 3px;
 }
-
 
 .restaurants figure{
     background-color : white;

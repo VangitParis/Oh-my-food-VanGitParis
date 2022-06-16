@@ -1,11 +1,19 @@
 .form{
     width: 100%;
     height: 40px;
-    font-size: 16px;
     display: flex;
     justify-content: center;
     align-items: center;
     margin-top: -30px;
     background-color:$color-backgroundform;
     text-align: center;
+    height: 65px;
+        .formtext{
+    margin-right: 25px;
+    font-size: 15px;
+    }
+        .iconegeo{
+    margin-right: 20px;
+    font-size: 16px;
+    }
 }

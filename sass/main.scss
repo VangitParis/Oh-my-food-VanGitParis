@@ -20,7 +20,7 @@ body .description nav{
     align-items: center;
 }
 h2{
-    font-size: 24px;
+    font-size: x-large;
 }
 main li{
     text-decoration: none;
@@ -64,7 +64,7 @@ a{
 
 .menus{
     background-color: $color-background;
-    margin-top: 30px;
+    margin-top: 12px;
     font-size: 12px;
     display: flex;
     flex-direction: column;
@@ -118,9 +118,7 @@ margin-top: -12px;
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-top: 0px;
-    margin-bottom: 0px;
+    margin-bottom: -20px;
     background-color: $color-background;
-    height: 180px;
-    margin-left: 1px;
+    height: 150px;
 }
