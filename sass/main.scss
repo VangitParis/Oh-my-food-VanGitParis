@@ -38,6 +38,21 @@ main li{
 
 a{
     text-decoration: none;
+    display: flex;
+    &hover{
+        cursor: pointer;
+    }
+}
+.evenement{
+    position: absolute;
+    padding: 7px 13px;
+    background-color: #99E2D0;
+    color: #1d8269cf;
+    font-weight: bold;
+    border-radius: 2px;
+    font-size: 14px;
+    margin-top: 32px;
+    margin-right: 41px;
 }
 .Titrepages{
     font-family: $title-font;

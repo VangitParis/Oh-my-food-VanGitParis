@@ -78,18 +78,24 @@ section.location{
     width: 90%;
     margin: 20px 20px;
 }
+body .restaurants a{
+    justify-content: right;
+}
 body .restaurants a img {
     border-radius: 15px 15px 0 0;
     object-fit: cover;
     width: 100%;
-    height: 200px;
-    object-position: 20% 63%;
+    height: 190px;
+    object-position: 20% 104%;
+}
+body .restaurants a.carte2restaurant img {
+    object-position: 20% 61%;
 }
 
 body .restaurants a figcaption{
     width: 90%;
     margin-left: 10px;
-    height: 70px;
+    height: 80px;
     font-size: 12px;
     display: flex;
     justify-content: space-between;
