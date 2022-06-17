@@ -46,12 +46,29 @@
   display: inline-flex;
   align-items: center;
   justify-content: space-evenly;
-  margin-left: 0;
+  margin-left: -5px;
   height: 80px;
   font-weight: 400;
 }
 .btnfonctionnement:hover {
   background: #f2eafb;
+}
+@media screen and (max-width: 424px) {
+  .btnfonctionnement {
+    width: 320px;
+  }
+}
+@media screen and (max-width: 374px) {
+  .btnfonctionnement {
+    width: 270px;
+    font-size: 15px;
+    height: 65px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  .btnfonctionnement {
+    width: 650px;
+  }
 }
 
 .btnflecheretour {
@@ -189,7 +206,7 @@ section.location {
   align-items: center;
   text-align: center;
   background-color: #F6F6F6;
-  height: 290px;
+  height: 270px;
 }
 section.location .textacceuil {
   font-size: 16px;
@@ -206,7 +223,7 @@ section.location .textacceuil {
 }
 .description span {
   background-color: #9356DC;
-  padding: 14px;
+  padding: 12px;
   border-radius: 50px;
   color: white;
   width: 2%;
@@ -214,25 +231,44 @@ section.location .textacceuil {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-right: 370px;
+  margin-right: 375px;
   position: absolute;
+}
+@media screen and (max-width: 424px) {
+  .description span {
+    margin-right: 325px;
+  }
+}
+@media screen and (max-width: 374px) {
+  .description span {
+    margin-right: 275px;
+    padding: 10px;
+    font-size: 13px;
+  }
 }
 .description .fa-mobile-screen-button, .description .fa-list, .description .fa-store {
   margin-left: -60px;
   margin-right: -50px;
 }
+@media screen and (max-width: 424px) {
+  .description .fa-mobile-screen-button, .description .fa-list, .description .fa-store {
+    margin-left: -20px;
+    margin-right: -5px;
+  }
+}
+@media screen and (max-width: 374px) {
+  .description .fa-mobile-screen-button, .description .fa-list, .description .fa-store {
+    margin-left: -23px;
+    margin-right: -9px;
+  }
+}
 .description .fa-mobile-screen-button:hover, .description .fa-list:hover, .description .fa-store:hover {
   color: #9356DC;
 }
-.description .choisissez {
-  font-size: 18px;
-}
 .description .composez {
   margin-right: 5%;
-  font-size: 18px;
 }
 .description .degustez {
-  font-size: 18px;
   margin-right: 3%;
 }
 
@@ -294,10 +330,16 @@ body .description nav {
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
+  margin-top: -15px;
 }
 
 h2 {
   font-size: x-large;
+}
+@media screen and (max-width: 374px) {
+  h2 {
+    font-size: 20px;
+  }
 }
 
 main li {
@@ -339,6 +381,11 @@ a {
 
 .titreacceuil {
   margin-left: 5%;
+}
+@media screen and (max-width: 374px) {
+  .titreacceuil {
+    margin-left: 7%;
+  }
 }
 
 .menus {

@@ -15,7 +15,7 @@ section.location{
     align-items: center;
     text-align: center;
     background-color: $color-background;
-    height: 290px;
+    height: 270px;
     .textacceuil{
         font-size: 16px;
         margin-top: -10px;
@@ -30,7 +30,7 @@ section.location{
     align-items: baseline;
         span{
             background-color: #9356DC;
-            padding: 14px;
+            padding: 12px;
             border-radius: 50px;
             color: white;
             width: 2%;
@@ -38,25 +38,37 @@ section.location{
             display: flex;
             align-items: center;
             justify-content: center;
-            margin-right: 370px;
+            margin-right: 375px;
+            @include mobile-Medium-screen{
+                margin-right: 325px;
+                
+            }
+            @include mobile-Small-screen{
+                margin-right: 275px;
+                padding: 10px;
+                font-size:13px;
+            }
             position: absolute;
         }
         .fa-mobile-screen-button, .fa-list, .fa-store{
             margin-left: -60px;
             margin-right: -50px;
+            @include mobile-Medium-screen{
+                margin-left: -20px;
+                margin-right: -5px;
+            }
+            @include mobile-Small-screen{
+                margin-left: -23px;
+                margin-right: -9px;
+            }
             &:hover{
                 color: $color-primary;
             }
         }
-        .choisissez{
-            font-size: 18px;
-        }
         .composez{
             margin-right: 5%;
-            font-size: 18px;
         }
         .degustez{
-            font-size: 18px;
             margin-right: 3%;
         }
 }

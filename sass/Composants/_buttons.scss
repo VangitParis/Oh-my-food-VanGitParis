@@ -22,11 +22,22 @@
     display: inline-flex;
     align-items: center;
     justify-content: space-evenly;
-    margin-left: 0;
+    margin-left: -5px;
     height: 80px;
     font-weight: 400;
     &:hover{
         @include hover-description;
+    }
+    @include mobile-Medium-screen{
+        width: 320px;
+    }
+    @include mobile-Small-screen{
+        width: 270px;
+        font-size: 15px;
+        height: 65px;
+    }
+    @include tablette{
+        width: 650px;
     }
 }
 .btnflecheretour{

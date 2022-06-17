@@ -19,9 +19,13 @@ body .description nav{
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
+    margin-top: -15px;
 }
 h2{
     font-size: x-large;
+    @include mobile-Small-screen{
+        font-size: $font-size-title;
+    }
 }
 main li{
     text-decoration: none;
@@ -61,6 +65,9 @@ a{
 }
 .titreacceuil{
     margin-left: 5%;
+    @include mobile-Small-screen{
+        margin-left: 7%;
+    }
 }
 
 .menus{
