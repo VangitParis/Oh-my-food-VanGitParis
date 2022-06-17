@@ -1,19 +1,36 @@
+@import "../utils/variables";
 .form{
-    width: 100%;
+    width: $width-mobile-L;
+    @include mobile-Small-screen{
+        width: $width-mobile-S;
+    }
+    @include mobile-Medium-screen{
+        width: $width-mobile-M;
+    }
+    @include tablette{
+        width: $width-tablette;
+    }
+    @include desktop{
+        width: $width-desktop;
+    }
     height: 40px;
     display: flex;
     justify-content: center;
     align-items: center;
     margin-top: -30px;
-    background-color:$color-backgroundform;
+    background:$color-backgroundform;
     text-align: center;
-    height: 65px;
+    height: 50px;
+    border-top: 1px solid $color-backgroundform;
+    border-bottom: 1px solid $color-grey;
         .formtext{
     margin-right: 25px;
     font-size: 15px;
+  
     }
         .iconegeo{
     margin-right: 20px;
     font-size: 16px;
     }
+      
 }

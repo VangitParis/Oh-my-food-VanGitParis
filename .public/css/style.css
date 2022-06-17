@@ -20,12 +20,6 @@
   padding: 15px 20px;
   color: white;
 }
-@media screen and (min-width: 740px) {
-  .btn {
-    display: inline-block;
-    float: right;
-  }
-}
 
 .btncommander {
   font-size: 15.5px;
@@ -40,12 +34,6 @@
   opacity: 0.8;
   padding: 15px 50px;
   color: white;
-}
-@media screen and (min-width: 740px) {
-  .btncommander {
-    display: inline-block;
-    float: right;
-  }
 }
 
 .btnfonctionnement {
@@ -141,15 +129,37 @@ footer a {
 }
 
 .form {
-  width: 100%;
+  width: 425px;
   height: 40px;
   display: flex;
   justify-content: center;
   align-items: center;
   margin-top: -30px;
-  background-color: #EAEAEA;
+  background: linear-gradient(180deg, #cbcbcb -1%, #eaeaea 7%);
   text-align: center;
-  height: 65px;
+  height: 50px;
+  border-top: 1px solid linear-gradient(180deg, #cbcbcb -1%, #eaeaea 7%);
+  border-bottom: 1px solid #eaeaea;
+}
+@media screen and (max-width: 374px) {
+  .form {
+    width: 320px;
+  }
+}
+@media screen and (max-width: 424px) {
+  .form {
+    width: 375px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  .form {
+    width: 100%;
+  }
+}
+@media screen and (min-width: 992px) {
+  .form {
+    width: 100%;
+  }
 }
 .form .formtext {
   margin-right: 25px;
@@ -168,6 +178,7 @@ body .description nav {
 }
 
 section.location {
+  width: 100%;
   margin-top: 60px;
   margin-bottom: 30px;
   display: flex;
@@ -256,6 +267,7 @@ body .restaurants a figcaption .legende {
 
 body {
   font-family: "Roboto", sans-serif;
+  margin: auto;
 }
 
 body .description nav {

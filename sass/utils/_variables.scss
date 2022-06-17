@@ -4,16 +4,24 @@ $color-secondary:#FF79DA;
 $color-tertiary:#99E2D0;
 $color-background-btn:linear-gradient(356deg,$color-primary,$color-secondary);
 $color-background:#F6F6F6;
-$color-backgroundform:#EAEAEA;
+$color-form-grey:#cbcbcb;
+$color-grey:#eaeaea;
+$color-backgroundform:linear-gradient(180deg,$color-form-grey -1%,$color-grey 7%);
 $color-backgroundfooter:#353535;
 //polices
 $title-font:"Shrikhand",sans-serif;
 $body-font:"Roboto",sans-serif;
 //media-queries
-$small-screen: "screen and (max-width: 540px)";
-$large-screen: "screen and (min-width: 740px)";
+$mobile-small-screen: "screen and (max-width: 374px)";
+$mobile-large-screen: "screen and (min-width: 424px)";
 $tablet-screen:"screen and (min-width:741px) and (max-width:991px";
 $deskop-screen:"screen and (min-width:992px";
 //taille-polices
 $font-size-body:15.5px;
 $font-size-title:20px;
+//taille-blocs
+$width-mobile-L:425px;
+$width-mobile-M:375px;
+$width-mobile-S:320px;
+$width-tablette:100%;
+$width-desktop:100%;
