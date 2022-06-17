@@ -76,15 +76,18 @@ a{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    
+    height: 1400px;
 }
 .titreacceuil{
     margin-left: 5%;
+    margin-bottom: 20px;
     @include mobile-Small-screen{
         margin-left: 7%;
     }
 }
-
+.restaurants{
+    margin-top: -10px;
+}
 .menus{
     background-color: $color-background;
     margin-top: 12px;

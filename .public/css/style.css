@@ -17,8 +17,9 @@
   border: transparent;
   display: flex;
   opacity: 0.8;
-  padding: 15px 20px;
   color: white;
+  box-shadow: 0px 8px 10px -5px grey;
+  padding: 15px 20px;
 }
 
 .btncommander {
@@ -32,8 +33,9 @@
   border: transparent;
   display: flex;
   opacity: 0.8;
-  padding: 15px 50px;
   color: white;
+  box-shadow: 0px 8px 10px -5px grey;
+  padding: 15px 50px;
 }
 
 .btnfonctionnement {
@@ -49,6 +51,7 @@
   margin-left: -5px;
   height: 80px;
   font-weight: 400;
+  box-shadow: 0px 2px 5px 2px #eaeaea;
 }
 .btnfonctionnement:hover {
   background: #f2eafb;
@@ -401,15 +404,21 @@ ahover {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  height: 1400px;
 }
 
 .titreacceuil {
   margin-left: 5%;
+  margin-bottom: 20px;
 }
 @media screen and (max-width: 374px) {
   .titreacceuil {
     margin-left: 7%;
   }
+}
+
+.restaurants {
+  margin-top: -10px;
 }
 
 .menus {

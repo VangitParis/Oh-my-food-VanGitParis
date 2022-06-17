@@ -4,12 +4,12 @@
 .btn {
     @include button;
     @include padding-button();
-    color: white;
+ 
 }
 .btncommander{
     @include button;
     @include padding-button(15px 50px);
-    color: white;
+    
 }
 
 .btnfonctionnement{
@@ -25,6 +25,7 @@
     margin-left: -5px;
     height: 80px;
     font-weight: 400;
+    box-shadow: $shadow;
     &:hover{
         @include hover-description;
     }
