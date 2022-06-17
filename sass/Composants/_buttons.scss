@@ -13,19 +13,21 @@
 }
 
 .btnfonctionnement{
-    background-color:$color-background;
+    background-color: $color-background;
     border: 1px solid $color-background;
-    padding: 25px;
-    width: 380px;
-    border-radius: 15px;
+    padding: 20px;
+    width: 370px;
+    border-radius: 25px;
     font-size: 18px;
-    font-weight: bold;
     display: inline-flex;
     align-items: center;
     justify-content: space-evenly;
-    margin-right: -100px;
-    margin-left: -20px;
+    margin-left: 0;
     height: 80px;
+    font-weight: 400;
+    &:hover{
+        @include hover-description;
+    }
 }
 .btnflecheretour{
     border-color: transparent;

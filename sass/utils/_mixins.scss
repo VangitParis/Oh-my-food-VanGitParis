@@ -19,6 +19,9 @@
     display: flex;
     opacity: 0.8;
 }
+@mixin hover-description($color:$color-primary){
+    background: lighten($color,35%) 
+}
 @mixin mobile-Small-screen {
     @media screen and (max-width: 374px) {
         @content;

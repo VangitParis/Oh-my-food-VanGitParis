@@ -1,18 +1,20 @@
 @import "../utils/variables";
+@import "../utils/mixins";
 .form{
-    width: $width-mobile-L;
-    @include mobile-Small-screen{
-        width: $width-mobile-S;
-    }
     @include mobile-Medium-screen{
         width: $width-mobile-M;
     }
+    @include mobile-Small-screen{
+        width:$width-mobile-S;
+    }
+    
     @include tablette{
         width: $width-tablette;
     }
     @include desktop{
         width: $width-desktop;
     }
+    width: $width-mobile-L;
     height: 40px;
     display: flex;
     justify-content: center;
