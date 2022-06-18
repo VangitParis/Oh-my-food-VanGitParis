@@ -1,6 +1,25 @@
 @import "../utils/variables";
 @import "../utils/mixins";
 .form{
+    height: 50px;
+    width: $width-mobile-L;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: -30px;
+    background:$color-backgroundform;
+    text-align: center;
+    border-top: 1px solid $color-backgroundform;
+    border-bottom: 1px solid $color-grey;
+        .formtext{
+    margin-right: 25px;
+    font-size: 15px;
+  
+    }
+        .iconegeo{
+    margin-right: 20px;
+    font-size: 16px;
+    }
     @include mobile-Medium-screen{
         width: $width-mobile-M;
     }
@@ -14,25 +33,4 @@
     @include desktop{
         width: $width-desktop;
     }
-    width: $width-mobile-L;
-    height: 40px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: -30px;
-    background:$color-backgroundform;
-    text-align: center;
-    height: 50px;
-    border-top: 1px solid $color-backgroundform;
-    border-bottom: 1px solid $color-grey;
-        .formtext{
-    margin-right: 25px;
-    font-size: 15px;
-  
-    }
-        .iconegeo{
-    margin-right: 20px;
-    font-size: 16px;
-    }
-      
 }

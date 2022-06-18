@@ -21,6 +21,9 @@ section.location{
         margin-top: -10px;
         margin-bottom: 25px;
     } 
+    @include mobile-Small-screen{
+        height: 250px;
+    }
 }
 .description{
     display: flex;
@@ -51,15 +54,15 @@ section.location{
             position: absolute;
         }
         .fa-mobile-screen-button, .fa-list, .fa-store{
-            margin-left: -60px;
-            margin-right: -50px;
+            margin-left: -50px;
+            margin-right: -40px;
             @include mobile-Medium-screen{
                 margin-left: -20px;
                 margin-right: -5px;
             }
             @include mobile-Small-screen{
-                margin-left: -23px;
-                margin-right: -9px;
+                margin-left: -13px;
+                margin-right: 0;
             }
             &:hover{
                 color: $color-primary;
@@ -78,46 +81,79 @@ section.location{
     width: 90%;
     margin: 20px 20px;
 }
-body .restaurants a{
+.restaurants a{
     justify-content: right;
-    
 }
-body .restaurants a img {
+
+.restaurants a img {
     border-radius: 15px 15px 0 0;
     object-fit: cover;
     width: 100%;
     height: 190px;
     object-position: 20% 104%;
+    @include mobile-Medium-screen{
+        height: 170px;
+    }
+    @include mobile-Small-screen{
+        height: 145px;
+    }
 }
-body .restaurants a.carte2restaurant img {
+.restaurants a.carte2restaurant img {
     object-position: 20% 61%;
 }
 
-body .restaurants a figcaption{
+.restaurants a figcaption{
     width: 90%;
     margin-left: 10px;
-    height: 80px;
+    height: 70px;
     font-size: 12px;
     display: flex;
     justify-content: space-between;
     align-items: center;
     color: black;
-}
-body .restaurants a figcaption p{
-    font-weight: 100;
-    margin-bottom: 15px;
-    margin-top: -15px;
+    @include mobile-Medium-screen{
+        height:60px;
+    }
+    @include mobile-Small-screen{
+        height:50px;
+    }
+
+    p{
+        font-weight: 100;
+        margin-bottom: 15px;
+        margin-top: -15px;
 
 }
-body .restaurants a figcaption .coeur{
-    display: flex;
-    justify-content:flex-end;
-    align-items: center;
+    .coeur{
+        display: flex;
+        justify-content:flex-end;
+        align-items: center;
+        .fa-heart{
+            height: 2rem;
+            margin-top: -1.2rem;
+            @include mobile-Medium-screen{
+                height: 1.6rem;
+                margin-top: -1rem;
+            }
+            @include mobile-Small-screen{
+                height: 1.3rem;
+            }
+            
+        }
+}
+    .legende{
+        width: 90%;
+        font-size: 17px;
+        margin-top: -5px;
+        @include mobile-Medium-screen{
+            font-size: 15px;
+            margin-left: 1px;
+            margin-top: 5px;
+        }
+        @include mobile-Small-screen{
+            font-size: 13px;
+        }
+
 
 }
-body .restaurants a figcaption .legende{
-    width: 90%;
-    font-size: 17px;
-    margin-top: -5px;
-
 }

@@ -10,6 +10,12 @@
     margin-top: 0px;
     height: 20px;
     text-align: center;
+    @include mobile-Medium-screen{
+        font-size:31px ;
+    }
+    @include mobile-Small-screen{
+        font-size:29px ;
+    }
 }
 
 svg.svg-inline--fa.fa-arrow-left{

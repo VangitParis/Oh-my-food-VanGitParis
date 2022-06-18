@@ -10,6 +10,7 @@
     @include button;
     @include padding-button(15px 50px);
     
+    
 }
 
 .btnfonctionnement{
@@ -45,7 +46,16 @@
     border-color: transparent;
     background-color: transparent;
     font-size: 20px;
-    margin-left: -100px;
+    margin-left: -105px;
+    cursor: pointer;
+    @include mobile-Medium-screen{
+        margin-left: -90px;
+        font-size: 19px;
+    }
+    @include mobile-Small-screen{
+        margin-left: -73px;
+        font-size: 18px;
+    }
 }
 .menus button{
     background-color: white;
@@ -55,7 +65,9 @@
     align-items: center;
     border-color:transparent;
     border-radius: 20px;
-    margin: 20px 20px 20px 20px;
+    margin: 10px 0px 10px 17px;
+    width: 90%;
+    cursor: pointer;
     
 }
 
