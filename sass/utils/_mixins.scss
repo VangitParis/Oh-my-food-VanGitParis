@@ -24,6 +24,7 @@
 @mixin hover-description($color:$color-primary){
     background: lighten($color,35%);
     border: none; 
+    box-shadow: $shadow2X;
 }
 @mixin hover-button-menu{
     background-color: $color-tertiary;

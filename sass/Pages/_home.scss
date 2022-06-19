@@ -8,7 +8,7 @@ body .description nav{
 section.location{
     width: 100%;
     margin-top: 60px;
-    margin-bottom: 30px;
+    margin-bottom: 0;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -21,16 +21,19 @@ section.location{
         margin-top: -10px;
         margin-bottom: 25px;
     } 
-    @include mobile-Small-screen{
-        height: 250px;
+    @include tablette{
+        height: 280px;
+        margin-bottom: 0;
     }
+    
 }
 .description{
-    display: flex;
+    display: grid;
     align-items: center;
     justify-content: center;
     flex-direction: column;
     align-items: baseline;
+    width: 100%;
         span{
             background-color: #9356DC;
             padding: 12px;
@@ -73,6 +76,10 @@ section.location{
         }
         .degustez{
             margin-right: 3%;
+        }
+        @include tablette{
+            display: grid;
+
         }
 }
 .restaurants figure{

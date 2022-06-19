@@ -2,13 +2,13 @@
   width: 100%;
   height: 310px;
   object-fit: cover;
-  object-position: 39%;
+  object-position: 48%;
   margin-left: 0.5px;
 }
 @media screen and (max-width: 424px) {
   .imgrestaurant {
     width: 100%;
-    object-position: 48%;
+    object-position: 63%;
     height: 280px;
   }
 }
@@ -16,7 +16,7 @@
   .imgrestaurant {
     width: 100%;
     height: 235px;
-    object-position: 44%;
+    object-position: 50%;
   }
 }
 
@@ -70,6 +70,7 @@
 .btnfonctionnement:hover {
   background: #f2eafb;
   border: none;
+  box-shadow: 5px 4px 10px 4px #eaeaea;
 }
 @media screen and (max-width: 424px) {
   .btnfonctionnement {
@@ -81,11 +82,6 @@
     width: 270px;
     font-size: 15px;
     height: 65px;
-  }
-}
-@media screen and (min-width: 768px) and (max-width: 991px) {
-  .btnfonctionnement {
-    width: 650px;
   }
 }
 
@@ -118,7 +114,23 @@
   border-color: transparent;
   border-radius: 20px;
   margin: 10px 0px 10px 17px;
-  width: 90%;
+  width: 93%;
+  cursor: pointer;
+}
+@media screen and (max-width: 424px) {
+  .menus button {
+    width: 92%;
+  }
+}
+@media screen and (max-width: 374px) {
+  .menus button {
+    width: 91%;
+  }
+}
+
+#btnheart {
+  border: none;
+  background: none;
   cursor: pointer;
 }
 
@@ -143,7 +155,12 @@
 }
 @media screen and (max-width: 374px) {
   .titreheader {
-    font-size: 29px;
+    font-size: 30px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  .titreheader {
+    font-size: 35px;
   }
 }
 
@@ -160,51 +177,53 @@ footer {
 footer nav {
   margin-left: 10px;
 }
-
-.textfooter {
+footer .textfooter {
   color: white;
   font-family: "Shrikhand", sans-serif;
 }
-
 footer ul {
   list-style: none;
   margin-left: -40px;
   margin-bottom: 5px;
 }
-
 footer li {
   margin-bottom: 10px;
 }
-
 footer .fa-utensils {
   margin-right: 10px;
 }
-
 footer .fa-handshake-angle {
   margin-right: 4px;
 }
-
 footer a {
   text-decoration: none;
   color: white;
   cursor: pointer;
 }
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  footer nav {
+    margin-left: 183px;
+  }
+}
 
 .form {
   height: 50px;
-  width: 425px;
+  width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
   margin-top: -30px;
   background: linear-gradient(180deg, #cbcbcb -1%, #eaeaea 7%);
   text-align: center;
-  border-top: 1px solid linear-gradient(180deg, #cbcbcb -1%, #eaeaea 7%);
-  border-bottom: 1px solid #eaeaea;
 }
 .form .formtext {
   margin-right: 25px;
   font-size: 15px;
+}
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  .form .formtext {
+    font-size: 18px;
+  }
 }
 .form .iconegeo {
   margin-right: 20px;
@@ -212,17 +231,18 @@ footer a {
 }
 @media screen and (max-width: 424px) {
   .form {
-    width: 375px;
+    width: 100%;
   }
 }
 @media screen and (max-width: 374px) {
   .form {
-    width: 320px;
+    width: 100%;
   }
 }
 @media screen and (min-width: 768px) and (max-width: 991px) {
   .form {
     width: 100%;
+    margin-bottom: 10px;
   }
 }
 @media screen and (min-width: 992px) {
@@ -241,7 +261,7 @@ body .description nav {
 section.location {
   width: 100%;
   margin-top: 60px;
-  margin-bottom: 30px;
+  margin-bottom: 0;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -255,18 +275,20 @@ section.location .textacceuil {
   margin-top: -10px;
   margin-bottom: 25px;
 }
-@media screen and (max-width: 374px) {
+@media screen and (min-width: 768px) and (max-width: 991px) {
   section.location {
-    height: 250px;
+    height: 280px;
+    margin-bottom: 0;
   }
 }
 
 .description {
-  display: flex;
+  display: grid;
   align-items: center;
   justify-content: center;
   flex-direction: column;
   align-items: baseline;
+  width: 100%;
 }
 .description span {
   background-color: #9356DC;
@@ -317,6 +339,11 @@ section.location .textacceuil {
 }
 .description .degustez {
   margin-right: 3%;
+}
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  .description {
+    display: grid;
+  }
 }
 
 .restaurants figure {
@@ -424,14 +451,6 @@ body {
   margin: auto;
 }
 
-body .description nav {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
-  margin-top: -15px;
-}
-
 main li {
   text-decoration: none;
   display: flex;
@@ -469,6 +488,11 @@ ahover {
 @media screen and (max-width: 374px) {
   .evenement {
     font-size: 10px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  .evenement {
+    margin-top: 39px;
   }
 }
 
@@ -518,10 +542,10 @@ ahover {
 
 .choixrestaurants {
   background-color: #F6F6F6;
-  display: flex;
+  display: grid;
+  height: auto;
   flex-direction: column;
   justify-content: center;
-  height: 1400px;
 }
 @media screen and (max-width: 424px) {
   .choixrestaurants {
@@ -533,11 +557,10 @@ ahover {
     height: 1050px;
   }
 }
-
 .titreacceuil {
   font-size: 20px;
   margin-left: 5%;
-  margin-bottom: 15px;
+  margin-top: 40px;
 }
 @media screen and (max-width: 424px) {
   .titreacceuil {
@@ -548,6 +571,13 @@ ahover {
   .titreacceuil {
     margin-left: 7%;
     font-size: 20px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  .titreacceuil {
+    font-size: 25px;
+    margin-top: 50px;
+    margin-bottom: 30px;
   }
 }
 
@@ -594,7 +624,7 @@ ahover {
 }
 
 article h2 {
-  margin-left: 20px;
+  margin-left: 25px;
   font-weight: lighter;
   border-bottom: 3px solid #99E2D0;
   width: 9%;
@@ -619,9 +649,12 @@ article h2 {
   margin-top: -5px;
   margin-bottom: 10px;
   margin-left: 5px;
-  font-size: 16px;
-  width: 90%;
   margin-top: -5px;
+  text-align: left;
+  font-size: 16px;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
 }
 @media screen and (max-width: 424px) {
   .legende {
@@ -640,17 +673,61 @@ article h2 {
   text-overflow: ellipsis;
   overflow: hidden;
   white-space: nowrap;
-  text-align: left;
-  width: 302px;
+  width: 310px;
+  font-size: 16.5px;
 }
 @media screen and (max-width: 424px) {
   .legende p {
     width: 265px;
+    font-size: 14.3px;
   }
 }
 @media screen and (max-width: 374px) {
   .legende p {
-    width: 225px;
+    width: 227px;
+    font-size: 12.3px;
+  }
+}
+
+.desserts .legende p {
+  font-size: 16.1px;
+}
+@media screen and (max-width: 424px) {
+  .desserts .legende p {
+    font-size: 14px;
+  }
+}
+@media screen and (max-width: 374px) {
+  .desserts .legende p {
+    font-size: 12px;
+  }
+}
+
+.legende p.myrtilles {
+  font-size: 17.8px;
+}
+@media screen and (max-width: 424px) {
+  .legende p.myrtilles {
+    font-size: 15.5px;
+  }
+}
+@media screen and (max-width: 374px) {
+  .legende p.myrtilles {
+    font-size: 13.5px;
+  }
+}
+
+.noteenchantee p {
+  font-size: 16px;
+}
+@media screen and (max-width: 424px) {
+  .noteenchantee p {
+    font-size: 14px;
+  }
+}
+@media screen and (max-width: 374px) {
+  .noteenchantee p {
+    font-size: 12.3px;
   }
 }
 

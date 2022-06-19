@@ -9,12 +9,12 @@
     margin-top: -30px;
     background:$color-backgroundform;
     text-align: center;
-    border-top: 1px solid $color-backgroundform;
-    border-bottom: 1px solid $color-grey;
         .formtext{
     margin-right: 25px;
     font-size: 15px;
-  
+            @include tablette{
+                font-size: 18px;
+            }
     }
         .iconegeo{
     margin-right: 20px;
@@ -26,10 +26,11 @@
     @include mobile-Small-screen{
         width:$width-mobile-S;
     }
-    
     @include tablette{
         width: $width-tablette;
-    }
+        margin-bottom: 10px;
+        }
+    
     @include desktop{
         width: $width-desktop;
     }

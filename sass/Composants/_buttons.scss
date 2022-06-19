@@ -30,6 +30,7 @@
     &:hover{
         @include hover-description;
     }
+
     @include mobile-Medium-screen{
         width: 320px;
     }
@@ -38,9 +39,7 @@
         font-size: 15px;
         height: 65px;
     }
-    @include tablette{
-        width: 650px;
-    }
+    
 }
 .btnflecheretour{
     border-color: transparent;
@@ -66,8 +65,20 @@
     border-color:transparent;
     border-radius: 20px;
     margin: 10px 0px 10px 17px;
-    width: 90%;
+    width: 93%;
     cursor: pointer;
+    @include mobile-Medium-screen{
+        width: 92%
+    }
+    @include mobile-Small-screen{
+        width: 91%
+    }
     
+}
+#btnheart{
+    
+    border: none;
+    background: none;
+    cursor: pointer;
 }
 

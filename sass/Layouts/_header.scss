@@ -14,7 +14,10 @@
         font-size:31px ;
     }
     @include mobile-Small-screen{
-        font-size:29px ;
+        font-size:30px ;
+    }
+    @include tablette{
+        font-size: 35px;
     }
 }
 

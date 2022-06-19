@@ -14,13 +14,6 @@ body{
     font-family: $body-font;
     margin: auto;
    }
-body .description nav{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    margin-top: -15px;
-}
 
 main li{
     text-decoration: none;
@@ -55,6 +48,9 @@ a{
     }
     @include mobile-Small-screen{
         font-size: 10px;
+    }
+    @include tablette{
+        margin-top: 39px;
     }
 }
 .Titrepages{
@@ -99,27 +95,37 @@ a{
 }
 .choixrestaurants{
     background-color:$color-background;
-    display: flex;
+    display: grid;
+    height: auto;
     flex-direction: column;
     justify-content: center;
-    height: 1400px;
+    
     @include mobile-Medium-screen{
         height: 1220px;
     }
     @include mobile-Small-screen{
         height: 1050px;
     }
+    @include tablette{
+        
+    }
 }
 .titreacceuil{
     font-size: $font-size-title;
     margin-left: 5%;
-    margin-bottom: 15px;
+    margin-top: 40px;
     @include mobile-Medium-screen{
         font-size: 23px;
+        
     }
     @include mobile-Small-screen{
         margin-left: 7%;
         font-size: 20px;
+    }
+    @include tablette{
+        font-size: 25px;
+        margin-top: 50px;
+        margin-bottom: 30px;
     }
 }
 .restaurants{
@@ -155,7 +161,7 @@ a{
     flex-direction: column;
 }
 article h2{
-    margin-left: 20px;
+    margin-left: 25px;
     font-weight: lighter;
     border-bottom: 3px solid $color-tertiary;
     width: 9%;
@@ -176,9 +182,12 @@ article h2{
     margin-top: -5px;
     margin-bottom: 10px;
     margin-left: 5px;
-    font-size: $font-size-body;
-    width: 90%;
     margin-top: -5px;
+    text-align: left;
+    font-size: $font-size-body;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
     @include mobile-Medium-screen{
         font-size: 14px;
     }
@@ -192,15 +201,45 @@ margin-top: -12px;
 text-overflow: ellipsis;
 overflow: hidden;
 white-space: nowrap;
-text-align: left;
-width: 302px;
+width: 310px;
+font-size: 16.5px;
     @include mobile-Medium-screen{
         width: 265px;
+        font-size: 14.3px;
     }
     @include mobile-Small-screen{
-        width: 225px;
+        width: 227px;
+        font-size: 12.3px;
     }
 }
+.desserts .legende p{
+    font-size: 16.1px;
+    @include mobile-Medium-screen{
+    font-size: 14px;
+    }
+    @include mobile-Small-screen{
+       font-size: 12px;
+    }
+}
+.legende p.myrtilles {
+    font-size: 17.8px;
+    @include mobile-Medium-screen{
+        font-size: 15.5px;
+        }
+    @include mobile-Small-screen{
+        font-size: 13.5px;
+        }
+}
+.noteenchantee p{
+    font-size: 16px;
+    @include mobile-Medium-screen{
+        font-size: 14px;
+    }
+    @include mobile-Small-screen{
+        font-size: 12.3px;
+    }
+}
+
 .prix{
     margin-right: 20px;
     margin-bottom: -30px;

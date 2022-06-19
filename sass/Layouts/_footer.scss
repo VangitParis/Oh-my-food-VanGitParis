@@ -6,28 +6,34 @@ footer{
     nav{
         margin-left: 10px;
     }
-}
-.textfooter{
+
+    .textfooter{
     color: white;
     font-family: $title-font;
 
-}
-footer ul{
+    }
+    ul{
     list-style: none;
     margin-left: -40px;
     margin-bottom: 5px;
-}
-footer li{
+    }
+    li{
     margin-bottom: 10px;
-}
-footer .fa-utensils{
+    }
+    .fa-utensils{
     margin-right : 10px;
-}
-footer .fa-handshake-angle{
+    }
+    .fa-handshake-angle{
     margin-right: 4px;
-}
-footer a{
+    }
+    a{
     text-decoration: none;
     color: white;
     cursor: pointer;
+    }
+    @include tablette{
+        nav{
+            margin-left: 183px;
+        }
+    }
 }
