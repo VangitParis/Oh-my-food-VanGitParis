@@ -50,7 +50,8 @@ a{
         font-size: 10px;
     }
     @include tablette{
-        margin-top: 39px;
+        margin-top: 47px;
+        margin-right: 64px;
     }
 }
 .Titrepages{
@@ -91,23 +92,35 @@ a{
             margin-top: -0.2rem;
         }
     }
+    @include tablette{
+        font-size: 36px;
+        padding-right: 50px;
+        padding-left: 25px;
+        .fa-heart{
+            height: 3rem;
+            margin-top: -0.6rem;
+            margin-right: 1rem;
 
+        }
+    }
 }
+
 .choixrestaurants{
     background-color:$color-background;
     display: grid;
     height: auto;
     flex-direction: column;
     justify-content: center;
+    height: 1220px;
     
     @include mobile-Medium-screen{
-        height: 1220px;
+        height: 1100px;
     }
     @include mobile-Small-screen{
-        height: 1050px;
+        height: 950px;
     }
     @include tablette{
-        
+        height: 1650px;
     }
 }
 .titreacceuil{
@@ -123,16 +136,26 @@ a{
         font-size: 20px;
     }
     @include tablette{
-        font-size: 25px;
+        font-size: 29px;
         margin-top: 50px;
         margin-bottom: 30px;
     }
 }
 .restaurants{
-    margin-top: -15px;
-    @include mobile-Small-screen{
-        margin-top: -20px;
+    margin-top: -50px;
+    @include mobile-Medium-screen{
+        margin-top: -60px;
     }
+    @include tablette{
+        margin-top: -30px;
+    }
+    @include desktop{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+    
 }
 .menus{
     background-color: $color-background;
@@ -145,6 +168,9 @@ a{
     }
     @include mobile-Small-screen{
         margin-top: 15px;
+    }
+    @include tablette{
+        margin-top: 100px;
     }
     
 }
@@ -173,6 +199,9 @@ article h2{
     @include mobile-Small-screen{
         margin-left: 20px;
     }
+    @include tablette{
+        font-size: 23px;
+    }
 }
 
 .legende{
@@ -194,6 +223,9 @@ article h2{
     @include mobile-Small-screen{
         font-size: 12px;
     }
+    @include tablette{
+        font-size: 23px;
+    }
 }
 .legende p{
 margin-bottom: 0px;
@@ -211,6 +243,10 @@ font-size: 16.5px;
         width: 227px;
         font-size: 12.3px;
     }
+    @include tablette{
+        width: 442px;
+        font-size: 23.5px;
+    }
 }
 .desserts .legende p{
     font-size: 16.1px;
@@ -219,6 +255,9 @@ font-size: 16.5px;
     }
     @include mobile-Small-screen{
        font-size: 12px;
+    }
+    @include tablette{
+        font-size: 23.1px;
     }
 }
 .legende p.myrtilles {
@@ -229,6 +268,9 @@ font-size: 16.5px;
     @include mobile-Small-screen{
         font-size: 13.5px;
         }
+    @include tablette{
+        font-size: 25.8px;
+    }
 }
 .noteenchantee p{
     font-size: 16px;
@@ -238,6 +280,10 @@ font-size: 16.5px;
     @include mobile-Small-screen{
         font-size: 12.3px;
     }
+    @include tablette{
+        font-size: 23px;
+    }
+    
 }
 
 .prix{
@@ -255,6 +301,11 @@ font-size: 16.5px;
         margin-bottom: -10px;
         margin-right: 10px;
     }
+    @include tablette{
+        font-size: 22px;
+        margin-bottom: -55px;
+        }
+    
 }
 
 .commander{
@@ -264,5 +315,8 @@ font-size: 16.5px;
     margin-bottom: -20px;
     background-color: $color-background;
     height: 150px;
+    @include tablette{
+        height: 200px;
+    }
 }
 

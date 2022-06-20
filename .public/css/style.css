@@ -19,6 +19,18 @@
     object-position: 50%;
   }
 }
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  .imgrestaurant {
+    height: 470px;
+    object-position: 50% 8%;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  .img-noteenchantee {
+    object-position: 50% 48%;
+  }
+}
 
 .btn {
   font-size: 16px;
@@ -35,6 +47,11 @@
   cursor: pointer;
   padding: 15px 20px;
 }
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  .btn {
+    font-size: 23px;
+  }
+}
 
 .btncommander {
   font-size: 16px;
@@ -50,6 +67,12 @@
   box-shadow: 0px 8px 10px -5px grey;
   cursor: pointer;
   padding: 15px 50px;
+}
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  .btncommander {
+    font-size: 23px;
+    padding: 20px 60px;
+  }
 }
 
 .btnfonctionnement {
@@ -84,6 +107,12 @@
     height: 65px;
   }
 }
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  .btnfonctionnement {
+    width: 430px;
+    font-size: 23px;
+  }
+}
 
 .btnflecheretour {
   border-color: transparent;
@@ -102,6 +131,12 @@
   .btnflecheretour {
     margin-left: -73px;
     font-size: 18px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  .btnflecheretour {
+    margin-left: -200px;
+    font-size: 25px;
   }
 }
 
@@ -127,6 +162,12 @@
     width: 91%;
   }
 }
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  .menus button {
+    margin: 10px 0px 10px 14px;
+    padding: 3px 5px;
+  }
+}
 
 #btnheart {
   border: none;
@@ -139,6 +180,11 @@
   justify-content: center;
   align-items: center;
   height: 60px;
+}
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  .flechelogo {
+    height: 80px;
+  }
 }
 
 .titreheader {
@@ -160,7 +206,7 @@
 }
 @media screen and (min-width: 768px) and (max-width: 991px) {
   .titreheader {
-    font-size: 35px;
+    font-size: 40px;
   }
 }
 
@@ -177,17 +223,54 @@ footer {
 footer nav {
   margin-left: 10px;
 }
+@media screen and (min-width: 992px) {
+  footer nav {
+    display: flex;
+    flex-direction: column;
+  }
+}
 footer .textfooter {
   color: white;
   font-family: "Shrikhand", sans-serif;
+}
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  footer .textfooter {
+    margin-bottom: 0;
+    font-size: 23px;
+  }
+}
+@media screen and (min-width: 992px) {
+  footer .textfooter {
+    font-size: 25px;
+  }
 }
 footer ul {
   list-style: none;
   margin-left: -40px;
   margin-bottom: 5px;
 }
+@media screen and (min-width: 992px) {
+  footer ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+}
 footer li {
   margin-bottom: 10px;
+}
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  footer li {
+    margin-right: 49px;
+  }
+}
+@media screen and (min-width: 992px) {
+  footer li {
+    margin-right: 80px;
+    font-size: 20px;
+  }
 }
 footer .fa-utensils {
   margin-right: 10px;
@@ -199,11 +282,6 @@ footer a {
   text-decoration: none;
   color: white;
   cursor: pointer;
-}
-@media screen and (min-width: 768px) and (max-width: 991px) {
-  footer nav {
-    margin-left: 183px;
-  }
 }
 
 .form {
@@ -277,8 +355,9 @@ section.location .textacceuil {
 }
 @media screen and (min-width: 768px) and (max-width: 991px) {
   section.location {
-    height: 280px;
+    height: 330px;
     margin-bottom: 0;
+    font-size: 20px;
   }
 }
 
@@ -313,6 +392,13 @@ section.location .textacceuil {
     margin-right: 275px;
     padding: 10px;
     font-size: 13px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  .description span {
+    font-size: 20px;
+    padding: 14px;
+    margin-right: 435px;
   }
 }
 .description .fa-mobile-screen-button, .description .fa-list, .description .fa-store {
@@ -355,6 +441,12 @@ section.location .textacceuil {
 
 .restaurants a {
   justify-content: right;
+  margin-bottom: -25px;
+}
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  .restaurants a {
+    margin-bottom: -10px;
+  }
 }
 
 .restaurants a img {
@@ -372,6 +464,11 @@ section.location .textacceuil {
 @media screen and (max-width: 374px) {
   .restaurants a img {
     height: 145px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  .restaurants a img {
+    height: 245px;
   }
 }
 
@@ -395,6 +492,16 @@ section.location .textacceuil {
   }
 }
 @media screen and (max-width: 374px) {
+  .restaurants a figcaption {
+    height: 50px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  .restaurants a figcaption {
+    height: 100px;
+  }
+}
+@media screen and (min-width: 992px) {
   .restaurants a figcaption {
     height: 50px;
   }
@@ -439,6 +546,14 @@ section.location .textacceuil {
 @media screen and (max-width: 374px) {
   .restaurants a figcaption .legende {
     font-size: 13px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  .restaurants a figcaption .legende {
+    font-size: 23px;
+  }
+  .restaurants a figcaption .legende p {
+    font-size: 27px;
   }
 }
 
@@ -492,7 +607,8 @@ ahover {
 }
 @media screen and (min-width: 768px) and (max-width: 991px) {
   .evenement {
-    margin-top: 39px;
+    margin-top: 47px;
+    margin-right: 64px;
   }
 }
 
@@ -539,6 +655,18 @@ ahover {
     margin-top: -0.2rem;
   }
 }
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  .Titrepages {
+    font-size: 36px;
+    padding-right: 50px;
+    padding-left: 25px;
+  }
+  .Titrepages .fa-heart {
+    height: 3rem;
+    margin-top: -0.6rem;
+    margin-right: 1rem;
+  }
+}
 
 .choixrestaurants {
   background-color: #F6F6F6;
@@ -546,17 +674,24 @@ ahover {
   height: auto;
   flex-direction: column;
   justify-content: center;
+  height: 1220px;
 }
 @media screen and (max-width: 424px) {
   .choixrestaurants {
-    height: 1220px;
+    height: 1100px;
   }
 }
 @media screen and (max-width: 374px) {
   .choixrestaurants {
-    height: 1050px;
+    height: 950px;
   }
 }
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  .choixrestaurants {
+    height: 1650px;
+  }
+}
+
 .titreacceuil {
   font-size: 20px;
   margin-left: 5%;
@@ -575,18 +710,31 @@ ahover {
 }
 @media screen and (min-width: 768px) and (max-width: 991px) {
   .titreacceuil {
-    font-size: 25px;
+    font-size: 29px;
     margin-top: 50px;
     margin-bottom: 30px;
   }
 }
 
 .restaurants {
-  margin-top: -15px;
+  margin-top: -50px;
 }
-@media screen and (max-width: 374px) {
+@media screen and (max-width: 424px) {
   .restaurants {
-    margin-top: -20px;
+    margin-top: -60px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  .restaurants {
+    margin-top: -30px;
+  }
+}
+@media screen and (min-width: 992px) {
+  .restaurants {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
   }
 }
 
@@ -605,6 +753,11 @@ ahover {
 @media screen and (max-width: 374px) {
   .menus {
     margin-top: 15px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  .menus {
+    margin-top: 100px;
   }
 }
 
@@ -641,6 +794,11 @@ article h2 {
     margin-left: 20px;
   }
 }
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  article h2 {
+    font-size: 23px;
+  }
+}
 
 .legende {
   align-items: baseline;
@@ -666,6 +824,11 @@ article h2 {
     font-size: 12px;
   }
 }
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  .legende {
+    font-size: 23px;
+  }
+}
 
 .legende p {
   margin-bottom: 0px;
@@ -688,6 +851,12 @@ article h2 {
     font-size: 12.3px;
   }
 }
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  .legende p {
+    width: 442px;
+    font-size: 23.5px;
+  }
+}
 
 .desserts .legende p {
   font-size: 16.1px;
@@ -700,6 +869,11 @@ article h2 {
 @media screen and (max-width: 374px) {
   .desserts .legende p {
     font-size: 12px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  .desserts .legende p {
+    font-size: 23.1px;
   }
 }
 
@@ -716,6 +890,11 @@ article h2 {
     font-size: 13.5px;
   }
 }
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  .legende p.myrtilles {
+    font-size: 25.8px;
+  }
+}
 
 .noteenchantee p {
   font-size: 16px;
@@ -728,6 +907,11 @@ article h2 {
 @media screen and (max-width: 374px) {
   .noteenchantee p {
     font-size: 12.3px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  .noteenchantee p {
+    font-size: 23px;
   }
 }
 
@@ -751,6 +935,12 @@ article h2 {
     margin-right: 10px;
   }
 }
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  .prix {
+    font-size: 22px;
+    margin-bottom: -55px;
+  }
+}
 
 .commander {
   display: flex;
@@ -759,6 +949,11 @@ article h2 {
   margin-bottom: -20px;
   background-color: #F6F6F6;
   height: 150px;
+}
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  .commander {
+    height: 200px;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

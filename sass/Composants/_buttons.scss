@@ -4,12 +4,19 @@
 .btn {
     @include button;
     @include padding-button();
+    @include tablette{
+        font-size: 23px;
+        
+    }
  
 }
 .btncommander{
     @include button;
     @include padding-button(15px 50px);
-    
+    @include tablette{
+        font-size: 23px;
+        @include padding-button(20px 60px)
+    }
     
 }
 
@@ -39,6 +46,10 @@
         font-size: 15px;
         height: 65px;
     }
+    @include tablette{
+        width: 430px;
+        font-size: 23px;
+    }
     
 }
 .btnflecheretour{
@@ -54,6 +65,11 @@
     @include mobile-Small-screen{
         margin-left: -73px;
         font-size: 18px;
+    
+}
+    @include tablette{
+        margin-left: -200px;
+        font-size: 25px;
     }
 }
 .menus button{
@@ -72,6 +88,10 @@
     }
     @include mobile-Small-screen{
         width: 91%
+    }
+    @include tablette{
+        margin: 10px 0px 10px 14px;
+        padding: 3px 5px;
     }
     
 }

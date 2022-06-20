@@ -1,39 +1,71 @@
 @import "../utils/variables";
-footer{
-    background-color:$color-backgroundfooter;
+
+footer {
+    background-color: $color-backgroundfooter;
     color: white;
     padding: 1px 20px;
-    nav{
+
+    nav {
         margin-left: 10px;
-    }
 
-    .textfooter{
-    color: white;
-    font-family: $title-font;
-
-    }
-    ul{
-    list-style: none;
-    margin-left: -40px;
-    margin-bottom: 5px;
-    }
-    li{
-    margin-bottom: 10px;
-    }
-    .fa-utensils{
-    margin-right : 10px;
-    }
-    .fa-handshake-angle{
-    margin-right: 4px;
-    }
-    a{
-    text-decoration: none;
-    color: white;
-    cursor: pointer;
-    }
-    @include tablette{
-        nav{
-            margin-left: 183px;
+        @include tablette; @include desktop{
+            display: flex;
+            flex-direction: column;
         }
+    }
+
+    .textfooter {
+        color: white;
+        font-family: $title-font;
+
+        @include tablette {
+            margin-bottom: 0;
+            font-size: 23px;
+        }
+        @include desktop{
+            font-size: 25px;
+        }
+    }
+
+
+
+    ul {
+        list-style: none;
+        margin-left: -40px;
+        margin-bottom: 5px;
+
+        @include tablette; @include desktop{
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+    }
+
+    li {
+        margin-bottom: 10px;
+
+        @include tablette{
+            margin-right: 49px;
+        }
+        @include desktop{
+            margin-right: 80px;
+            font-size: 20px;
+        }
+    }
+
+    .fa-utensils {
+        margin-right: 10px;
+    }
+
+    .fa-handshake-angle {
+        margin-right: 4px;
+    }
+
+    a {
+        text-decoration: none;
+        color: white;
+        cursor: pointer;
     }
 }
