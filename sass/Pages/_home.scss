@@ -36,6 +36,20 @@ section.location{
     flex-direction: column;
     align-items: baseline;
     width: 100%;
+        ol{
+            @include desktop-S{
+                display: flex;
+                justify-content: center;
+            }
+            @include desktop-M{
+                display: flex;
+                justify-content: center;
+            }
+            @include desktop-L{
+                display: flex;
+                justify-content: center;
+            }
+        }
         span{
             background-color: #9356DC;
             padding: 12px;
@@ -62,6 +76,17 @@ section.location{
                 padding: 14px;
                 margin-right: 435px;
             }
+            @include desktop-S{
+                margin-right: 235px;
+            }
+            @include desktop-M{
+                margin-right: 235px;
+                width: 1%;
+            }
+            @include desktop-L{
+                margin-right: 300px;
+                width: 1%;
+            }
             
 
         }
@@ -76,6 +101,19 @@ section.location{
                 margin-left: -13px;
                 margin-right: 0;
             }
+            @include desktop-S{
+                margin-left: 0;
+                margin-right: 7px;
+            }
+            @include desktop-M{
+                margin-left: 0;
+                margin-right: 7px;
+            }
+            @include desktop-L{
+                margin-left: 0;
+                margin-right: 5px;
+            }
+
             &:hover{
                 color: $color-primary;
             }
@@ -86,10 +124,19 @@ section.location{
         .degustez{
             margin-right: 3%;
         }
-        @include tablette{
-            display: grid;
-
+        @include desktop-S{
+            display: flex;
+            align-items: inherit;
         }
+        @include desktop-M{
+            display: flex;
+            align-items: inherit;
+        }
+        @include desktop-L{
+            display: flex;
+            align-items: inherit;
+        }
+        
 }
 .restaurants figure{
     background-color : white;
@@ -102,7 +149,13 @@ section.location{
     margin-bottom: -25px;
     @include tablette{
         margin-bottom: -10px;
-}
+    }
+    @include desktop-S{
+        margin-bottom: 0;
+    }
+    @include desktop-L{
+        margin-bottom: -10px;
+    }
 }
 
 .restaurants a img {
@@ -119,6 +172,9 @@ section.location{
     }
     @include tablette{
         height: 245px;
+    }
+    @include desktop-L{
+        height: 230px;
     }
 }
 .restaurants a.carte2restaurant img {
@@ -143,8 +199,8 @@ section.location{
     @include tablette{
         height: 100px;
     }
-    @include desktop{
-        height: 50px;
+    @include desktop-S{
+        height: 80px;
     }
     p{
         font-weight: 100;
@@ -188,7 +244,14 @@ section.location{
                 font-size: 27px;
             }
         }
+        @include desktop-L{
+            margin: 5px 0 15px 5px;
+            font-size: 20px;
+            p{
+                font-size: 23px;
+            }
+        }
+    }
 
 
-}
 }

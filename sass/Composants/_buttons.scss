@@ -17,6 +17,10 @@
         font-size: 23px;
         @include padding-button(20px 60px)
     }
+    @include desktop-L{
+        font-size: 25px;
+        padding: 20px 65px;
+    }
     
 }
 
@@ -50,6 +54,18 @@
         width: 430px;
         font-size: 23px;
     }
+    @include desktop-S{
+        width: 230px;
+        font-size: 15px;
+    }
+    @include desktop-M{
+        width: 230px;
+        font-size: 15px;
+    }
+    @include desktop-L{
+        width: 295px;
+        font-size: 15px;
+    }
     
 }
 .btnflecheretour{
@@ -71,6 +87,10 @@
         margin-left: -200px;
         font-size: 25px;
     }
+    @include desktop-L{
+        font-size: 30px;
+        margin-left: -205px;
+    }
 }
 .menus button{
     background-color: white;
@@ -91,7 +111,13 @@
     }
     @include tablette{
         margin: 10px 0px 10px 14px;
-        padding: 3px 5px;
+        
+    }
+    @include desktop-L{
+        margin: 10px 0 30px 17px;;
+        width: 150%;
+        padding: 5% 1% 5% 1%;
+        justify-content: center;
     }
     
 }

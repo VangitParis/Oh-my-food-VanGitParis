@@ -22,6 +22,11 @@
         height: 470px;
         object-position: 50% 8%;
     }
+    @include desktop-L{
+        width: 30%;
+        height: 500px;
+        margin-left: 35%;
+    }
 }
 .img-noteenchantee{
     @include tablette{

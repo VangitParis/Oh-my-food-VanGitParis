@@ -25,6 +25,13 @@
     object-position: 50% 8%;
   }
 }
+@media screen and (min-width: 2560px) and (max-width: 3000px) {
+  .imgrestaurant {
+    width: 30%;
+    height: 500px;
+    margin-left: 35%;
+  }
+}
 
 @media screen and (min-width: 768px) and (max-width: 991px) {
   .img-noteenchantee {
@@ -74,6 +81,12 @@
     padding: 20px 60px;
   }
 }
+@media screen and (min-width: 2560px) and (max-width: 3000px) {
+  .btncommander {
+    font-size: 25px;
+    padding: 20px 65px;
+  }
+}
 
 .btnfonctionnement {
   background-color: #F6F6F6;
@@ -113,6 +126,24 @@
     font-size: 23px;
   }
 }
+@media screen and (min-width: 992px) and (max-width: 1439px) {
+  .btnfonctionnement {
+    width: 230px;
+    font-size: 15px;
+  }
+}
+@media screen and (min-width: 1440px) and (max-width: 2559px) {
+  .btnfonctionnement {
+    width: 230px;
+    font-size: 15px;
+  }
+}
+@media screen and (min-width: 2560px) and (max-width: 3000px) {
+  .btnfonctionnement {
+    width: 295px;
+    font-size: 15px;
+  }
+}
 
 .btnflecheretour {
   border-color: transparent;
@@ -137,6 +168,12 @@
   .btnflecheretour {
     margin-left: -200px;
     font-size: 25px;
+  }
+}
+@media screen and (min-width: 2560px) and (max-width: 3000px) {
+  .btnflecheretour {
+    font-size: 30px;
+    margin-left: -205px;
   }
 }
 
@@ -165,7 +202,14 @@
 @media screen and (min-width: 768px) and (max-width: 991px) {
   .menus button {
     margin: 10px 0px 10px 14px;
-    padding: 3px 5px;
+  }
+}
+@media screen and (min-width: 2560px) and (max-width: 3000px) {
+  .menus button {
+    margin: 10px 0 30px 17px;
+    width: 150%;
+    padding: 5% 1% 5% 1%;
+    justify-content: center;
   }
 }
 
@@ -209,6 +253,12 @@
     font-size: 40px;
   }
 }
+@media screen and (min-width: 2560px) and (max-width: 3000px) {
+  .titreheader {
+    font-size: 40px;
+    height: 30px;
+  }
+}
 
 svg.svg-inline--fa.fa-arrow-left {
   display: flex;
@@ -218,15 +268,25 @@ svg.svg-inline--fa.fa-arrow-left {
 footer {
   background-color: #353535;
   color: white;
-  padding: 1px 20px;
+  padding: 1px 30px;
 }
 footer nav {
   margin-left: 10px;
 }
-@media screen and (min-width: 992px) {
+@media screen and (min-width: 768px) and (max-width: 991px) {
   footer nav {
     display: flex;
     flex-direction: column;
+    margin-left: 60px;
+    margin-right: 0;
+  }
+}
+@media screen and (min-width: 992px) and (max-width: 1439px) {
+  footer nav {
+    display: flex;
+    flex-direction: column;
+    margin-left: 60px;
+    margin-right: 0;
   }
 }
 footer .textfooter {
@@ -235,13 +295,27 @@ footer .textfooter {
 }
 @media screen and (min-width: 768px) and (max-width: 991px) {
   footer .textfooter {
+    margin-left: 70px;
     margin-bottom: 0;
-    font-size: 23px;
+    font-size: 20px;
   }
 }
-@media screen and (min-width: 992px) {
+@media screen and (min-width: 992px) and (max-width: 1439px) {
   footer .textfooter {
-    font-size: 25px;
+    margin-bottom: 0;
+    font-size: 23px;
+    margin-left: 6%;
+  }
+}
+@media screen and (min-width: 1440px) and (max-width: 2559px) {
+  footer .textfooter {
+    margin-left: 23%;
+  }
+}
+@media screen and (min-width: 2560px) and (max-width: 3000px) {
+  footer .textfooter {
+    margin-left: 32%;
+    font-size: 30px;
   }
 }
 footer ul {
@@ -249,7 +323,7 @@ footer ul {
   margin-left: -40px;
   margin-bottom: 5px;
 }
-@media screen and (min-width: 992px) {
+@media screen and (min-width: 768px) and (max-width: 991px) {
   footer ul {
     display: flex;
     flex-direction: row;
@@ -258,18 +332,59 @@ footer ul {
     margin-bottom: 20px;
   }
 }
+@media screen and (min-width: 992px) and (max-width: 1439px) {
+  footer ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+}
+@media screen and (min-width: 1440px) and (max-width: 2559px) {
+  footer ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+}
+@media screen and (min-width: 2560px) and (max-width: 3000px) {
+  footer ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+    margin-left: 0;
+  }
+}
 footer li {
   margin-bottom: 10px;
 }
 @media screen and (min-width: 768px) and (max-width: 991px) {
   footer li {
-    margin-right: 49px;
+    margin-right: 40px;
+    font-size: 11px;
   }
 }
-@media screen and (min-width: 992px) {
+@media screen and (min-width: 992px) and (max-width: 1439px) {
   footer li {
-    margin-right: 80px;
-    font-size: 20px;
+    margin-right: 70px;
+    font-size: 16px;
+  }
+}
+@media screen and (min-width: 1440px) and (max-width: 2559px) {
+  footer li {
+    margin-right: 54px;
+    font-size: 16px;
+  }
+}
+@media screen and (min-width: 2560px) and (max-width: 3000px) {
+  footer li {
+    margin-right: 86px;
+    font-size: 18px;
   }
 }
 footer .fa-utensils {
@@ -282,6 +397,23 @@ footer a {
   text-decoration: none;
   color: white;
   cursor: pointer;
+}
+@media screen and (min-width: 992px) and (max-width: 1439px) {
+  footer {
+    justify-content: center;
+  }
+}
+@media screen and (min-width: 1440px) and (max-width: 2559px) {
+  footer {
+    justify-content: center;
+  }
+}
+@media screen and (min-width: 2560px) and (max-width: 3000px) {
+  footer {
+    justify-content: center;
+    height: 250px;
+    padding: 40px 30px;
+  }
 }
 
 .form {
@@ -299,6 +431,11 @@ footer a {
   font-size: 15px;
 }
 @media screen and (min-width: 768px) and (max-width: 991px) {
+  .form .formtext {
+    font-size: 18px;
+  }
+}
+@media screen and (min-width: 992px) and (max-width: 1439px) {
   .form .formtext {
     font-size: 18px;
   }
@@ -323,7 +460,7 @@ footer a {
     margin-bottom: 10px;
   }
 }
-@media screen and (min-width: 992px) {
+@media screen and (min-width: 992px) and (max-width: 1439px) {
   .form {
     width: 100%;
   }
@@ -369,6 +506,24 @@ section.location .textacceuil {
   align-items: baseline;
   width: 100%;
 }
+@media screen and (min-width: 992px) and (max-width: 1439px) {
+  .description ol {
+    display: flex;
+    justify-content: center;
+  }
+}
+@media screen and (min-width: 1440px) and (max-width: 2559px) {
+  .description ol {
+    display: flex;
+    justify-content: center;
+  }
+}
+@media screen and (min-width: 2560px) and (max-width: 3000px) {
+  .description ol {
+    display: flex;
+    justify-content: center;
+  }
+}
 .description span {
   background-color: #9356DC;
   padding: 12px;
@@ -401,6 +556,23 @@ section.location .textacceuil {
     margin-right: 435px;
   }
 }
+@media screen and (min-width: 992px) and (max-width: 1439px) {
+  .description span {
+    margin-right: 235px;
+  }
+}
+@media screen and (min-width: 1440px) and (max-width: 2559px) {
+  .description span {
+    margin-right: 235px;
+    width: 1%;
+  }
+}
+@media screen and (min-width: 2560px) and (max-width: 3000px) {
+  .description span {
+    margin-right: 300px;
+    width: 1%;
+  }
+}
 .description .fa-mobile-screen-button, .description .fa-list, .description .fa-store {
   margin-left: -50px;
   margin-right: -40px;
@@ -417,6 +589,24 @@ section.location .textacceuil {
     margin-right: 0;
   }
 }
+@media screen and (min-width: 992px) and (max-width: 1439px) {
+  .description .fa-mobile-screen-button, .description .fa-list, .description .fa-store {
+    margin-left: 0;
+    margin-right: 7px;
+  }
+}
+@media screen and (min-width: 1440px) and (max-width: 2559px) {
+  .description .fa-mobile-screen-button, .description .fa-list, .description .fa-store {
+    margin-left: 0;
+    margin-right: 7px;
+  }
+}
+@media screen and (min-width: 2560px) and (max-width: 3000px) {
+  .description .fa-mobile-screen-button, .description .fa-list, .description .fa-store {
+    margin-left: 0;
+    margin-right: 5px;
+  }
+}
 .description .fa-mobile-screen-button:hover, .description .fa-list:hover, .description .fa-store:hover {
   color: #9356DC;
 }
@@ -426,9 +616,22 @@ section.location .textacceuil {
 .description .degustez {
   margin-right: 3%;
 }
-@media screen and (min-width: 768px) and (max-width: 991px) {
+@media screen and (min-width: 992px) and (max-width: 1439px) {
   .description {
-    display: grid;
+    display: flex;
+    align-items: inherit;
+  }
+}
+@media screen and (min-width: 1440px) and (max-width: 2559px) {
+  .description {
+    display: flex;
+    align-items: inherit;
+  }
+}
+@media screen and (min-width: 2560px) and (max-width: 3000px) {
+  .description {
+    display: flex;
+    align-items: inherit;
   }
 }
 
@@ -444,6 +647,16 @@ section.location .textacceuil {
   margin-bottom: -25px;
 }
 @media screen and (min-width: 768px) and (max-width: 991px) {
+  .restaurants a {
+    margin-bottom: -10px;
+  }
+}
+@media screen and (min-width: 992px) and (max-width: 1439px) {
+  .restaurants a {
+    margin-bottom: 0;
+  }
+}
+@media screen and (min-width: 2560px) and (max-width: 3000px) {
   .restaurants a {
     margin-bottom: -10px;
   }
@@ -469,6 +682,11 @@ section.location .textacceuil {
 @media screen and (min-width: 768px) and (max-width: 991px) {
   .restaurants a img {
     height: 245px;
+  }
+}
+@media screen and (min-width: 2560px) and (max-width: 3000px) {
+  .restaurants a img {
+    height: 230px;
   }
 }
 
@@ -501,9 +719,9 @@ section.location .textacceuil {
     height: 100px;
   }
 }
-@media screen and (min-width: 992px) {
+@media screen and (min-width: 992px) and (max-width: 1439px) {
   .restaurants a figcaption {
-    height: 50px;
+    height: 80px;
   }
 }
 .restaurants a figcaption p {
@@ -556,6 +774,15 @@ section.location .textacceuil {
     font-size: 27px;
   }
 }
+@media screen and (min-width: 2560px) and (max-width: 3000px) {
+  .restaurants a figcaption .legende {
+    margin: 5px 0 15px 5px;
+    font-size: 20px;
+  }
+  .restaurants a figcaption .legende p {
+    font-size: 23px;
+  }
+}
 
 * {
   box-sizing: border-box;
@@ -572,6 +799,27 @@ main li {
   margin-bottom: 8%;
   justify-content: center;
   align-items: center;
+}
+@media screen and (min-width: 992px) and (max-width: 1439px) {
+  main li {
+    margin-right: 30px;
+    margin-bottom: 5%;
+    margin-left: 1%;
+  }
+}
+@media screen and (min-width: 1440px) and (max-width: 2559px) {
+  main li {
+    margin-right: 30px;
+    margin-bottom: 5%;
+    margin-left: 1%;
+  }
+}
+@media screen and (min-width: 2560px) and (max-width: 3000px) {
+  main li {
+    margin-right: 25px;
+    margin-bottom: 5%;
+    margin-left: 1%;
+  }
 }
 
 a {
@@ -607,8 +855,27 @@ ahover {
 }
 @media screen and (min-width: 768px) and (max-width: 991px) {
   .evenement {
-    margin-top: 47px;
-    margin-right: 64px;
+    margin-top: 41px;
+    margin-right: 65px;
+    padding: 9px 15px;
+  }
+}
+@media screen and (min-width: 992px) and (max-width: 1439px) {
+  .evenement {
+    font-size: 11px;
+    margin-top: 39px;
+    margin-right: 46px;
+  }
+}
+@media screen and (min-width: 1440px) and (max-width: 2559px) {
+  .evenement {
+    padding: 5px 10px;
+    margin-top: 39px;
+  }
+}
+@media screen and (min-width: 2560px) and (max-width: 3000px) {
+  .evenement {
+    padding: 5px 13px;
   }
 }
 
@@ -667,6 +934,21 @@ ahover {
     margin-right: 1rem;
   }
 }
+@media screen and (min-width: 2560px) and (max-width: 3000px) {
+  .Titrepages {
+    font-size: 37px;
+    margin-top: -98px;
+    padding-right: 2.7%;
+    padding-left: 1%;
+    margin-left: 35%;
+    margin-right: 22%;
+    width: 30%;
+  }
+  .Titrepages .fa-heart {
+    height: 2.5rem;
+    margin-right: 1rem;
+  }
+}
 
 .choixrestaurants {
   background-color: #F6F6F6;
@@ -689,6 +971,24 @@ ahover {
 @media screen and (min-width: 768px) and (max-width: 991px) {
   .choixrestaurants {
     height: 1650px;
+  }
+}
+@media screen and (min-width: 992px) and (max-width: 1439px) {
+  .choixrestaurants {
+    display: flow-root;
+    height: 730px;
+  }
+}
+@media screen and (min-width: 1440px) and (max-width: 2559px) {
+  .choixrestaurants {
+    display: flow-root;
+    height: 730px;
+  }
+}
+@media screen and (min-width: 2560px) and (max-width: 3000px) {
+  .choixrestaurants {
+    display: flow-root;
+    height: 810px;
   }
 }
 
@@ -715,6 +1015,21 @@ ahover {
     margin-bottom: 30px;
   }
 }
+@media screen and (min-width: 992px) and (max-width: 1439px) {
+  .titreacceuil {
+    margin-left: 13%;
+  }
+}
+@media screen and (min-width: 1440px) and (max-width: 2559px) {
+  .titreacceuil {
+    margin-left: 23.2%;
+  }
+}
+@media screen and (min-width: 2560px) and (max-width: 3000px) {
+  .titreacceuil {
+    margin-left: 31.5%;
+  }
+}
 
 .restaurants {
   margin-top: -50px;
@@ -729,12 +1044,34 @@ ahover {
     margin-top: -30px;
   }
 }
-@media screen and (min-width: 992px) {
+@media screen and (min-width: 992px) and (max-width: 1439px) {
   .restaurants {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
+    margin: 1% 10%;
+    position: absolute;
+  }
+}
+@media screen and (min-width: 1440px) and (max-width: 2559px) {
+  .restaurants {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin: 1% 10%;
+    position: absolute;
+  }
+}
+@media screen and (min-width: 2560px) and (max-width: 3000px) {
+  .restaurants {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin: 1% 30%;
+    position: absolute;
   }
 }
 
@@ -760,20 +1097,43 @@ ahover {
     margin-top: 100px;
   }
 }
+@media screen and (min-width: 2560px) and (max-width: 3000px) {
+  .menus {
+    flex-direction: row;
+    margin-top: 60px;
+  }
+}
 
 .entrees {
   display: flex;
   flex-direction: column;
+}
+@media screen and (min-width: 2560px) and (max-width: 3000px) {
+  .entrees {
+    margin-right: 10%;
+    margin-left: 2%;
+  }
 }
 
 .plats {
   display: flex;
   flex-direction: column;
 }
+@media screen and (min-width: 2560px) and (max-width: 3000px) {
+  .plats {
+    margin-right: 12%;
+    margin-left: 4.5%;
+  }
+}
 
 .desserts {
   display: flex;
   flex-direction: column;
+}
+@media screen and (min-width: 2560px) and (max-width: 3000px) {
+  .desserts {
+    margin-left: 2.2%;
+  }
 }
 
 article h2 {
@@ -799,6 +1159,12 @@ article h2 {
     font-size: 23px;
   }
 }
+@media screen and (min-width: 2560px) and (max-width: 3000px) {
+  article h2 {
+    font-size: 25px;
+    width: 13%;
+  }
+}
 
 .legende {
   align-items: baseline;
@@ -807,7 +1173,6 @@ article h2 {
   margin-top: -5px;
   margin-bottom: 10px;
   margin-left: 5px;
-  margin-top: -5px;
   text-align: left;
   font-size: 16px;
   text-overflow: ellipsis;
@@ -827,6 +1192,13 @@ article h2 {
 @media screen and (min-width: 768px) and (max-width: 991px) {
   .legende {
     font-size: 23px;
+  }
+}
+@media screen and (min-width: 2560px) and (max-width: 3000px) {
+  .legende {
+    margin-left: -14px;
+    margin-right: 0;
+    font-size: 21px;
   }
 }
 
@@ -857,6 +1229,12 @@ article h2 {
     font-size: 23.5px;
   }
 }
+@media screen and (min-width: 2560px) and (max-width: 3000px) {
+  .legende p {
+    width: 405px;
+    font-size: 21.5px;
+  }
+}
 
 .desserts .legende p {
   font-size: 16.1px;
@@ -874,6 +1252,11 @@ article h2 {
 @media screen and (min-width: 768px) and (max-width: 991px) {
   .desserts .legende p {
     font-size: 23.1px;
+  }
+}
+@media screen and (min-width: 2560px) and (max-width: 3000px) {
+  .desserts .legende p {
+    font-size: 21.2px;
   }
 }
 
@@ -941,6 +1324,12 @@ article h2 {
     margin-bottom: -55px;
   }
 }
+@media screen and (min-width: 2560px) and (max-width: 3000px) {
+  .prix {
+    font-size: 25px;
+    margin-left: 30%;
+  }
+}
 
 .commander {
   display: flex;
@@ -953,6 +1342,11 @@ article h2 {
 @media screen and (min-width: 768px) and (max-width: 991px) {
   .commander {
     height: 200px;
+  }
+}
+@media screen and (min-width: 2560px) and (max-width: 3000px) {
+  .commander {
+    height: 250px;
   }
 }
 

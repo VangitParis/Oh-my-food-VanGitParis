@@ -21,6 +21,22 @@ main li{
     margin-bottom: 8%;
     justify-content: center;
     align-items: center;
+    @include desktop-S{
+        margin-right: 30px;
+        margin-bottom: 5%;
+        margin-left: 1%;
+    }
+    @include desktop-M{
+        margin-right: 30px;
+        margin-bottom: 5%;
+        margin-left: 1%;
+    }
+    @include desktop-L{
+        margin-right: 25px;
+        margin-bottom: 5%;
+        margin-left: 1%;
+    }
+
     
 }
 
@@ -50,8 +66,22 @@ a{
         font-size: 10px;
     }
     @include tablette{
-        margin-top: 47px;
-        margin-right: 64px;
+        margin-top: 41px;
+        margin-right: 65px;
+        padding: 9px 15px;
+    }
+    @include desktop-S{
+        font-size: 11px;
+        margin-top: 39px;
+        margin-right: 46px;
+    }
+    @include desktop-M{
+        padding: 5px 10px;
+        margin-top: 39px;
+    }
+    @include desktop-L{
+        padding: 5px 13px;
+        
     }
 }
 .Titrepages{
@@ -103,6 +133,19 @@ a{
 
         }
     }
+    @include desktop-L{
+        font-size: 37px;
+        margin-top: -98px;
+        padding-right: 2.7%;
+        padding-left: 1%;
+        margin-left: 35%;
+        margin-right: 22%;
+        width: 30%;
+        .fa-heart{
+            height: 2.5rem;
+            margin-right: 1rem;
+        }
+    }
 }
 
 .choixrestaurants{
@@ -122,6 +165,18 @@ a{
     @include tablette{
         height: 1650px;
     }
+    @include desktop-S{
+        display: flow-root;
+        height: 730px;
+    }
+    @include desktop-M{
+        display: flow-root;
+        height: 730px;
+    }
+    @include desktop-L{
+        display: flow-root;
+        height: 810px;
+    }
 }
 .titreacceuil{
     font-size: $font-size-title;
@@ -140,6 +195,15 @@ a{
         margin-top: 50px;
         margin-bottom: 30px;
     }
+    @include desktop-S{
+        margin-left: 13%;
+    }
+    @include desktop-M{
+        margin-left: 23.2%;
+    }
+    @include desktop-L{
+        margin-left: 31.5%;
+    }
 }
 .restaurants{
     margin-top: -50px;
@@ -149,14 +213,35 @@ a{
     @include tablette{
         margin-top: -30px;
     }
-    @include desktop{
+    @include desktop-S{
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
         align-items: center;
+        margin:1% 10%;
+        position: absolute;
+    } 
+    @include desktop-M{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        margin:1% 10%;
+        position: absolute;
     }
+    @include desktop-L{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        margin:1% 30%;
+        position: absolute;
+    }
+   
+    }
+
     
-}
+
 .menus{
     background-color: $color-background;
     margin-top: 25px;
@@ -172,19 +257,35 @@ a{
     @include tablette{
         margin-top: 100px;
     }
+    @include desktop-L{
+        flex-direction: row;
+        margin-top: 60px;
+    }
     
 }
 .entrees{
     display: flex;
     flex-direction: column;
+    @include desktop-L{
+        margin-right: 10%;
+        margin-left: 2%;
+    }
+   
 }
 .plats{
     display: flex;
     flex-direction: column;
+    @include desktop-L{
+        margin-right: 12%;
+        margin-left: 4.5%;
+    }
 }
 .desserts{
     display: flex;
     flex-direction: column;
+    @include desktop-L{
+        margin-left: 2.2%;
+    }
 }
 article h2{
     margin-left: 25px;
@@ -202,6 +303,10 @@ article h2{
     @include tablette{
         font-size: 23px;
     }
+    @include desktop-L{
+        font-size: 25px;
+        width: 13%;
+    }
 }
 
 .legende{
@@ -211,7 +316,6 @@ article h2{
     margin-top: -5px;
     margin-bottom: 10px;
     margin-left: 5px;
-    margin-top: -5px;
     text-align: left;
     font-size: $font-size-body;
     text-overflow: ellipsis;
@@ -225,6 +329,11 @@ article h2{
     }
     @include tablette{
         font-size: 23px;
+    }
+    @include desktop-L{
+        margin-left: -14px;
+        margin-right: 0;
+        font-size: 21px;
     }
 }
 .legende p{
@@ -247,6 +356,10 @@ font-size: 16.5px;
         width: 442px;
         font-size: 23.5px;
     }
+    @include desktop-L{
+        width: 405px;
+        font-size: 21.5px;
+    }
 }
 .desserts .legende p{
     font-size: 16.1px;
@@ -258,6 +371,11 @@ font-size: 16.5px;
     }
     @include tablette{
         font-size: 23.1px;
+        
+    }
+    @include desktop-L{
+        font-size: 21.2px;
+        
     }
 }
 .legende p.myrtilles {
@@ -305,6 +423,10 @@ font-size: 16.5px;
         font-size: 22px;
         margin-bottom: -55px;
         }
+    @include desktop-L{
+        font-size: 25px;
+        margin-left: 30%;
+    }
     
 }
 
@@ -317,6 +439,9 @@ font-size: 16.5px;
     height: 150px;
     @include tablette{
         height: 200px;
+    }
+    @include desktop-L{
+        height: 250px;
     }
 }
 

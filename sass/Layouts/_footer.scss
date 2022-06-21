@@ -3,30 +3,48 @@
 footer {
     background-color: $color-backgroundfooter;
     color: white;
-    padding: 1px 20px;
+    padding: 1px 30px;
 
     nav {
         margin-left: 10px;
-
-        @include tablette; @include desktop{
+        @include tablette{
+            display: flex;
+                flex-direction: column;
+                margin-left: 60px;
+                margin-right: 0;
+        }
+        @include desktop-S {
             display: flex;
             flex-direction: column;
+            margin-left: 60px;
+            margin-right: 0;
         }
+       
     }
 
     .textfooter {
         color: white;
         font-family: $title-font;
 
-        @include tablette {
+        @include tablette{
+            margin-left: 70px;
+            margin-bottom: 0;
+            font-size: 20px;
+        }
+        @include desktop-S{
             margin-bottom: 0;
             font-size: 23px;
+            margin-left: 6%;
         }
-        @include desktop{
-            font-size: 25px;
+        @include desktop-M{
+            margin-left: 23%;
         }
+        @include desktop-L{
+            margin-left: 32%;
+            font-size: 30px;
+        }
+        
     }
-
 
 
     ul {
@@ -34,12 +52,34 @@ footer {
         margin-left: -40px;
         margin-bottom: 5px;
 
-        @include tablette; @include desktop{
+        @include tablette{
             display: flex;
             flex-direction: row;
             justify-content: center;
             align-items: center;
             margin-bottom: 20px;
+        }
+        @include desktop-S{
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+        @include desktop-M{
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+        @include desktop-L{
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 20px;
+            margin-left: 0;
         }
     }
 
@@ -47,12 +87,23 @@ footer {
         margin-bottom: 10px;
 
         @include tablette{
-            margin-right: 49px;
+            margin-right: 40px;
+            font-size: 11px;
         }
-        @include desktop{
-            margin-right: 80px;
-            font-size: 20px;
+        @include desktop-S{
+            margin-right: 70px;
+            font-size: 16px;
         }
+        @include desktop-M{
+            margin-right: 54px;
+            font-size: 16px;
+        }
+        @include desktop-L{
+            margin-right: 86px;
+            font-size: 18px;
+        }
+
+        
     }
 
     .fa-utensils {
@@ -67,5 +118,17 @@ footer {
         text-decoration: none;
         color: white;
         cursor: pointer;
+    }
+    @include desktop-S{
+        justify-content: center;
+
+    }
+    @include desktop-M{
+        justify-content: center;
+    }
+    @include desktop-L{
+        justify-content: center;
+        height: 250px;
+        padding: 40px 30px;
     }
 }
