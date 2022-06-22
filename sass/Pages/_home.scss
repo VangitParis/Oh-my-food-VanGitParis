@@ -30,7 +30,7 @@ section.location{
     
 }
 .description{
-    display: grid;
+    display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
@@ -74,7 +74,7 @@ section.location{
             @include tablette{
                 font-size: 20px;
                 padding: 14px;
-                margin-right: 435px;
+                margin-right: 495px;
             }
             @include desktop-S{
                 margin-right: 235px;
@@ -123,6 +123,9 @@ section.location{
         }
         .degustez{
             margin-right: 3%;
+        }
+        @include tablette{
+            display: grid;
         }
         @include desktop-S{
             display: flex;

@@ -149,7 +149,7 @@
 }
 @media screen and (min-width: 768px) and (max-width: 991px) {
   .btnfonctionnement {
-    width: 430px;
+    width: 490px;
     font-size: 23px;
   }
 }
@@ -587,7 +587,7 @@ section.location .textacceuil {
 }
 
 .description {
-  display: grid;
+  display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
@@ -641,7 +641,7 @@ section.location .textacceuil {
   .description span {
     font-size: 20px;
     padding: 14px;
-    margin-right: 435px;
+    margin-right: 495px;
   }
 }
 @media screen and (min-width: 992px) and (max-width: 1439px) {
@@ -703,6 +703,11 @@ section.location .textacceuil {
 }
 .description .degustez {
   margin-right: 3%;
+}
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  .description {
+    display: grid;
+  }
 }
 @media screen and (min-width: 992px) and (max-width: 1439px) {
   .description {
