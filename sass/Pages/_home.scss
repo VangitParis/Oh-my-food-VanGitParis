@@ -152,6 +152,8 @@ section.location{
     }
     @include desktop-S{
         margin-bottom: 0;
+        width: 49%;
+        
     }
     @include desktop-L{
         margin-bottom: -10px;
@@ -222,6 +224,10 @@ section.location{
             @include mobile-Small-screen{
                 height: 1.3rem;
             }
+            @include desktop-S{
+                height: 2.2rem;
+                
+            }
             
         }
 }
@@ -242,6 +248,12 @@ section.location{
             
             p{
                 font-size: 27px;
+            }
+        }
+        @include desktop-S{
+            font-size: 16px;
+            p{
+                font-size: 19.5px;
             }
         }
         @include desktop-L{

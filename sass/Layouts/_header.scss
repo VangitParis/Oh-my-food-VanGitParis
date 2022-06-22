@@ -6,6 +6,9 @@
     @include tablette{
         height: 80px;
     }
+    @include desktop-S{
+        height: 50px;
+    }
 }
 .titreheader{
     font-size: 32px;
@@ -21,6 +24,14 @@
     }
     @include tablette{
         font-size: 40px;
+    }
+    @include desktop-S{
+        font-size: 28px;
+        height: 26px;
+    }
+    @include desktop-M{
+        font-size: 35px;
+        height: 30px;
     }
     @include desktop-L{
         font-size: 40px;

@@ -22,6 +22,17 @@
         height: 470px;
         object-position: 50% 8%;
     }
+    @include desktop-S{
+        width: 34%;
+        height: 250px;
+        margin-left: 33%;
+    }
+    @include desktop-M{
+        width: 34%;
+        height: 350px;
+        margin-left: 33%;
+        object-position: 40%;
+    }
     @include desktop-L{
         width: 30%;
         height: 500px;

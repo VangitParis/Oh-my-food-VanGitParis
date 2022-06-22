@@ -17,6 +17,14 @@
         font-size: 23px;
         @include padding-button(20px 60px)
     }
+    @include desktop-S{
+        font-size: 25px;
+        padding: 20px 65px;
+    }
+    @include desktop-M{
+        font-size: 22px;
+        padding: 17px 60px;
+    }
     @include desktop-L{
         font-size: 25px;
         padding: 20px 65px;
@@ -87,6 +95,14 @@
         margin-left: -200px;
         font-size: 25px;
     }
+    @include desktop-S{
+        font-size: 16px;
+        margin-left: -80px;
+    }
+    @include desktop-M{
+        font-size: 28px;
+        margin-left: -116px;
+    }
     @include desktop-L{
         font-size: 30px;
         margin-left: -205px;
@@ -113,14 +129,35 @@
         margin: 10px 0px 10px 14px;
         
     }
+    @include desktop-S{
+        margin: 10px 0 30px 17px;;
+        width: 90%;
+        padding: 5% 1% 5% 0;
+        justify-content: center;
+    }
+    @include desktop-M{
+        margin: 10px 0 30px 17px;;
+        width: 120%;
+        padding: 5% 1% 5% 0;
+        justify-content: center;
+        
+        
+    }
     @include desktop-L{
         margin: 10px 0 30px 17px;;
         width: 150%;
         padding: 5% 1% 5% 1%;
         justify-content: center;
+        
     }
     
+    
 }
+button.buttonpadding{
+    padding: 2.5%;
+}
+
+
 #btnheart{
     
     border: none;

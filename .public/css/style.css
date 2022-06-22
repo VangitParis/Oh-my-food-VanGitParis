@@ -25,6 +25,21 @@
     object-position: 50% 8%;
   }
 }
+@media screen and (min-width: 992px) and (max-width: 1439px) {
+  .imgrestaurant {
+    width: 34%;
+    height: 250px;
+    margin-left: 33%;
+  }
+}
+@media screen and (min-width: 1440px) and (max-width: 2559px) {
+  .imgrestaurant {
+    width: 34%;
+    height: 350px;
+    margin-left: 33%;
+    object-position: 40%;
+  }
+}
 @media screen and (min-width: 2560px) and (max-width: 3000px) {
   .imgrestaurant {
     width: 30%;
@@ -79,6 +94,18 @@
   .btncommander {
     font-size: 23px;
     padding: 20px 60px;
+  }
+}
+@media screen and (min-width: 992px) and (max-width: 1439px) {
+  .btncommander {
+    font-size: 25px;
+    padding: 20px 65px;
+  }
+}
+@media screen and (min-width: 1440px) and (max-width: 2559px) {
+  .btncommander {
+    font-size: 22px;
+    padding: 17px 60px;
   }
 }
 @media screen and (min-width: 2560px) and (max-width: 3000px) {
@@ -170,6 +197,18 @@
     font-size: 25px;
   }
 }
+@media screen and (min-width: 992px) and (max-width: 1439px) {
+  .btnflecheretour {
+    font-size: 16px;
+    margin-left: -80px;
+  }
+}
+@media screen and (min-width: 1440px) and (max-width: 2559px) {
+  .btnflecheretour {
+    font-size: 28px;
+    margin-left: -116px;
+  }
+}
 @media screen and (min-width: 2560px) and (max-width: 3000px) {
   .btnflecheretour {
     font-size: 30px;
@@ -204,6 +243,22 @@
     margin: 10px 0px 10px 14px;
   }
 }
+@media screen and (min-width: 992px) and (max-width: 1439px) {
+  .menus button {
+    margin: 10px 0 30px 17px;
+    width: 90%;
+    padding: 5% 1% 5% 0;
+    justify-content: center;
+  }
+}
+@media screen and (min-width: 1440px) and (max-width: 2559px) {
+  .menus button {
+    margin: 10px 0 30px 17px;
+    width: 120%;
+    padding: 5% 1% 5% 0;
+    justify-content: center;
+  }
+}
 @media screen and (min-width: 2560px) and (max-width: 3000px) {
   .menus button {
     margin: 10px 0 30px 17px;
@@ -211,6 +266,10 @@
     padding: 5% 1% 5% 1%;
     justify-content: center;
   }
+}
+
+button.buttonpadding {
+  padding: 2.5%;
 }
 
 #btnheart {
@@ -228,6 +287,11 @@
 @media screen and (min-width: 768px) and (max-width: 991px) {
   .flechelogo {
     height: 80px;
+  }
+}
+@media screen and (min-width: 992px) and (max-width: 1439px) {
+  .flechelogo {
+    height: 50px;
   }
 }
 
@@ -251,6 +315,18 @@
 @media screen and (min-width: 768px) and (max-width: 991px) {
   .titreheader {
     font-size: 40px;
+  }
+}
+@media screen and (min-width: 992px) and (max-width: 1439px) {
+  .titreheader {
+    font-size: 28px;
+    height: 26px;
+  }
+}
+@media screen and (min-width: 1440px) and (max-width: 2559px) {
+  .titreheader {
+    font-size: 35px;
+    height: 30px;
   }
 }
 @media screen and (min-width: 2560px) and (max-width: 3000px) {
@@ -654,6 +730,7 @@ section.location .textacceuil {
 @media screen and (min-width: 992px) and (max-width: 1439px) {
   .restaurants a {
     margin-bottom: 0;
+    width: 49%;
   }
 }
 @media screen and (min-width: 2560px) and (max-width: 3000px) {
@@ -749,6 +826,11 @@ section.location .textacceuil {
     height: 1.3rem;
   }
 }
+@media screen and (min-width: 992px) and (max-width: 1439px) {
+  .restaurants a figcaption .coeur .fa-heart {
+    height: 2.2rem;
+  }
+}
 .restaurants a figcaption .legende {
   width: 90%;
   font-size: 17px;
@@ -772,6 +854,14 @@ section.location .textacceuil {
   }
   .restaurants a figcaption .legende p {
     font-size: 27px;
+  }
+}
+@media screen and (min-width: 992px) and (max-width: 1439px) {
+  .restaurants a figcaption .legende {
+    font-size: 16px;
+  }
+  .restaurants a figcaption .legende p {
+    font-size: 19.5px;
   }
 }
 @media screen and (min-width: 2560px) and (max-width: 3000px) {
@@ -876,6 +966,8 @@ ahover {
 @media screen and (min-width: 2560px) and (max-width: 3000px) {
   .evenement {
     padding: 5px 13px;
+    margin-top: 43px;
+    margin-right: 62px;
   }
 }
 
@@ -932,6 +1024,36 @@ ahover {
     height: 3rem;
     margin-top: -0.6rem;
     margin-right: 1rem;
+  }
+}
+@media screen and (min-width: 992px) and (max-width: 1439px) {
+  .Titrepages {
+    font-size: 15px;
+    margin-top: -47px;
+    padding-right: 0.7%;
+    padding-left: 1%;
+    margin-left: 32.5%;
+    margin-right: 22%;
+    width: 35%;
+  }
+  .Titrepages .fa-heart {
+    height: 1.5rem;
+    margin-right: 3rem;
+  }
+}
+@media screen and (min-width: 1440px) and (max-width: 2559px) {
+  .Titrepages {
+    font-size: 23px;
+    margin-top: -68px;
+    padding-right: 0;
+    padding-left: 1.5%;
+    margin-left: 32.9%;
+    margin-right: 23%;
+    width: 34.3%;
+  }
+  .Titrepages .fa-heart {
+    height: 2rem;
+    margin-right: 4rem;
   }
 }
 @media screen and (min-width: 2560px) and (max-width: 3000px) {
@@ -1060,7 +1182,7 @@ ahover {
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    margin: 1% 10%;
+    margin: 1% 20%;
     position: absolute;
   }
 }
@@ -1097,6 +1219,18 @@ ahover {
     margin-top: 100px;
   }
 }
+@media screen and (min-width: 992px) and (max-width: 1439px) {
+  .menus {
+    flex-direction: row;
+  }
+}
+@media screen and (min-width: 1440px) and (max-width: 2559px) {
+  .menus {
+    flex-direction: row;
+    margin-top: 40px;
+    justify-content: space-between;
+  }
+}
 @media screen and (min-width: 2560px) and (max-width: 3000px) {
   .menus {
     flex-direction: row;
@@ -1107,6 +1241,17 @@ ahover {
 .entrees {
   display: flex;
   flex-direction: column;
+}
+@media screen and (min-width: 992px) and (max-width: 1439px) {
+  .entrees {
+    margin-right: 0%;
+    margin-left: 0%;
+  }
+}
+@media screen and (min-width: 1440px) and (max-width: 2559px) {
+  .entrees {
+    margin-right: -6%;
+  }
 }
 @media screen and (min-width: 2560px) and (max-width: 3000px) {
   .entrees {
@@ -1119,6 +1264,18 @@ ahover {
   display: flex;
   flex-direction: column;
 }
+@media screen and (min-width: 992px) and (max-width: 1439px) {
+  .plats {
+    margin-right: 0%;
+    margin-left: 0%;
+  }
+}
+@media screen and (min-width: 1440px) and (max-width: 2559px) {
+  .plats {
+    margin-right: 0%;
+    margin-left: 7.5%;
+  }
+}
 @media screen and (min-width: 2560px) and (max-width: 3000px) {
   .plats {
     margin-right: 12%;
@@ -1129,6 +1286,17 @@ ahover {
 .desserts {
   display: flex;
   flex-direction: column;
+}
+@media screen and (min-width: 992px) and (max-width: 1439px) {
+  .desserts {
+    margin-left: 0%;
+  }
+}
+@media screen and (min-width: 1440px) and (max-width: 2559px) {
+  .desserts {
+    margin-left: 1.4%;
+    margin-right: 7%;
+  }
 }
 @media screen and (min-width: 2560px) and (max-width: 3000px) {
   .desserts {
@@ -1157,6 +1325,12 @@ article h2 {
 @media screen and (min-width: 768px) and (max-width: 991px) {
   article h2 {
     font-size: 23px;
+  }
+}
+@media screen and (min-width: 992px) and (max-width: 1439px) {
+  article h2 {
+    font-size: 13px;
+    width: 7%;
   }
 }
 @media screen and (min-width: 2560px) and (max-width: 3000px) {
@@ -1194,6 +1368,19 @@ article h2 {
     font-size: 23px;
   }
 }
+@media screen and (min-width: 992px) and (max-width: 1439px) {
+  .legende {
+    margin-left: 2px;
+    margin-right: 0;
+    font-size: 13px;
+  }
+}
+@media screen and (min-width: 1440px) and (max-width: 2559px) {
+  .legende {
+    margin-right: 16%;
+    font-size: 16px;
+  }
+}
 @media screen and (min-width: 2560px) and (max-width: 3000px) {
   .legende {
     margin-left: -14px;
@@ -1229,6 +1416,18 @@ article h2 {
     font-size: 23.5px;
   }
 }
+@media screen and (min-width: 992px) and (max-width: 1439px) {
+  .legende p {
+    width: 200px;
+    font-size: 12px;
+  }
+}
+@media screen and (min-width: 1440px) and (max-width: 2559px) {
+  .legende p {
+    width: 300px;
+    font-size: 15.4px;
+  }
+}
 @media screen and (min-width: 2560px) and (max-width: 3000px) {
   .legende p {
     width: 405px;
@@ -1252,6 +1451,17 @@ article h2 {
 @media screen and (min-width: 768px) and (max-width: 991px) {
   .desserts .legende p {
     font-size: 23.1px;
+  }
+}
+@media screen and (min-width: 992px) and (max-width: 1439px) {
+  .desserts .legende p {
+    font-size: 12.5px;
+  }
+}
+@media screen and (min-width: 1440px) and (max-width: 2559px) {
+  .desserts .legende p {
+    font-size: 16px;
+    width: 328px;
   }
 }
 @media screen and (min-width: 2560px) and (max-width: 3000px) {
@@ -1278,6 +1488,21 @@ article h2 {
     font-size: 25.8px;
   }
 }
+@media screen and (min-width: 992px) and (max-width: 1439px) {
+  .legende p.myrtilles {
+    font-size: 16.8px;
+  }
+}
+@media screen and (min-width: 1440px) and (max-width: 2559px) {
+  .legende p.myrtilles {
+    font-size: 18.8px;
+  }
+}
+@media screen and (min-width: 2560px) and (max-width: 3000px) {
+  .legende p.myrtilles {
+    font-size: 23.8px;
+  }
+}
 
 .noteenchantee p {
   font-size: 16px;
@@ -1295,6 +1520,11 @@ article h2 {
 @media screen and (min-width: 768px) and (max-width: 991px) {
   .noteenchantee p {
     font-size: 23px;
+  }
+}
+@media screen and (min-width: 2560px) and (max-width: 3000px) {
+  .noteenchantee p {
+    font-size: 21px;
   }
 }
 
@@ -1322,6 +1552,12 @@ article h2 {
   .prix {
     font-size: 22px;
     margin-bottom: -55px;
+  }
+}
+@media screen and (min-width: 992px) and (max-width: 1439px) {
+  .prix {
+    font-size: 15px;
+    margin-left: 10%;
   }
 }
 @media screen and (min-width: 2560px) and (max-width: 3000px) {
