@@ -135,10 +135,10 @@ a{
         }
     }
     @include desktop-S{
-        font-size: 15px;
+        font-size: 16px;
         margin-top: -47px;
         padding-right: 0.7%;
-        padding-left: 1%;
+        padding-left: 2.3%;
         margin-left: 32.5%;
         margin-right: 22%;
         width: 35%;
@@ -286,6 +286,8 @@ a{
     }
     @include desktop-S{
         flex-direction: row;
+        margin-top: 30px;
+        justify-content: space-between;
         
     }
     @include desktop-M{
@@ -303,7 +305,7 @@ a{
     display: flex;
     flex-direction: column;
     @include desktop-S{
-        margin-right: 0%;
+        margin-right: 3%;
         margin-left: 0%;
     }
     @include desktop-M{
@@ -320,7 +322,7 @@ a{
     display: flex;
     flex-direction: column;
     @include desktop-S{
-        margin-right: 0%;
+        margin-right: 3%;
         margin-left: 0%;
     }
     @include desktop-M{
@@ -337,6 +339,7 @@ a{
     flex-direction: column;
     @include desktop-S{
         margin-left: 0%;
+        margin-right: 5%;
     }
     @include desktop-M{
         margin-left: 1.4%;
@@ -394,9 +397,10 @@ article h2{
         font-size: 23px;
     }
     @include desktop-S{
-        margin-left: 2px;
+        margin-left: 4px;
         margin-right: 0;
-        font-size: 13px;
+        font-size: 12.5px;
+
     }
     @include desktop-M{
         margin-right: 16%;
@@ -430,7 +434,7 @@ font-size: 16.5px;
         font-size: 23.5px;
     }
     @include desktop-S{
-        width: 200px;
+        width: 226px;
         font-size: 12px;
     }
     @include desktop-M{
@@ -456,7 +460,7 @@ font-size: 16.5px;
     }
     @include desktop-S{
         font-size: 12.5px;
-        
+        width: 258px;
     }
     @include desktop-M{
         font-size: 16px;
@@ -480,7 +484,7 @@ font-size: 16.5px;
         font-size: 25.8px;
     }
     @include desktop-S{
-        font-size: 16.8px;
+        font-size: 13.8px;
     }
     @include desktop-M{
         font-size: 18.8px;
@@ -500,6 +504,9 @@ font-size: 16.5px;
     }
     @include tablette{
         font-size: 23px;
+    }
+    @include desktop-S{
+        font-size: 12.5px;
     }
     @include desktop-L{
         font-size: 21px;
@@ -527,8 +534,9 @@ font-size: 16.5px;
         margin-bottom: -55px;
         }
     @include desktop-S{
-            font-size: 15px;
-            margin-left: 10%;
+            font-size: 13px;
+            margin-left: 5%;
+            margin-bottom: -20px;
         }
     @include desktop-L{
         font-size: 25px;

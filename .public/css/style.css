@@ -98,8 +98,8 @@
 }
 @media screen and (min-width: 992px) and (max-width: 1439px) {
   .btncommander {
-    font-size: 25px;
-    padding: 20px 65px;
+    font-size: 17px;
+    padding: 15px 55px;
   }
 }
 @media screen and (min-width: 1440px) and (max-width: 2559px) {
@@ -246,8 +246,8 @@
 @media screen and (min-width: 992px) and (max-width: 1439px) {
   .menus button {
     margin: 10px 0 30px 17px;
-    width: 90%;
-    padding: 5% 1% 5% 0;
+    width: 105%;
+    padding: 3% 1% 3% 0;
     justify-content: center;
   }
 }
@@ -268,8 +268,20 @@
   }
 }
 
-button.buttonpadding {
-  padding: 2.5%;
+@media screen and (min-width: 992px) and (max-width: 1439px) {
+  button.buttonpadding {
+    padding: 0.4%;
+  }
+}
+@media screen and (min-width: 1440px) and (max-width: 2559px) {
+  button.buttonpadding {
+    padding: 2%;
+  }
+}
+@media screen and (min-width: 2560px) and (max-width: 3000px) {
+  button.buttonpadding {
+    padding: 2.5%;
+  }
 }
 
 #btnheart {
@@ -1028,10 +1040,10 @@ ahover {
 }
 @media screen and (min-width: 992px) and (max-width: 1439px) {
   .Titrepages {
-    font-size: 15px;
+    font-size: 16px;
     margin-top: -47px;
     padding-right: 0.7%;
-    padding-left: 1%;
+    padding-left: 2.3%;
     margin-left: 32.5%;
     margin-right: 22%;
     width: 35%;
@@ -1222,6 +1234,8 @@ ahover {
 @media screen and (min-width: 992px) and (max-width: 1439px) {
   .menus {
     flex-direction: row;
+    margin-top: 30px;
+    justify-content: space-between;
   }
 }
 @media screen and (min-width: 1440px) and (max-width: 2559px) {
@@ -1244,7 +1258,7 @@ ahover {
 }
 @media screen and (min-width: 992px) and (max-width: 1439px) {
   .entrees {
-    margin-right: 0%;
+    margin-right: 3%;
     margin-left: 0%;
   }
 }
@@ -1266,7 +1280,7 @@ ahover {
 }
 @media screen and (min-width: 992px) and (max-width: 1439px) {
   .plats {
-    margin-right: 0%;
+    margin-right: 3%;
     margin-left: 0%;
   }
 }
@@ -1290,6 +1304,7 @@ ahover {
 @media screen and (min-width: 992px) and (max-width: 1439px) {
   .desserts {
     margin-left: 0%;
+    margin-right: 5%;
   }
 }
 @media screen and (min-width: 1440px) and (max-width: 2559px) {
@@ -1370,9 +1385,9 @@ article h2 {
 }
 @media screen and (min-width: 992px) and (max-width: 1439px) {
   .legende {
-    margin-left: 2px;
+    margin-left: 4px;
     margin-right: 0;
-    font-size: 13px;
+    font-size: 12.5px;
   }
 }
 @media screen and (min-width: 1440px) and (max-width: 2559px) {
@@ -1418,7 +1433,7 @@ article h2 {
 }
 @media screen and (min-width: 992px) and (max-width: 1439px) {
   .legende p {
-    width: 200px;
+    width: 226px;
     font-size: 12px;
   }
 }
@@ -1456,6 +1471,7 @@ article h2 {
 @media screen and (min-width: 992px) and (max-width: 1439px) {
   .desserts .legende p {
     font-size: 12.5px;
+    width: 258px;
   }
 }
 @media screen and (min-width: 1440px) and (max-width: 2559px) {
@@ -1490,7 +1506,7 @@ article h2 {
 }
 @media screen and (min-width: 992px) and (max-width: 1439px) {
   .legende p.myrtilles {
-    font-size: 16.8px;
+    font-size: 13.8px;
   }
 }
 @media screen and (min-width: 1440px) and (max-width: 2559px) {
@@ -1520,6 +1536,11 @@ article h2 {
 @media screen and (min-width: 768px) and (max-width: 991px) {
   .noteenchantee p {
     font-size: 23px;
+  }
+}
+@media screen and (min-width: 992px) and (max-width: 1439px) {
+  .noteenchantee p {
+    font-size: 12.5px;
   }
 }
 @media screen and (min-width: 2560px) and (max-width: 3000px) {
@@ -1556,8 +1577,9 @@ article h2 {
 }
 @media screen and (min-width: 992px) and (max-width: 1439px) {
   .prix {
-    font-size: 15px;
-    margin-left: 10%;
+    font-size: 13px;
+    margin-left: 5%;
+    margin-bottom: -20px;
   }
 }
 @media screen and (min-width: 2560px) and (max-width: 3000px) {
