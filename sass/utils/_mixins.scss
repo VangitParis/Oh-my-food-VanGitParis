@@ -1,16 +1,19 @@
 @import "../utils/variables";
 
-@mixin padding-button($paddingbutton:15px 20px){
+@mixin padding-button($paddingbutton: 15px 20px) {
     padding: $paddingbutton;
 }
+
 @mixin button {
     font: {
         size: $font-size-body;
     }
+
     text: {
         align-items: center;
         font-weight: 500;
     }
+
     border-radius: 50px;
     margin-bottom: 50px;
     background: $color-background-btn;
@@ -21,41 +24,64 @@
     box-shadow: 0px 8px 10px -5px grey;
     cursor: pointer;
 }
-@mixin hover-description($color:$color-primary){
-    background: lighten($color,35%);
-    border: none; 
+
+@mixin hover-description-btn-icn($color: $color-primary) {
+    background-color: lighten($color, 35%);
+    border: none;
     box-shadow: $shadow2X;
+    transition: background-color .5s;
+
+    .fa-mobile-screen-button,
+    .fa-list,
+    .fa-store {
+        color: $color;
+    }
+
 }
-@mixin hover-button-menu{
+
+@mixin hover-btn-accueil-menus {
+    transition: opacity .5s;
+    border: none;
+    box-shadow: $shadowbtnaccueilmenu2X;
+    
+}
+
+@mixin hover-button-menu {
     background-color: $color-tertiary;
 }
+
 @mixin mobile-Small-screen {
     @media screen and (max-width: 374px) {
         @content;
     }
 }
+
 @mixin mobile-Medium-screen {
     @media screen and (max-width: 424px) {
         @content;
     }
 }
+
 @mixin tablette {
     @media screen and (min-width:768px) and (max-width: 991px) {
-            @content;
-    }
-}
-@mixin desktop-S{
-    @media screen and (min-width: 992px) and (max-width:1439px){
         @content;
     }
 }
-@mixin desktop-M{
-    @media screen and (min-width: 1440px) and (max-width:2559px){
-            @content;
+
+@mixin desktop-S {
+    @media screen and (min-width: 992px) and (max-width:1439px) {
+        @content;
     }
 }
-@mixin desktop-L{
-    @media screen and (min-width: 2560px) and (max-width:3000px){
-            @content;
+
+@mixin desktop-M {
+    @media screen and (min-width: 1440px) and (max-width:2559px) {
+        @content;
+    }
+}
+
+@mixin desktop-L {
+    @media screen and (min-width: 2560px) and (max-width:3000px) {
+        @content;
     }
 }

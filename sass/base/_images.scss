@@ -2,19 +2,19 @@
 @import "../utils/variables";
 
 .imgrestaurant{
-    width: 100%;
+    width: 99.9%;
     height: 310px;
     object-fit: cover;
     object-position: 48%;
     margin-left: 0.5px;
     @include mobile-Medium-screen{
-        width: 100%;
+        
         object-position: 63%;
         height: 280px;
       }
     
     @include mobile-Small-screen{
-        width: 100%;
+       
         height: 235px;
         object-position: 50%;
     }
@@ -23,20 +23,19 @@
         object-position: 50% 8%;
     }
     @include desktop-S{
-        width: 34%;
-        height: 250px;
-        margin-left: 33%;
+        
+        height: 350px;
+        object-position: 40% 58%;
     }
     @include desktop-M{
-        width: 34%;
-        height: 350px;
-        margin-left: 33%;
-        object-position: 40%;
+       
+        height: 450px;
+        object-position: 40% 58%;
     }
     @include desktop-L{
-        width: 30%;
-        height: 500px;
-        margin-left: 35%;
+       
+        height: 600px;
+        object-position: 40% 58%;
     }
 }
 .img-noteenchantee{

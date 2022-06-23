@@ -27,7 +27,7 @@ footer {
         font-family: $title-font;
 
         @include tablette{
-            margin-left: 70px;
+            margin-left: -45px;
             margin-bottom: 0;
             font-size: 20px;
         }
@@ -58,6 +58,8 @@ footer {
             justify-content: center;
             align-items: center;
             margin-bottom: 20px;
+            margin-left: -13%;
+            margin-right: 0;
         }
         @include desktop-S{
             display: flex;
@@ -87,8 +89,8 @@ footer {
         margin-bottom: 10px;
 
         @include tablette{
-            margin-right: 40px;
-            font-size: 11px;
+            margin-right: 67px;
+            font-size: 13px;
         }
         @include desktop-S{
             margin-right: 70px;

@@ -23,7 +23,8 @@
         font-size:30px ;
     }
     @include tablette{
-        font-size: 40px;
+        font-size: 35px;
+        height: 35px;
     }
     @include desktop-S{
         font-size: 28px;

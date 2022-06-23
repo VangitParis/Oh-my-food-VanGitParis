@@ -1,5 +1,5 @@
 .imgrestaurant {
-  width: 100%;
+  width: 99.9%;
   height: 310px;
   object-fit: cover;
   object-position: 48%;
@@ -7,14 +7,12 @@
 }
 @media screen and (max-width: 424px) {
   .imgrestaurant {
-    width: 100%;
     object-position: 63%;
     height: 280px;
   }
 }
 @media screen and (max-width: 374px) {
   .imgrestaurant {
-    width: 100%;
     height: 235px;
     object-position: 50%;
   }
@@ -27,24 +25,20 @@
 }
 @media screen and (min-width: 992px) and (max-width: 1439px) {
   .imgrestaurant {
-    width: 34%;
-    height: 250px;
-    margin-left: 33%;
+    height: 350px;
+    object-position: 40% 58%;
   }
 }
 @media screen and (min-width: 1440px) and (max-width: 2559px) {
   .imgrestaurant {
-    width: 34%;
-    height: 350px;
-    margin-left: 33%;
-    object-position: 40%;
+    height: 450px;
+    object-position: 40% 58%;
   }
 }
 @media screen and (min-width: 2560px) and (max-width: 3000px) {
   .imgrestaurant {
-    width: 30%;
-    height: 500px;
-    margin-left: 35%;
+    height: 600px;
+    object-position: 40% 58%;
   }
 }
 
@@ -69,10 +63,11 @@
   cursor: pointer;
   padding: 15px 20px;
 }
-@media screen and (min-width: 768px) and (max-width: 991px) {
-  .btn {
-    font-size: 23px;
-  }
+.btn:hover {
+  transition: opacity 0.5s;
+  border: none;
+  box-shadow: 0px 16px 20px -5px grey;
+  opacity: 0.7;
 }
 
 .btncommander {
@@ -90,10 +85,16 @@
   cursor: pointer;
   padding: 15px 50px;
 }
+.btncommander:hover {
+  transition: opacity 0.5s;
+  border: none;
+  box-shadow: 0px 16px 20px -5px grey;
+  opacity: 0.7;
+}
 @media screen and (min-width: 768px) and (max-width: 991px) {
   .btncommander {
-    font-size: 23px;
-    padding: 20px 60px;
+    font-size: 16px;
+    padding: 18px 60px;
   }
 }
 @media screen and (min-width: 992px) and (max-width: 1439px) {
@@ -131,9 +132,15 @@
   box-shadow: 0px 2px 5px 2px #eaeaea;
 }
 .btnfonctionnement:hover {
-  background: #f2eafb;
+  background-color: #f2eafb;
   border: none;
-  box-shadow: 5px 4px 10px 4px #eaeaea;
+  box-shadow: 5px 4px 10px 8px #eaeaea;
+  transition: background-color 0.5s;
+}
+.btnfonctionnement:hover .fa-mobile-screen-button,
+.btnfonctionnement:hover .fa-list,
+.btnfonctionnement:hover .fa-store {
+  color: #9356DC;
 }
 @media screen and (max-width: 424px) {
   .btnfonctionnement {
@@ -147,28 +154,22 @@
     height: 65px;
   }
 }
-@media screen and (min-width: 768px) and (max-width: 991px) {
-  .btnfonctionnement {
-    width: 490px;
-    font-size: 23px;
-  }
-}
 @media screen and (min-width: 992px) and (max-width: 1439px) {
   .btnfonctionnement {
     width: 230px;
-    font-size: 15px;
+    font-size: 14px;
   }
 }
 @media screen and (min-width: 1440px) and (max-width: 2559px) {
   .btnfonctionnement {
     width: 230px;
-    font-size: 15px;
+    font-size: 14px;
   }
 }
 @media screen and (min-width: 2560px) and (max-width: 3000px) {
   .btnfonctionnement {
     width: 295px;
-    font-size: 15px;
+    font-size: 14px;
   }
 }
 
@@ -241,6 +242,7 @@
 @media screen and (min-width: 768px) and (max-width: 991px) {
   .menus button {
     margin: 10px 0px 10px 14px;
+    width: 100%;
   }
 }
 @media screen and (min-width: 992px) and (max-width: 1439px) {
@@ -284,12 +286,6 @@
   }
 }
 
-#btnheart {
-  border: none;
-  background: none;
-  cursor: pointer;
-}
-
 .flechelogo {
   display: flex;
   justify-content: center;
@@ -326,7 +322,8 @@
 }
 @media screen and (min-width: 768px) and (max-width: 991px) {
   .titreheader {
-    font-size: 40px;
+    font-size: 35px;
+    height: 35px;
   }
 }
 @media screen and (min-width: 992px) and (max-width: 1439px) {
@@ -383,7 +380,7 @@ footer .textfooter {
 }
 @media screen and (min-width: 768px) and (max-width: 991px) {
   footer .textfooter {
-    margin-left: 70px;
+    margin-left: -45px;
     margin-bottom: 0;
     font-size: 20px;
   }
@@ -418,6 +415,8 @@ footer ul {
     justify-content: center;
     align-items: center;
     margin-bottom: 20px;
+    margin-left: -13%;
+    margin-right: 0;
   }
 }
 @media screen and (min-width: 992px) and (max-width: 1439px) {
@@ -453,8 +452,8 @@ footer li {
 }
 @media screen and (min-width: 768px) and (max-width: 991px) {
   footer li {
-    margin-right: 40px;
-    font-size: 11px;
+    margin-right: 67px;
+    font-size: 13px;
   }
 }
 @media screen and (min-width: 992px) and (max-width: 1439px) {
@@ -520,7 +519,7 @@ footer a {
 }
 @media screen and (min-width: 768px) and (max-width: 991px) {
   .form .formtext {
-    font-size: 18px;
+    font-size: 17px;
   }
 }
 @media screen and (min-width: 992px) and (max-width: 1439px) {
@@ -580,9 +579,9 @@ section.location .textacceuil {
 }
 @media screen and (min-width: 768px) and (max-width: 991px) {
   section.location {
-    height: 330px;
+    height: 300px;
     margin-bottom: 0;
-    font-size: 20px;
+    font-size: 17px;
   }
 }
 
@@ -637,13 +636,6 @@ section.location .textacceuil {
     font-size: 13px;
   }
 }
-@media screen and (min-width: 768px) and (max-width: 991px) {
-  .description span {
-    font-size: 20px;
-    padding: 14px;
-    margin-right: 495px;
-  }
-}
 @media screen and (min-width: 992px) and (max-width: 1439px) {
   .description span {
     margin-right: 235px;
@@ -695,9 +687,6 @@ section.location .textacceuil {
     margin-right: 5px;
   }
 }
-.description .fa-mobile-screen-button:hover, .description .fa-list:hover, .description .fa-store:hover {
-  color: #9356DC;
-}
 .description .composez {
   margin-right: 5%;
 }
@@ -706,7 +695,8 @@ section.location .textacceuil {
 }
 @media screen and (min-width: 768px) and (max-width: 991px) {
   .description {
-    display: grid;
+    display: flex;
+    align-items: inherit;
   }
 }
 @media screen and (min-width: 992px) and (max-width: 1439px) {
@@ -741,7 +731,8 @@ section.location .textacceuil {
 }
 @media screen and (min-width: 768px) and (max-width: 991px) {
   .restaurants a {
-    margin-bottom: -10px;
+    margin-bottom: -15px;
+    width: 50%;
   }
 }
 @media screen and (min-width: 992px) and (max-width: 1439px) {
@@ -775,7 +766,7 @@ section.location .textacceuil {
 }
 @media screen and (min-width: 768px) and (max-width: 991px) {
   .restaurants a img {
-    height: 245px;
+    height: 170px;
   }
 }
 @media screen and (min-width: 2560px) and (max-width: 3000px) {
@@ -810,7 +801,7 @@ section.location .textacceuil {
 }
 @media screen and (min-width: 768px) and (max-width: 991px) {
   .restaurants a figcaption {
-    height: 100px;
+    height: 50px;
   }
 }
 @media screen and (min-width: 992px) and (max-width: 1439px) {
@@ -825,26 +816,58 @@ section.location .textacceuil {
 }
 .restaurants a figcaption .coeur {
   display: flex;
-  justify-content: flex-end;
+  justify-content: center;
+  align-items: center;
+  width: 25px;
+  height: 20px;
+  font-size: 20px;
+  overflow: hidden;
+  z-index: 0;
+  background: transparent;
+  border: none;
+  position: relative;
+  margin-bottom: 10%;
+}
+.restaurants a figcaption .coeur::before {
+  content: "";
+  position: absolute;
+  top: 20px;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(356deg, #9356DC, #FF79DA);
+  border-radius: 50%;
+  transition: all 1s;
+  z-index: -1;
+}
+.restaurants a figcaption .coeur:hover::before {
+  top: 0;
+  border-radius: 50% 40% 50% 0;
+  z-index: -2;
+}
+.restaurants a figcaption .fa-heart {
+  display: flex;
+  justify-content: center;
   align-items: center;
 }
-.restaurants a figcaption .coeur .fa-heart {
-  height: 2rem;
-  margin-top: -1.2rem;
-}
 @media screen and (max-width: 424px) {
-  .restaurants a figcaption .coeur .fa-heart {
+  .restaurants a figcaption .fa-heart {
     height: 1.6rem;
     margin-top: -1rem;
   }
 }
 @media screen and (max-width: 374px) {
-  .restaurants a figcaption .coeur .fa-heart {
+  .restaurants a figcaption .fa-heart {
     height: 1.3rem;
   }
 }
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  .restaurants a figcaption .fa-heart {
+    height: 1.5rem;
+    margin-top: -1rem;
+  }
+}
 @media screen and (min-width: 992px) and (max-width: 1439px) {
-  .restaurants a figcaption .coeur .fa-heart {
+  .restaurants a figcaption .fa-heart {
     height: 2.2rem;
   }
 }
@@ -867,10 +890,11 @@ section.location .textacceuil {
 }
 @media screen and (min-width: 768px) and (max-width: 991px) {
   .restaurants a figcaption .legende {
-    font-size: 23px;
+    font-size: 15px;
+    margin-top: 5px;
   }
   .restaurants a figcaption .legende p {
-    font-size: 27px;
+    font-size: 18px;
   }
 }
 @media screen and (min-width: 992px) and (max-width: 1439px) {
@@ -944,27 +968,29 @@ ahover {
   color: rgba(29, 130, 105, 0.8117647059);
   font-weight: bold;
   border-radius: 2px;
-  font-size: 14px;
-  margin-top: 32px;
-  margin-right: 41px;
+  font-size: 12px;
+  margin-top: 37px;
+  margin-right: 51px;
 }
 @media screen and (max-width: 424px) {
   .evenement {
     padding: 5px 8px;
-    margin-top: 34px;
-    font-size: 13px;
+    margin-top: 40px;
+    font-size: 10px;
   }
 }
 @media screen and (max-width: 374px) {
   .evenement {
-    font-size: 10px;
+    font-size: 8px;
+    margin-top: 38px;
   }
 }
 @media screen and (min-width: 768px) and (max-width: 991px) {
   .evenement {
-    margin-top: 41px;
-    margin-right: 65px;
-    padding: 9px 15px;
+    margin-top: 43px;
+    margin-right: 50px;
+    padding: 3px 7px;
+    font-size: 11px;
   }
 }
 @media screen and (min-width: 992px) and (max-width: 1439px) {
@@ -1033,14 +1059,14 @@ ahover {
 }
 @media screen and (min-width: 768px) and (max-width: 991px) {
   .Titrepages {
-    font-size: 36px;
-    padding-right: 50px;
-    padding-left: 25px;
+    font-size: 22px;
+    padding-right: 20%;
+    padding-left: 25%;
   }
   .Titrepages .fa-heart {
-    height: 3rem;
+    height: 2rem;
     margin-top: -0.6rem;
-    margin-right: 1rem;
+    margin-right: 2rem;
   }
 }
 @media screen and (min-width: 992px) and (max-width: 1439px) {
@@ -1049,9 +1075,6 @@ ahover {
     margin-top: -47px;
     padding-right: 0.7%;
     padding-left: 2.3%;
-    margin-left: 32.5%;
-    margin-right: 22%;
-    width: 35%;
   }
   .Titrepages .fa-heart {
     height: 1.5rem;
@@ -1064,9 +1087,6 @@ ahover {
     margin-top: -68px;
     padding-right: 0;
     padding-left: 1.5%;
-    margin-left: 32.9%;
-    margin-right: 23%;
-    width: 34.3%;
   }
   .Titrepages .fa-heart {
     height: 2rem;
@@ -1079,9 +1099,6 @@ ahover {
     margin-top: -98px;
     padding-right: 2.7%;
     padding-left: 1%;
-    margin-left: 35%;
-    margin-right: 22%;
-    width: 30%;
   }
   .Titrepages .fa-heart {
     height: 2.5rem;
@@ -1109,7 +1126,8 @@ ahover {
 }
 @media screen and (min-width: 768px) and (max-width: 991px) {
   .choixrestaurants {
-    height: 1650px;
+    display: flow-root;
+    height: 640px;
   }
 }
 @media screen and (min-width: 992px) and (max-width: 1439px) {
@@ -1149,9 +1167,8 @@ ahover {
 }
 @media screen and (min-width: 768px) and (max-width: 991px) {
   .titreacceuil {
-    font-size: 29px;
-    margin-top: 50px;
-    margin-bottom: 30px;
+    font-size: 25px;
+    margin-bottom: 35px;
   }
 }
 @media screen and (min-width: 992px) and (max-width: 1439px) {
@@ -1180,7 +1197,12 @@ ahover {
 }
 @media screen and (min-width: 768px) and (max-width: 991px) {
   .restaurants {
-    margin-top: -30px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin: 0 3%;
+    position: absolute;
   }
 }
 @media screen and (min-width: 992px) and (max-width: 1439px) {
@@ -1233,7 +1255,9 @@ ahover {
 }
 @media screen and (min-width: 768px) and (max-width: 991px) {
   .menus {
-    margin-top: 100px;
+    margin-top: 40px;
+    justify-content: center;
+    align-items: center;
   }
 }
 @media screen and (min-width: 992px) and (max-width: 1439px) {
@@ -1344,7 +1368,8 @@ article h2 {
 }
 @media screen and (min-width: 768px) and (max-width: 991px) {
   article h2 {
-    font-size: 23px;
+    font-size: 20px;
+    width: 6.5%;
   }
 }
 @media screen and (min-width: 992px) and (max-width: 1439px) {
@@ -1385,7 +1410,7 @@ article h2 {
 }
 @media screen and (min-width: 768px) and (max-width: 991px) {
   .legende {
-    font-size: 23px;
+    font-size: 18px;
   }
 }
 @media screen and (min-width: 992px) and (max-width: 1439px) {
@@ -1432,8 +1457,8 @@ article h2 {
 }
 @media screen and (min-width: 768px) and (max-width: 991px) {
   .legende p {
-    width: 442px;
-    font-size: 23.5px;
+    width: 345px;
+    font-size: 18.5px;
   }
 }
 @media screen and (min-width: 992px) and (max-width: 1439px) {
@@ -1470,7 +1495,7 @@ article h2 {
 }
 @media screen and (min-width: 768px) and (max-width: 991px) {
   .desserts .legende p {
-    font-size: 23.1px;
+    font-size: 18.1px;
   }
 }
 @media screen and (min-width: 992px) and (max-width: 1439px) {
@@ -1506,7 +1531,7 @@ article h2 {
 }
 @media screen and (min-width: 768px) and (max-width: 991px) {
   .legende p.myrtilles {
-    font-size: 25.8px;
+    font-size: 20px;
   }
 }
 @media screen and (min-width: 992px) and (max-width: 1439px) {
@@ -1540,7 +1565,7 @@ article h2 {
 }
 @media screen and (min-width: 768px) and (max-width: 991px) {
   .noteenchantee p {
-    font-size: 23px;
+    font-size: 19px;
   }
 }
 @media screen and (min-width: 992px) and (max-width: 1439px) {
@@ -1576,8 +1601,9 @@ article h2 {
 }
 @media screen and (min-width: 768px) and (max-width: 991px) {
   .prix {
-    font-size: 22px;
-    margin-bottom: -55px;
+    font-size: 18px;
+    margin-right: 23px;
+    margin-bottom: -40px;
   }
 }
 @media screen and (min-width: 992px) and (max-width: 1439px) {

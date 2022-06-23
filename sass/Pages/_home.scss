@@ -23,9 +23,9 @@ section.location{
         margin-bottom: 25px;
     } 
     @include tablette{
-        height: 330px;
+        height: 300px;
         margin-bottom: 0;
-        font-size: 20px;
+        font-size: 17px;
     }
     
 }
@@ -37,6 +37,7 @@ section.location{
     align-items: baseline;
     width: 100%;
         ol{
+            
             @include desktop-S{
                 display: flex;
                 justify-content: center;
@@ -71,11 +72,7 @@ section.location{
                 padding: 10px;
                 font-size:13px;
             }
-            @include tablette{
-                font-size: 20px;
-                padding: 14px;
-                margin-right: 495px;
-            }
+            
             @include desktop-S{
                 margin-right: 235px;
             }
@@ -114,9 +111,7 @@ section.location{
                 margin-right: 5px;
             }
 
-            &:hover{
-                color: $color-primary;
-            }
+            
         }
         .composez{
             margin-right: 5%;
@@ -125,7 +120,8 @@ section.location{
             margin-right: 3%;
         }
         @include tablette{
-            display: grid;
+            display: flex;
+            align-items: inherit;
         }
         @include desktop-S{
             display: flex;
@@ -151,7 +147,8 @@ section.location{
     justify-content: right;
     margin-bottom: -25px;
     @include tablette{
-        margin-bottom: -10px;
+        margin-bottom: -15px;
+        width: 50%;
     }
     @include desktop-S{
         margin-bottom: 0;
@@ -176,7 +173,7 @@ section.location{
         height: 145px;
     }
     @include tablette{
-        height: 245px;
+        height: 170px;
     }
     @include desktop-L{
         height: 230px;
@@ -202,7 +199,7 @@ section.location{
         height:50px;
     }
     @include tablette{
-        height: 100px;
+        height: 50px;
     }
     @include desktop-S{
         height: 80px;
@@ -214,12 +211,41 @@ section.location{
 
 }
     .coeur{
-        display: flex;
-        justify-content:flex-end;
-        align-items: center;
+
+            display:flex;
+            justify-content:center;
+            align-items:center;
+            width:25px;
+            height:20px;
+            font-size:20px;
+            overflow:hidden;
+            z-index:0;
+            background:transparent;
+            border:none;
+            position:relative;
+            margin-bottom: 10%;
+        }
+        .coeur::before{
+            content:'';
+            position:absolute;
+            top:20px;
+            width:100%;
+            height:100%;
+            background:linear-gradient(356deg,#9356DC,#FF79DA);
+            border-radius:50%;
+            transition: all 1s;
+            z-index:-1;
+          }
+        .coeur:hover::before{
+            top:0;
+            border-radius:50% 40% 50% 0;
+            z-index:-2;
+        }
+        
         .fa-heart{
-            height: 2rem;
-            margin-top: -1.2rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
             @include mobile-Medium-screen{
                 height: 1.6rem;
                 margin-top: -1rem;
@@ -227,13 +253,15 @@ section.location{
             @include mobile-Small-screen{
                 height: 1.3rem;
             }
+            @include tablette{
+                height: 1.5rem;
+                margin-top: -1rem;
+            }
             @include desktop-S{
                 height: 2.2rem;
                 
             }
-            
         }
-}
     .legende{
         width: 90%;
         font-size: 17px;
@@ -247,10 +275,10 @@ section.location{
             font-size: 13px;
         }
         @include tablette{
-            font-size: 23px;
-            
+            font-size: 15px;
+            margin-top: 5px;
             p{
-                font-size: 27px;
+                font-size: 18px;
             }
         }
         @include desktop-S{
