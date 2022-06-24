@@ -79,23 +79,23 @@
     }
     
 }
-.btnflecheretour{
-    border-color: transparent;
-    background-color: transparent;
+.btn-fleche-retour{
+    text-decoration: none;
+    color: black;
     font-size: 20px;
-    margin-left: -105px;
+    margin-left: -93px;
     cursor: pointer;
     @include mobile-Medium-screen{
-        margin-left: -90px;
+        margin-left: -87px;
         font-size: 19px;
     }
     @include mobile-Small-screen{
-        margin-left: -73px;
+        margin-left: -58px;
         font-size: 18px;
     
 }
     @include tablette{
-        margin-left: -200px;
+        margin-left: -205px;
         font-size: 25px;
     }
     @include desktop-S{
@@ -111,7 +111,7 @@
         margin-left: -205px;
     }
 }
-.menus button{
+.menus .button{
     background-color: white;
     display: flex;
     justify-content: space-between;
@@ -156,7 +156,7 @@
     
     
 }
-button.buttonpadding{
+article.button.buttonpadding{
     @include desktop-S{
         padding: 0.4%;
     }
