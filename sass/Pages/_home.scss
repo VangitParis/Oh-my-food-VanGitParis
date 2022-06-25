@@ -1,11 +1,62 @@
 @import "../utils/variables";
 @import "../utils/mixins";
+@import "../utils/keyframes";
 body .description nav{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
 }
+/*SECTION LOADING-SPINNER*/
+.loading-spinner{
+    background: $color-backgroundform;
+    height: 500px;
+    line-height: 500px;
+    font-family: $title-font;
+    font-size: 30px;
+    text-align: center;
+    position: fixed;
+    width: 100%;
+    z-index: 5;
+}
+.loader{
+    width: 50px;
+    height: 50px;
+    display: inline;
+    vertical-align: middle;
+    color:black;
+    position: relative;
+}
+.cercle-chargement{
+    border-radius: 50px;
+    border: 10px solid $color-primary;
+    &::after{
+        content: '';
+        position: absolute;
+        width: 50px;
+        top: -5px;
+        left: 15px;
+        bottom: -5px;
+        right: -10px;
+        border-top: 5px solid transparent;
+        border-radius: 40px;
+        border-top-color: $color-secondary;
+        animation: spin 1.5s linear infinite;
+    }
+.spinner-chargement{
+    border: 5px solid $color-tertiary;
+    border-radius: 50px;
+    &::after{
+        content:'';
+        display: inline-block;
+        position: absolute;
+        width: 50px;
+    }
+
+}
+}
+
+/*SECTION LOCATION*/
 section.location{
     width: 100%;
     margin-top: 60px;
@@ -29,6 +80,7 @@ section.location{
     }
     
 }
+/*SECTION DESCRIPTION*/
 .description{
     display: flex;
     align-items: center;
@@ -137,6 +189,7 @@ section.location{
         }
         
 }
+/*SECTION RESTAURANTS*/
 .restaurants figure{
     background-color : white;
     border-radius: 20px;
@@ -148,11 +201,12 @@ section.location{
     margin-bottom: -25px;
     @include tablette{
         margin-bottom: -15px;
-        width: 50%;
+        width: 90%;
     }
+    
     @include desktop-S{
         margin-bottom: 0;
-        width: 49%;
+        width: 132%;
         
     }
     @include desktop-L{
@@ -165,13 +219,13 @@ section.location{
     border-radius: 15px 15px 0 0;
     object-fit: cover;
     width: 100%;
-    height: 180px;
+    height: 170px;
     object-position: 20% 104%;
     @include mobile-Medium-screen{
-        height: 160px;
+        height: 145px;
     }
     @include mobile-Small-screen{
-        height: 140px;
+        height: 125px;
     }
     @include tablette{
         height: 170px;
@@ -211,77 +265,7 @@ section.location{
         margin-top: -15px;
 
 }
-    .coeur{
-
-            display:flex;
-            justify-content:center;
-            align-items:center;
-            width:25px;
-            height:20px;
-            font-size:20px;
-            overflow:hidden;
-            z-index:0;
-            background:transparent;
-            border:none;
-            position:relative;
-            margin-bottom: 10%;
-            cursor: pointer;
-            
-            
-        &::before{
-            content:'';
-            position:absolute;
-            top:20px;
-            width:100%;
-            height:100%;
-            background:linear-gradient(356deg,#9356DC,#FF79DA);
-            border-radius:50%;
-            transition: all 1s ease-in;
-            z-index:0;
-          }
-        
-        &:active::before{
-            top:0;
-            border-radius:30%;
-            z-index:-1;
-            
-            
-        }
-        @include mobile-Medium-screen{
-            margin-top: 5%;
-        }
-        @include mobile-Small-screen{
-            margin-top: 5%;
-        }
-        @include tablette{
-            margin-top: 5%;
-        }
-        @include desktop-S{
-            margin-top: 2%;
-            
-        }
-    }
-        .fa-heart{
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            
-            @include mobile-Medium-screen{
-                height: 1.4rem;
-                
-            }
-            @include mobile-Small-screen{
-                height: 1.3rem;
-            }
-            @include tablette{
-                height: 1.4rem;
-                
-            }
-            @include desktop-S{
-                height: 23px;
-                
-            }
-        }
+    
     .legende{
         width: 90%;
         font-size: 17px;
@@ -317,4 +301,95 @@ section.location{
     }
 
 
+}
+/*TRANSITION COEUR*/
+button.coeur{
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    font-size:22px;
+    width: 25px;
+    height: 25PX;
+    z-index:0;
+    background:transparent;
+    border:none;
+    position:relative;
+    margin-bottom: 10%;
+    cursor: pointer;
+    margin-top: -22%;
+    margin-left: 78%;
+   
+    @include mobile-Medium-screen{
+        margin-top: -21%;
+    }
+    @include mobile-Small-screen{
+        margin-top: -23%;
+        font-size: 19px;
+    }
+    @include tablette{
+        margin-top: -17%;
+        margin-left: 67%;
+        
+    }
+
+    @include desktop-S{
+        margin-top: -30%; 
+        margin-bottom: 25%;  
+        margin-left: 100%;
+    }
+    @include desktop-M{
+        margin-top: -22%; 
+        margin-bottom: 20%;  
+    }
+    @include desktop-L{
+        margin-top: -17%; 
+       
+    }
+
+    .coeurvide{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        opacity: 1;
+    }
+    .coeurplein{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        background-clip:text;
+        color: transparent;
+        opacity: 0;
+        background-image: $color-background-btn;
+        z-index: -1;
+        &:hover{
+            opacity: 1;
+            z-index: 0;
+        }
+        
+    
+
+   
+    
+    
+        
+    @include mobile-Medium-screen{
+        height: 1.4rem;
+        
+    }
+    @include mobile-Small-screen{
+        height: 1.3rem;
+    }
+    @include tablette{
+        height: 1.4rem;
+        
+    }
+    @include desktop-S{
+        height: 23px;
+        
+    }
+   
+}
 }

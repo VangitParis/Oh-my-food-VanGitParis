@@ -3,12 +3,13 @@
 
 .btn {
     @include button;
+    
+    @include padding-button();
     &:hover{
         @include hover-btn-accueil-menus;
         opacity: 0.7;
+        transition: all 100ms ease-in-out;
     }
-    @include padding-button();
-    
  
 }
 .btncommander{
