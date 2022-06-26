@@ -13,7 +13,7 @@
     background: $color-background-btn;
     border:transparent;
     display: flex;
-    opacity: 0.8;
+    
     color: white;
     box-shadow: 0px 8px 10px -5px grey;
     cursor: pointer;
@@ -23,7 +23,7 @@
     background-color: lighten($color, 35%);
     border: none;
     box-shadow: $shadow2X;
-    transition: background-color .5s;
+    
 
     .fa-mobile-screen-button,
     .fa-list,
@@ -34,7 +34,8 @@
 }
 
 @mixin hover-btn-accueil-menus {
-    transition: opacity .5s;
+    opacity: 0.7;
+    
     border: none;
     box-shadow: $shadowbtnaccueilmenu2X;
     

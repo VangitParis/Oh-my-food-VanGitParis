@@ -1,6 +1,8 @@
 @import "../utils/variables";
 @import "../utils/mixins";
 @import "../utils/keyframes";
+@import "../utils/functions";
+
 body .description nav{
     display: flex;
     flex-direction: column;
@@ -10,30 +12,37 @@ body .description nav{
 /*SECTION LOADING-SPINNER*/
 .loading-spinner{
     background: $color-backgroundform;
-    height: 500px;
-    line-height: 500px;
+    height: 100%;
+    line-height: 550px;
     font-family: $title-font;
     font-size: 30px;
     text-align: center;
     position: fixed;
     width: 100%;
-    z-index: 5;
+    z-index: 10;
+    
+    
+    
 }
 .loader{
-    width: 50px;
-    height: 50px;
+    
     display: inline;
     vertical-align: middle;
     color:black;
     position: relative;
+    transition: all 3s ease-out;
+    &::after{
+        display: none;
+    }
+    
+   
 }
 .cercle-chargement{
     border-radius: 50px;
-    border: 10px solid $color-primary;
-    &::after{
-        content: '';
+    border: 5px solid $color-primary;
+    &::before{
+        content:'';
         position: absolute;
-        width: 50px;
         top: -5px;
         left: 15px;
         bottom: -5px;
@@ -41,19 +50,13 @@ body .description nav{
         border-top: 5px solid transparent;
         border-radius: 40px;
         border-top-color: $color-secondary;
-        animation: spin 1.5s linear infinite;
-    }
-.spinner-chargement{
-    border: 5px solid $color-tertiary;
-    border-radius: 50px;
-    &::after{
-        content:'';
-        display: inline-block;
-        position: absolute;
+        animation: spin 2s linear infinite 1s ;
+        height: 50px;
         width: 50px;
-    }
 
-}
+    }
+    
+
 }
 
 /*SECTION LOCATION*/
@@ -362,11 +365,12 @@ button.coeur{
         background-clip:text;
         color: transparent;
         opacity: 0;
-        background-image: $color-background-btn;
         z-index: -1;
+        transition: color 2s ease-in-out;
         &:hover{
             opacity: 1;
             z-index: 0;
+            background-image: $color-background-btn;
         }
         
     
