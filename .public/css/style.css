@@ -1,3 +1,4 @@
+@charset "UTF-8";
 .imgrestaurant {
   width: 99.9%;
   height: 310px;
@@ -191,95 +192,22 @@
 }
 @media screen and (min-width: 768px) and (max-width: 991px) {
   .btn-fleche-retour {
-    margin-left: -205px;
     font-size: 25px;
   }
 }
 @media screen and (min-width: 992px) and (max-width: 1439px) {
   .btn-fleche-retour {
-    font-size: 16px;
-    margin-left: -80px;
+    font-size: 23px;
   }
 }
 @media screen and (min-width: 1440px) and (max-width: 2559px) {
   .btn-fleche-retour {
     font-size: 28px;
-    margin-left: -116px;
   }
 }
 @media screen and (min-width: 2560px) and (max-width: 3000px) {
   .btn-fleche-retour {
-    font-size: 30px;
-    margin-left: -205px;
-  }
-}
-
-.menus .button {
-  background-color: white;
-  display: flex;
-  justify-content: space-between;
-  flex-direction: row;
-  align-items: center;
-  border-color: transparent;
-  border-radius: 20px;
-  margin: 10px 0px 10px 17px;
-  width: 93%;
-  cursor: pointer;
-}
-@media screen and (max-width: 424px) {
-  .menus .button {
-    width: 92%;
-  }
-}
-@media screen and (max-width: 374px) {
-  .menus .button {
-    width: 91%;
-  }
-}
-@media screen and (min-width: 768px) and (max-width: 991px) {
-  .menus .button {
-    margin: 10px 0px 10px 14px;
-    width: 100%;
-  }
-}
-@media screen and (min-width: 992px) and (max-width: 1439px) {
-  .menus .button {
-    margin: 10px 0 30px 17px;
-    width: 105%;
-    padding: 3% 1% 3% 0;
-    justify-content: center;
-  }
-}
-@media screen and (min-width: 1440px) and (max-width: 2559px) {
-  .menus .button {
-    margin: 10px 0 30px 17px;
-    width: 120%;
-    padding: 5% 1% 5% 0;
-    justify-content: center;
-  }
-}
-@media screen and (min-width: 2560px) and (max-width: 3000px) {
-  .menus .button {
-    margin: 10px 0 30px 17px;
-    width: 150%;
-    padding: 5% 1% 5% 1%;
-    justify-content: center;
-  }
-}
-
-@media screen and (min-width: 992px) and (max-width: 1439px) {
-  article.button.buttonpadding {
-    padding: 0.4%;
-  }
-}
-@media screen and (min-width: 1440px) and (max-width: 2559px) {
-  article.button.buttonpadding {
-    padding: 2%;
-  }
-}
-@media screen and (min-width: 2560px) and (max-width: 3000px) {
-  article.button.buttonpadding {
-    padding: 2.5%;
+    font-size: 45px;
   }
 }
 
@@ -292,11 +220,29 @@
 @media screen and (min-width: 768px) and (max-width: 991px) {
   .flechelogo {
     height: 80px;
+    justify-content: space-evenly;
+    margin-left: -15%;
   }
 }
 @media screen and (min-width: 992px) and (max-width: 1439px) {
   .flechelogo {
     height: 50px;
+    justify-content: space-evenly;
+    margin-left: -25%;
+  }
+}
+@media screen and (min-width: 1440px) and (max-width: 2559px) {
+  .flechelogo {
+    height: 80px;
+    justify-content: space-evenly;
+    margin-left: -30%;
+  }
+}
+@media screen and (min-width: 2560px) and (max-width: 3000px) {
+  .flechelogo {
+    justify-content: space-evenly;
+    margin-left: -36%;
+    height: 90px;
   }
 }
 
@@ -326,7 +272,7 @@
 @media screen and (min-width: 992px) and (max-width: 1439px) {
   .titreheader {
     font-size: 28px;
-    height: 26px;
+    height: 24px;
   }
 }
 @media screen and (min-width: 1440px) and (max-width: 2559px) {
@@ -337,14 +283,9 @@
 }
 @media screen and (min-width: 2560px) and (max-width: 3000px) {
   .titreheader {
-    font-size: 40px;
+    font-size: 45px;
     height: 30px;
   }
-}
-
-svg.svg-inline--fa.fa-arrow-left {
-  display: flex;
-  justify-content: flex-start;
 }
 
 footer {
@@ -558,18 +499,60 @@ footer a {
     transform: rotate(360deg);
   }
 }
-@keyframes check {
+@keyframes fadeInAnimation {
   0% {
-    transform: rotate(0deg);
+    opacity: 1;
+  }
+  70% {
+    opacity: 0.6;
+  }
+  90% {
+    opacity: 0.2;
   }
   100% {
-    transform: rotate(360deg);
+    opacity: 0;
   }
 }
-.loading-spinner {
-  animation-delay: 500ms;
+@keyframes loader {
+  0% {
+    opacity: 1;
+    visibility: visible;
+  }
+  100% {
+    opacity: 0;
+    visibility: hidden;
+  }
 }
-
+@keyframes check {
+  0% {
+    transform: rotateZ(0deg);
+  }
+  100% {
+    transform: rotateZ(360deg);
+  }
+}
+@keyframes slidein {
+  from {
+    margin-left: 100%;
+  }
+  to {
+    margin-left: 0;
+  }
+}
+@keyframes Down {
+  0% {
+    left: 103%;
+  }
+  33% {
+    left: 100%;
+  }
+  66% {
+    left: 96%;
+  }
+  100% {
+    left: 90%;
+  }
+}
 body .description nav {
   display: flex;
   flex-direction: column;
@@ -583,29 +566,29 @@ body .description nav {
   height: 100%;
   line-height: 550px;
   font-family: "Shrikhand", sans-serif;
-  font-size: 30px;
+  font-size: 230%;
   text-align: center;
   position: fixed;
   width: 100%;
   z-index: 10;
+  display: inline-block;
+  transition: all 3s;
+  animation: loader 0.01s 3s both;
 }
 
-.loader {
+.loader { /*animation de fondu vers le site après chargement*/
   display: inline;
   vertical-align: middle;
   color: black;
   position: relative;
-  transition: all 3s ease-out;
-}
-.loader::after {
-  display: none;
+  animation: fadeInAnimation 2.5s ease 1 forwards;
 }
 
 .cercle-chargement {
   border-radius: 50px;
   border: 5px solid #9356DC;
 }
-.cercle-chargement::before {
+.cercle-chargement::before { /*cercle qui tourne*/
   content: "";
   position: absolute;
   top: -5px;
@@ -615,9 +598,9 @@ body .description nav {
   border-top: 5px solid transparent;
   border-radius: 40px;
   border-top-color: #FF79DA;
-  animation: spin 2s linear infinite 1s;
-  height: 50px;
-  width: 50px;
+  animation: spin 3s linear;
+  height: 60px;
+  width: 67px;
 }
 
 /*SECTION LOCATION*/
@@ -781,6 +764,70 @@ section.location .textacceuil {
 }
 
 /*SECTION RESTAURANTS*/
+.restaurants {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin: 0% 0% 0% 5%;
+  position: absolute;
+}
+@media screen and (max-width: 424px) {
+  .restaurants {
+    margin: 0% 0% 0% 5%;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  .restaurants {
+    margin: 0% 0% 0% -2%;
+  }
+}
+@media screen and (min-width: 992px) and (max-width: 1439px) {
+  .restaurants {
+    justify-content: space-between;
+    margin: 1% 24% 0 13%;
+  }
+}
+@media screen and (min-width: 1440px) and (max-width: 2559px) {
+  .restaurants {
+    justify-content: space-between;
+    margin: 1% 22% 0 23%;
+  }
+}
+@media screen and (min-width: 2560px) and (max-width: 3000px) {
+  .restaurants {
+    justify-content: space-between;
+    margin: 0% 30% 0 31%;
+  }
+}
+
+.cartesrestaurants {
+  width: 110%;
+  margin-left: -20px;
+}
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  .cartesrestaurants {
+    width: 50%;
+    margin-right: -5%;
+  }
+}
+@media screen and (min-width: 992px) and (max-width: 1439px) {
+  .cartesrestaurants {
+    width: 45%;
+    margin-right: -5%;
+  }
+}
+@media screen and (min-width: 1440px) and (max-width: 2559px) {
+  .cartesrestaurants {
+    width: 50%;
+  }
+}
+@media screen and (min-width: 2560px) and (max-width: 3000px) {
+  .cartesrestaurants {
+    width: 50%;
+  }
+}
+
 .restaurants figure {
   background-color: white;
   border-radius: 20px;
@@ -810,31 +857,32 @@ section.location .textacceuil {
   }
 }
 
+/*IMAGES CARTES RESTAUTANTS*/
 .restaurants a img {
   border-radius: 15px 15px 0 0;
   object-fit: cover;
   width: 100%;
-  height: 170px;
+  height: 195px;
   object-position: 20% 104%;
 }
 @media screen and (max-width: 424px) {
   .restaurants a img {
-    height: 145px;
+    height: 175px;
   }
 }
 @media screen and (max-width: 374px) {
   .restaurants a img {
-    height: 125px;
+    height: 145px;
   }
 }
 @media screen and (min-width: 768px) and (max-width: 991px) {
   .restaurants a img {
-    height: 170px;
+    height: 160px;
   }
 }
 @media screen and (min-width: 2560px) and (max-width: 3000px) {
   .restaurants a img {
-    height: 230px;
+    height: 240px;
   }
 }
 
@@ -845,7 +893,7 @@ section.location .textacceuil {
 .restaurants a figcaption {
   width: 90%;
   margin-left: 10px;
-  height: 70px;
+  height: 60px;
   font-size: 12px;
   display: flex;
   justify-content: space-between;
@@ -864,12 +912,22 @@ section.location .textacceuil {
 }
 @media screen and (min-width: 768px) and (max-width: 991px) {
   .restaurants a figcaption {
-    height: 50px;
+    height: 60px;
   }
 }
 @media screen and (min-width: 992px) and (max-width: 1439px) {
   .restaurants a figcaption {
-    height: 80px;
+    height: 70px;
+  }
+}
+@media screen and (min-width: 1440px) and (max-width: 2559px) {
+  .restaurants a figcaption {
+    height: 75px;
+  }
+}
+@media screen and (min-width: 2560px) and (max-width: 3000px) {
+  .restaurants a figcaption {
+    height: 75px;
   }
 }
 .restaurants a figcaption p {
@@ -933,52 +991,54 @@ button.coeur {
   background: transparent;
   border: none;
   position: relative;
-  margin-bottom: 10%;
+  margin-bottom: 7%;
   cursor: pointer;
-  margin-top: -22%;
+  margin-top: -17%;
   margin-left: 78%;
+  transform: color;
+  transition-property: transform;
+}
+button.coeur:active {
+  background: linear-gradient(356deg, #9356DC, #FF79DA);
+  z-index: 0;
+  color: #9356DC;
 }
 @media screen and (max-width: 424px) {
   button.coeur {
-    margin-top: -21%;
+    margin-bottom: 5%;
   }
 }
 @media screen and (max-width: 374px) {
   button.coeur {
-    margin-top: -23%;
+    margin-top: -18%;
     font-size: 19px;
+    margin-bottom: 3%;
   }
 }
 @media screen and (min-width: 768px) and (max-width: 991px) {
   button.coeur {
-    margin-top: -17%;
+    margin-top: -18%;
     margin-left: 67%;
   }
 }
 @media screen and (min-width: 992px) and (max-width: 1439px) {
   button.coeur {
-    margin-top: -30%;
-    margin-bottom: 25%;
+    margin-top: -27%;
+    margin-bottom: 15%;
     margin-left: 100%;
+    font-size: 23px;
   }
 }
 @media screen and (min-width: 1440px) and (max-width: 2559px) {
   button.coeur {
-    margin-top: -22%;
-    margin-bottom: 20%;
+    font-size: 25px;
   }
 }
 @media screen and (min-width: 2560px) and (max-width: 3000px) {
   button.coeur {
-    margin-top: -17%;
+    margin-top: -16%;
+    font-size: 30px;
   }
-}
-button.coeur .coeurvide {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: absolute;
-  opacity: 1;
 }
 button.coeur .coeurplein {
   display: flex;
@@ -987,14 +1047,17 @@ button.coeur .coeurplein {
   position: absolute;
   background-clip: text;
   color: transparent;
-  opacity: 0;
-  z-index: -1;
-  transition: color 2s ease-in-out;
-}
-button.coeur .coeurplein:hover {
   opacity: 1;
-  z-index: 0;
-  background-image: linear-gradient(356deg, #9356DC, #FF79DA);
+  z-index: -1;
+  bottom: 0;
+  left: 0;
+  transition: all 5s linear;
+}
+button.coeur .coeurplein::after {
+  content: "";
+  position: absolute;
+  bottom: 6px;
+  left: 6px;
 }
 @media screen and (max-width: 424px) {
   button.coeur .coeurplein {
@@ -1071,49 +1134,42 @@ ahover {
   font-weight: bold;
   border-radius: 2px;
   font-size: 13px;
-  margin-top: 37px;
-  margin-right: 38px;
+  margin: 40px 48px 0 0;
 }
 @media screen and (max-width: 424px) {
   .evenement {
-    padding: 5px 8px;
-    margin-top: 39px;
-    font-size: 10px;
+    font-size: 12px;
   }
 }
 @media screen and (max-width: 374px) {
   .evenement {
-    font-size: 8px;
-    margin-top: 37px;
+    font-size: 10px;
+    margin: 33px 40px 0 0;
   }
 }
 @media screen and (min-width: 768px) and (max-width: 991px) {
   .evenement {
-    margin-top: 38px;
-    margin-right: 37px;
+    margin-top: 32px;
     padding: 5px 7px;
     font-size: 13px;
   }
 }
 @media screen and (min-width: 992px) and (max-width: 1439px) {
   .evenement {
-    font-size: 13px;
-    margin-top: 35px;
-    margin-right: 41px;
+    font-size: 15px;
+    margin: 54px 35px 0 0;
   }
 }
 @media screen and (min-width: 1440px) and (max-width: 2559px) {
   .evenement {
-    padding: 5px 10px;
-    margin-top: 39px;
+    font-size: 15px;
+    margin: 47px 40px 0 0;
   }
 }
 @media screen and (min-width: 2560px) and (max-width: 3000px) {
   .evenement {
-    padding: 7px 13px;
-    margin-top: 45px;
-    margin-right: 45px;
-    font-size: 16px;
+    margin: 52px 50px 0 0;
+    font-size: 18px;
   }
 }
 
@@ -1211,20 +1267,20 @@ ahover {
 
 .choixrestaurants {
   background-color: #F6F6F6;
-  display: grid;
+  display: flow-root;
   height: auto;
   flex-direction: column;
   justify-content: center;
-  height: 1220px;
+  height: 1250px;
 }
 @media screen and (max-width: 424px) {
   .choixrestaurants {
-    height: 1100px;
+    height: 1180px;
   }
 }
 @media screen and (max-width: 374px) {
   .choixrestaurants {
-    height: 950px;
+    height: 980px;
   }
 }
 @media screen and (min-width: 768px) and (max-width: 991px) {
@@ -1253,18 +1309,12 @@ ahover {
 }
 
 .titreacceuil {
-  font-size: 20px;
+  font-size: 23px;
   margin-left: 5%;
   margin-top: 40px;
 }
-@media screen and (max-width: 424px) {
-  .titreacceuil {
-    font-size: 23px;
-  }
-}
 @media screen and (max-width: 374px) {
   .titreacceuil {
-    margin-left: 7%;
     font-size: 20px;
   }
 }
@@ -1287,55 +1337,6 @@ ahover {
 @media screen and (min-width: 2560px) and (max-width: 3000px) {
   .titreacceuil {
     margin-left: 31.5%;
-  }
-}
-
-.restaurants {
-  margin-top: -50px;
-}
-@media screen and (max-width: 424px) {
-  .restaurants {
-    margin-top: -60px;
-  }
-}
-@media screen and (min-width: 768px) and (max-width: 991px) {
-  .restaurants {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    margin: 1% 20% 0 11%;
-    position: absolute;
-  }
-}
-@media screen and (min-width: 992px) and (max-width: 1439px) {
-  .restaurants {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: center;
-    margin: 1% 20% 0 11%;
-    position: absolute;
-  }
-}
-@media screen and (min-width: 1440px) and (max-width: 2559px) {
-  .restaurants {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    align-items: center;
-    margin: 1% 18% 0 18%;
-    position: absolute;
-  }
-}
-@media screen and (min-width: 2560px) and (max-width: 3000px) {
-  .restaurants {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    align-items: center;
-    margin: 1% 29% 0 30%;
-    position: absolute;
   }
 }
 
@@ -1488,7 +1489,34 @@ ahover {
   }
 }
 
-.legende {
+.button {
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  align-items: center;
+  border-color: transparent;
+  border-radius: 20px;
+  margin: 10px 0px 10px 17px;
+  width: 93%;
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+}
+.button:after {
+  content: "";
+  display: block;
+  position: absolute;
+  bottom: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 0;
+  background-color: #99E2D0;
+  transition: 0.35s ease-in;
+  transition-property: top, bottom, left, right, border-width;
+}
+.button .legende {
   align-items: baseline;
   display: flex;
   flex-direction: column;
@@ -1502,42 +1530,41 @@ ahover {
   white-space: nowrap;
 }
 @media screen and (max-width: 424px) {
-  .legende {
+  .button .legende {
     font-size: 14px;
   }
 }
 @media screen and (max-width: 374px) {
-  .legende {
+  .button .legende {
     font-size: 12px;
   }
 }
 @media screen and (min-width: 768px) and (max-width: 991px) {
-  .legende {
+  .button .legende {
     font-size: 18px;
   }
 }
 @media screen and (min-width: 992px) and (max-width: 1439px) {
-  .legende {
+  .button .legende {
     margin-left: 4px;
     margin-right: 0;
     font-size: 12.5px;
   }
 }
 @media screen and (min-width: 1440px) and (max-width: 2559px) {
-  .legende {
+  .button .legende {
     margin-right: 16%;
     font-size: 16px;
   }
 }
 @media screen and (min-width: 2560px) and (max-width: 3000px) {
-  .legende {
+  .button .legende {
     margin-left: -14px;
     margin-right: 0;
     font-size: 21px;
   }
 }
-
-.legende p {
+.button .legende p {
   margin-bottom: 0px;
   margin-top: -12px;
   text-overflow: ellipsis;
@@ -1547,232 +1574,272 @@ ahover {
   font-size: 16.5px;
 }
 @media screen and (max-width: 424px) {
-  .legende p {
+  .button .legende p {
     width: 265px;
     font-size: 14.3px;
   }
 }
 @media screen and (max-width: 374px) {
-  .legende p {
+  .button .legende p {
     width: 227px;
     font-size: 12.3px;
   }
 }
 @media screen and (min-width: 768px) and (max-width: 991px) {
-  .legende p {
+  .button .legende p {
     width: 345px;
     font-size: 18.5px;
   }
 }
 @media screen and (min-width: 992px) and (max-width: 1439px) {
-  .legende p {
+  .button .legende p {
     width: 226px;
     font-size: 12px;
   }
 }
 @media screen and (min-width: 1440px) and (max-width: 2559px) {
-  .legende p {
+  .button .legende p {
     width: 300px;
     font-size: 15.4px;
   }
 }
 @media screen and (min-width: 2560px) and (max-width: 3000px) {
-  .legende p {
+  .button .legende p {
     width: 405px;
     font-size: 21.5px;
   }
 }
-
-.desserts .legende p {
+.button .desserts .legende p {
   font-size: 16.1px;
 }
 @media screen and (max-width: 424px) {
-  .desserts .legende p {
+  .button .desserts .legende p {
     font-size: 14px;
   }
 }
 @media screen and (max-width: 374px) {
-  .desserts .legende p {
+  .button .desserts .legende p {
     font-size: 12px;
   }
 }
 @media screen and (min-width: 768px) and (max-width: 991px) {
-  .desserts .legende p {
+  .button .desserts .legende p {
     font-size: 18.1px;
   }
 }
 @media screen and (min-width: 992px) and (max-width: 1439px) {
-  .desserts .legende p {
+  .button .desserts .legende p {
     font-size: 12.5px;
     width: 258px;
   }
 }
 @media screen and (min-width: 1440px) and (max-width: 2559px) {
-  .desserts .legende p {
+  .button .desserts .legende p {
     font-size: 16px;
     width: 328px;
   }
 }
 @media screen and (min-width: 2560px) and (max-width: 3000px) {
-  .desserts .legende p {
+  .button .desserts .legende p {
     font-size: 21.2px;
   }
 }
-
-.legende p.myrtilles {
+.button .legende p.myrtilles {
   font-size: 17.8px;
 }
 @media screen and (max-width: 424px) {
-  .legende p.myrtilles {
+  .button .legende p.myrtilles {
     font-size: 15.5px;
   }
 }
 @media screen and (max-width: 374px) {
-  .legende p.myrtilles {
+  .button .legende p.myrtilles {
     font-size: 13.5px;
   }
 }
 @media screen and (min-width: 768px) and (max-width: 991px) {
-  .legende p.myrtilles {
+  .button .legende p.myrtilles {
     font-size: 20px;
   }
 }
 @media screen and (min-width: 992px) and (max-width: 1439px) {
-  .legende p.myrtilles {
+  .button .legende p.myrtilles {
     font-size: 13.8px;
   }
 }
 @media screen and (min-width: 1440px) and (max-width: 2559px) {
-  .legende p.myrtilles {
+  .button .legende p.myrtilles {
     font-size: 18.8px;
   }
 }
 @media screen and (min-width: 2560px) and (max-width: 3000px) {
-  .legende p.myrtilles {
+  .button .legende p.myrtilles {
     font-size: 23.8px;
   }
 }
-
-.noteenchantee p {
+.button .noteenchantee p {
   font-size: 16px;
 }
 @media screen and (max-width: 424px) {
-  .noteenchantee p {
+  .button .noteenchantee p {
     font-size: 14px;
   }
 }
 @media screen and (max-width: 374px) {
-  .noteenchantee p {
+  .button .noteenchantee p {
     font-size: 12.3px;
   }
 }
 @media screen and (min-width: 768px) and (max-width: 991px) {
-  .noteenchantee p {
+  .button .noteenchantee p {
     font-size: 19px;
   }
 }
 @media screen and (min-width: 992px) and (max-width: 1439px) {
-  .noteenchantee p {
+  .button .noteenchantee p {
     font-size: 12.5px;
   }
 }
 @media screen and (min-width: 2560px) and (max-width: 3000px) {
-  .noteenchantee p {
+  .button .noteenchantee p {
     font-size: 21px;
   }
 }
-
-a.prix {
-  margin-right: 20px;
+.button .prix {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: -30px;
   margin-bottom: -30px;
   font-weight: bold;
   font-size: 16px;
-  position: relative;
-  bottom: -7px;
-  right: 0px;
-  transition: all 0.3s cubic-bezier(0.95, 0.05, 0, 0.27);
+  transition: 0.35s ease-in;
+}
+.button .prix:active::after {
+  transform: translateX(-15px);
 }
 @media screen and (max-width: 424px) {
-  a.prix {
+  .button .prix {
     font-size: 15px;
     margin-bottom: -20px;
     margin-right: 15px;
   }
 }
 @media screen and (max-width: 374px) {
-  a.prix {
+  .button .prix {
     font-size: 13px;
     margin-bottom: -10px;
     margin-right: 10px;
   }
 }
 @media screen and (min-width: 768px) and (max-width: 991px) {
-  a.prix {
+  .button .prix {
     font-size: 18px;
     margin-right: 23px;
     margin-bottom: -40px;
   }
 }
 @media screen and (min-width: 992px) and (max-width: 1439px) {
-  a.prix {
+  .button .prix {
     font-size: 13px;
     margin-left: 5%;
     margin-bottom: -20px;
   }
 }
 @media screen and (min-width: 2560px) and (max-width: 3000px) {
-  a.prix {
+  .button .prix {
     font-size: 25px;
     margin-left: 30%;
   }
 }
-a.prix:active::before {
-  content: "";
-  transform: translate(-66px);
-  position: absolute;
-  bottom: 0px;
-  right: 10px;
-}
-
-#checkbox {
-  display: none;
-  align-items: center;
-  justify-content: center;
-  border: 22px solid transparent;
-  background: #99E2D0;
-  border-radius: 0px 15px 15px 0px;
-  font-size: 10px;
-  position: relative;
-  right: -82px;
-  top: 0;
-  transition: all 0.3s cubic-bezier(0.95, 0.05, 0, 0.27);
-}
-#checkbox:active::after {
-  content: "";
-  position: absolute;
-  left: 0;
-  display: flex;
-  transform: translate(0);
-}
-#checkbox svg {
-  border: 1px solid transparent;
-  background-color: white;
+.button .iconecheck {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  background: white;
+  color: #99E2D0;
   border-radius: 50px;
   padding: 1%;
-  color: #99E2D0;
-  height: 20px;
+  font-size: 14px;
+  position: relative;
   width: 20px;
-  position: absolute;
-  transition: transform 0.1s ease-in-out;
-}
-#checkbox svg::after {
-  content: "";
-  position: absolute;
-  left: 0;
+  height: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   top: 0;
-  bottom: 0;
-  right: 0;
-  animation: check 0.5s linear 2s;
+  left: -25px;
+  z-index: -1;
+}
+.button .iconecheck::after {
+  content: "";
+  z-index: 0;
+  position: absolute;
+  animation: check 3s 0s linear;
+}
+@media screen and (max-width: 424px) {
+  .button {
+    width: 92%;
+  }
+}
+@media screen and (max-width: 374px) {
+  .button {
+    width: 91%;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  .button {
+    margin: 10px 0px 10px 14px;
+    width: 100%;
+  }
+}
+@media screen and (min-width: 992px) and (max-width: 1439px) {
+  .button {
+    margin: 10px 0 30px 17px;
+    width: 105%;
+    padding: 3% 1% 3% 0;
+    justify-content: center;
+  }
+}
+@media screen and (min-width: 1440px) and (max-width: 2559px) {
+  .button {
+    margin: 10px 0 30px 17px;
+    width: 120%;
+    padding: 5% 1% 5% 0;
+    justify-content: center;
+  }
+}
+@media screen and (min-width: 2560px) and (max-width: 3000px) {
+  .button {
+    margin: 10px 0 30px 17px;
+    width: 150%;
+    padding: 5% 1% 5% 1%;
+    justify-content: center;
+  }
+}
+
+.checkbox::after {
+  left: 100%;
+}
+
+.checkbox:hover::after {
+  left: 80%;
+}
+
+@media screen and (min-width: 992px) and (max-width: 1439px) {
+  article.button.buttonpadding {
+    padding: 0.4%;
+  }
+}
+@media screen and (min-width: 1440px) and (max-width: 2559px) {
+  article.button.buttonpadding {
+    padding: 2%;
+  }
+}
+@media screen and (min-width: 2560px) and (max-width: 3000px) {
+  article.button.buttonpadding {
+    padding: 2.5%;
+  }
 }
 
 .commander {

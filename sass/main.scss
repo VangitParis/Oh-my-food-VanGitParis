@@ -55,38 +55,33 @@ a{
     font-weight: bold;
     border-radius: 2px;
     font-size: 13px;
-    margin-top: 37px;
-    margin-right: 38px;
+    margin: 40px 48px 0 0;
     @include mobile-Medium-screen{
-        padding: 5px 8px;
-        margin-top: 39px;
-        font-size: 10px;
+        
+        font-size: 12px;
     }
     @include mobile-Small-screen{
-        font-size: 8px;
-        margin-top: 37px;
+        font-size: 10px;
+       
+        margin: 33px 40px 0 0;
     }
     @include tablette{
-        margin-top: 38px;
-        margin-right: 37px;
+        margin-top: 32px;
         padding: 5px 7px;
         font-size: 13px;
     }
     
     @include desktop-S{
-        font-size: 13px;
-        margin-top: 35px;
-        margin-right: 41px;
+        font-size: 15px;
+        margin: 54px 35px 0 0;
     }
     @include desktop-M{
-        padding: 5px 10px;
-        margin-top: 39px;
+        font-size: 15px;
+        margin: 47px 40px 0 0;
     }
     @include desktop-L{
-        padding: 7px 13px;
-        margin-top: 45px;
-        margin-right: 45px;
-        font-size: 16px;
+        margin: 52px 50px 0 0;
+        font-size: 18px;
     }
 }
 .Titrepages{
@@ -176,17 +171,17 @@ a{
 
 .choixrestaurants{
     background-color:$color-background;
-    display: grid;
+    display: flow-root;
     height: auto;
     flex-direction: column;
     justify-content: center;
-    height: 1220px;
+    height: 1250px;
     
     @include mobile-Medium-screen{
-        height: 1100px;
+        height: 1180px;
     }
     @include mobile-Small-screen{
-        height: 950px;
+        height: 980px;
     }
     @include tablette{
         display: flow-root;
@@ -206,15 +201,11 @@ a{
     }
 }
 .titreacceuil{
-    font-size: $font-size-title;
+    font-size: 23px;
     margin-left: 5%;
     margin-top: 40px;
-    @include mobile-Medium-screen{
-        font-size: 23px;
-        
-    }
+    
     @include mobile-Small-screen{
-        margin-left: 7%;
         font-size: 20px;
     }
     @include tablette{
@@ -232,46 +223,6 @@ a{
         margin-left: 31.5%;
     }
 }
-.restaurants{
-    margin-top: -50px;
-    @include mobile-Medium-screen{
-        margin-top: -60px;
-    }
-    @include tablette{
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        align-items: center;
-        margin: 1% 20% 0 11%;
-        position: absolute;
-        
-    }
-    @include desktop-S{
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-between;
-        align-items: center;
-        margin: 1% 20% 0 11%;
-        position: absolute;
-    } 
-    @include desktop-M{
-        display: flex;
-        flex-wrap: wrap;
-        justify-content:space-around;
-        align-items: center;
-        margin: 1% 18% 0 18%;
-        position: absolute;
-    }
-    @include desktop-L{
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-around;
-        align-items: center;
-        margin: 1% 29% 0 30%;
-        position: absolute;
-    }
-   
-    }
 
     
 
@@ -312,6 +263,7 @@ a{
 .entrees{
     display: flex;
     flex-direction: column;
+    
     @include desktop-S{
         margin-right: 3%;
         margin-left: 0%;
@@ -383,6 +335,34 @@ a{
         width: 13%;
     }
 }
+.button{
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
+    border-color:transparent;
+    border-radius: 20px;
+    margin: 10px 0px 10px 17px;
+    width: 93%;
+    position: relative;
+    overflow:hidden;
+    cursor: pointer;
+    &:after{
+        content:'';
+        display:block;
+        position:absolute;
+        bottom:0;
+        top:0;
+        left:0;
+        right:0;
+        z-index:0;
+        background-color: #99E2D0;
+        transition :  0.35s ease-in;
+        transition-property : top, bottom, left,right, border-width;
+      
+    }
+ 
 
 .legende{
     align-items: baseline;
@@ -396,6 +376,7 @@ a{
     text-overflow: ellipsis;
     overflow: hidden;
     white-space: nowrap;
+    
     @include mobile-Medium-screen{
         font-size: 14px;
     }
@@ -421,6 +402,7 @@ a{
         margin-right: 0;
         font-size: 21px;
     }
+   
 }
 .legende p{
 margin-bottom: 0px;
@@ -523,17 +505,19 @@ font-size: 16.5px;
     
 }
 
-a.prix {
-
-    margin-right: 20px;
+.prix {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: -30px;
     margin-bottom: -30px;
     font-weight: bold;
     font-size: $font-size-body;
-    position: relative;
-    bottom: -7px;
-    right: 0px;
-    transition: all .3s cubic-bezier(.95,.05,0,.27);
-
+    transition :  0.35s ease-in;
+    &:active::after{
+        transform: translateX(-15px);
+    }
+    
     @include mobile-Medium-screen{
         font-size: 15px;
         margin-bottom: -20px;
@@ -559,62 +543,96 @@ a.prix {
         font-size: 25px;
         margin-left: 30%;
     }
-    &:active::before{
-        content: '';
-        transform: translate(-66px);
-        position: absolute;
-        bottom: 0px;
-        right: 10px;
-      }
-    }
-
-    #checkbox{
-    display: none;
-    align-items: center;
-    justify-content: center;
-    border: 22px solid transparent;
-    background: $color-tertiary;
-    border-radius: 0px 15px 15px 0px;
-    font-size: 10px;
-    position: relative;
-    right: -82px;
-    top: 0;
-    transition: all .3s cubic-bezier(.95,.05,0,.27);
-    &:active::after{
-        content: '';
-        position: absolute;
-        left: 0;
-        display: flex;
-        transform: translate(0);
-    }
-    svg{
-        border: 1px solid transparent;
-        background-color: white;
+}
+.iconecheck{
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        -ms-appearance: none;
+        background: white;
+        color: #99E2D0;
         border-radius: 50px;
         padding: 1%;
-        color: $color-tertiary;
-        height: 20px;
+        font-size: 14px;
+        position: relative;
         width: 20px;
-        position:absolute;
-        transition: transform 0.1s ease-in-out;
+        height: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        top: 0;
+        left:-25px;
+        z-index: -1;
         &::after{
-            content: '';
-            position: absolute;
-            left: 0;
-            top: 0;
-            bottom: 0;
-            right: 0;
-            animation: check .5s linear 2s;
+        content:'';
+        z-index: 0;
+        position: absolute;
+        animation: check 3s  0s linear;
         }
         
-}   
+} 
+@include mobile-Medium-screen{
+    width: 92%;
+   
+}
+@include mobile-Small-screen{
+    width: 91%;
+   
+}
+@include tablette{
+    margin: 10px 0px 10px 14px;
+    width: 100%;
+   
+}
+@include desktop-S{
+    margin: 10px 0 30px 17px;
+    width: 105%;
+    padding: 3% 1% 3% 0;
+    justify-content: center;
+    
+}
+@include desktop-M{
+    margin: 10px 0 30px 17px;;
+    width: 120%;
+    padding: 5% 1% 5% 0;
+    justify-content: center;
+   
+    
+}
+@include desktop-L{
+    margin: 10px 0 30px 17px;;
+    width: 150%;
+    padding: 5% 1% 5% 1%;
+    justify-content: center;
+    
+}
+}
+.checkbox::after{
+    left:100%;
+}
+
+.checkbox:hover::after{
+    left:80%;
 }
 
 
+    
 
+article.button.buttonpadding{
+    @include desktop-S{
+        padding: 0.4%;
+    }
+    @include desktop-M{
+        padding: 2%;
+    }
+    @include desktop-L{
+        padding: 2.5%;
 
-   
-  
+}
+}    
+    
+    
+       
+      
 
 .commander{
     display: flex;

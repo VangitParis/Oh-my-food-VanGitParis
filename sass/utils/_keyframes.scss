@@ -1,7 +1,7 @@
 @keyframes spin{
     0%{
         transform: rotate(0deg);
-        
+       
     }
     
     100%{
@@ -9,13 +9,66 @@
         
     }
 }
-
-
-@keyframes check {
-    0%{
-        transform: rotate(0deg);
+@keyframes fadeInAnimation { 
+    0% { 
+        opacity: 1; 
+    } 
+    70%{
+        opacity: 0.6;
+    }
+    
+    90%{
+        opacity: 0.2;
     }
     100%{
-        transform: rotate(360deg)
+        opacity: 0;
     }
 }
+@keyframes loader {
+    0%{
+        opacity: 1;
+        visibility: visible;
+    }
+    100%{
+        opacity: 0;
+        visibility: hidden;
+    }
+}
+
+@keyframes check{
+    0%{
+        transform: rotateZ(0deg);
+    }
+    100%{
+        transform: rotateZ(360deg);
+    }
+}
+@keyframes slidein {
+   
+    from { margin-left: 100%;
+
+    }
+    to   { margin-left: 0; 
+    }
+      
+}
+@keyframes Down{
+    0%{
+       
+        left: 103%
+     }
+     33%{
+         left: 100%;
+     }
+     66%{
+         left: 96%;
+     }
+     100%{
+        
+         left: 90%;
+     }
+ }
+
+    
+ 
+

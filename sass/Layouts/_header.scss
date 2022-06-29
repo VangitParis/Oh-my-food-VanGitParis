@@ -5,9 +5,24 @@
     height: 60px;
     @include tablette{
         height: 80px;
+        justify-content: space-evenly;
+        margin-left: -15%;
     }
     @include desktop-S{
         height: 50px;
+        justify-content: space-evenly;
+        margin-left: -25%;
+    }
+    @include desktop-M{
+        height: 80px;
+        justify-content: space-evenly;
+        margin-left: -30%;
+    }
+    @include desktop-L{
+        justify-content: space-evenly;
+        margin-left: -36%;
+        height: 90px;
+        
     }
 }
 .titreheader{
@@ -25,23 +40,24 @@
     @include tablette{
         font-size: 35px;
         height: 35px;
+        
     }
     @include desktop-S{
         font-size: 28px;
-        height: 26px;
+        height: 24px;
+       
     }
     @include desktop-M{
         font-size: 35px;
         height: 30px;
+        
     }
     @include desktop-L{
-        font-size: 40px;
+        font-size: 45px;
         height: 30px;
+        
     }
 }
 
-svg.svg-inline--fa.fa-arrow-left{
-    display: flex;
-    justify-content: flex-start;
-}
+
 

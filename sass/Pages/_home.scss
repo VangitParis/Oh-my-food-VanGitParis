@@ -15,32 +15,31 @@ body .description nav{
     height: 100%;
     line-height: 550px;
     font-family: $title-font;
-    font-size: 30px;
+    font-size: 230%;
     text-align: center;
     position: fixed;
     width: 100%;
     z-index: 10;
-    
-    
-    
+    display: inline-block;
+    transition: all 3s;
+    animation: loader .01s 3s both; 
 }
-.loader{
+.loader{/*animation de fondu vers le site après chargement*/
     
     display: inline;
     vertical-align: middle;
     color:black;
     position: relative;
-    transition: all 3s ease-out;
-    &::after{
-        display: none;
-    }
-    
+    animation: fadeInAnimation 2.5s ease 1 forwards; 
    
 }
+    
+   
+
 .cercle-chargement{
     border-radius: 50px;
     border: 5px solid $color-primary;
-    &::before{
+    &::before{/*cercle qui tourne*/
         content:'';
         position: absolute;
         top: -5px;
@@ -50,15 +49,12 @@ body .description nav{
         border-top: 5px solid transparent;
         border-radius: 40px;
         border-top-color: $color-secondary;
-        animation: spin 2s linear infinite 1s ;
-        height: 50px;
-        width: 50px;
+        animation: spin 3s linear ;
+        height: 60px;
+        width: 67px;
 
     }
-    
-
 }
-
 /*SECTION LOCATION*/
 section.location{
     width: 100%;
@@ -193,6 +189,60 @@ section.location{
         
 }
 /*SECTION RESTAURANTS*/
+.restaurants{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin: 0% 0% 0% 5%;
+    position: absolute;
+    
+    @include mobile-Medium-screen{
+        margin: 0% 0% 0% 5%;
+    }
+    @include tablette{
+       
+        margin: 0% 0% 0% -2%;
+       
+        
+    }
+    @include desktop-S{
+        justify-content: space-between;
+        margin: 1% 24% 0 13%;
+       
+    } 
+    @include desktop-M{
+        justify-content: space-between;
+        margin: 1% 22% 0 23%;
+       
+    }
+    @include desktop-L{
+        justify-content: space-between;
+        margin: 0% 30% 0 31%;
+        
+    }
+   
+    }
+
+.cartesrestaurants {
+    width: 110%;
+    margin-left: -20px;
+    @include tablette{
+        width: 50%;
+        margin-right: -5%;
+    }
+    @include desktop-S{
+        width: 45%;
+        margin-right: -5%;
+    }
+    @include desktop-M{
+        width: 50%;
+    }
+    @include desktop-L{
+        width: 50%;
+    }
+    
+}
 .restaurants figure{
     background-color : white;
     border-radius: 20px;
@@ -218,23 +268,24 @@ section.location{
     
 }
 
+/*IMAGES CARTES RESTAUTANTS*/
 .restaurants a img {
     border-radius: 15px 15px 0 0;
     object-fit: cover;
     width: 100%;
-    height: 170px;
+    height: 195px;
     object-position: 20% 104%;
     @include mobile-Medium-screen{
-        height: 145px;
+        height: 175px;
     }
     @include mobile-Small-screen{
-        height: 125px;
+        height: 145px;
     }
     @include tablette{
-        height: 170px;
+        height: 160px;
     }
     @include desktop-L{
-        height: 230px;
+        height: 240px;
     }
 }
 .restaurants a.carte2restaurant img {
@@ -244,7 +295,7 @@ section.location{
 .restaurants a figcaption{
     width: 90%;
     margin-left: 10px;
-    height: 70px;
+    height: 60px;
     font-size: 12px;
     display: flex;
     justify-content: space-between;
@@ -257,10 +308,16 @@ section.location{
         height:50px;
     }
     @include tablette{
-        height: 50px;
+        height: 60px;
     }
     @include desktop-S{
-        height: 80px;
+        height: 70px;
+    }
+    @include desktop-M{
+        height: 75px;
+    }
+    @include desktop-L{
+        height: 75px;
     }
     p{
         font-weight: 100;
@@ -318,45 +375,46 @@ button.coeur{
     background:transparent;
     border:none;
     position:relative;
-    margin-bottom: 10%;
+    margin-bottom: 7%;
     cursor: pointer;
-    margin-top: -22%;
+    margin-top: -17%;
     margin-left: 78%;
-   
+    transform: color ;
+    transition-property: transform;
+    &:active{
+        background: $color-background-btn;
+        z-index: 0;
+        color: #9356DC;
+    }
     @include mobile-Medium-screen{
-        margin-top: -21%;
+        margin-bottom: 5%;
     }
     @include mobile-Small-screen{
-        margin-top: -23%;
+        margin-top: -18%;
         font-size: 19px;
+        margin-bottom: 3%;
     }
     @include tablette{
-        margin-top: -17%;
+        margin-top: -18%;
         margin-left: 67%;
         
     }
 
     @include desktop-S{
-        margin-top: -30%; 
-        margin-bottom: 25%;  
+        margin-top: -27%;
+        margin-bottom: 15%;
         margin-left: 100%;
+        font-size: 23px;
     }
     @include desktop-M{
-        margin-top: -22%; 
-        margin-bottom: 20%;  
+        font-size: 25px; 
     }
     @include desktop-L{
-        margin-top: -17%; 
-       
+        margin-top: -16%; 
+        font-size:30px;
     }
 
-    .coeurvide{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        position: absolute;
-        opacity: 1;
-    }
+   
     .coeurplein{
         display: flex;
         justify-content: center;
@@ -364,20 +422,18 @@ button.coeur{
         position: absolute;
         background-clip:text;
         color: transparent;
-        opacity: 0;
+        opacity: 1;
         z-index: -1;
-        transition: color 2s ease-in-out;
-        &:hover{
-            opacity: 1;
-            z-index: 0;
-            background-image: $color-background-btn;
+        bottom: 0;
+        left: 0;
+        transition: all 5s linear;
+        &::after{
+            content: '';
+            position: absolute;
+            bottom: 6px;
+            left: 6px;
+            
         }
-        
-    
-
-   
-    
-    
         
     @include mobile-Medium-screen{
         height: 1.4rem;
@@ -396,4 +452,5 @@ button.coeur{
     }
    
 }
+
 }
