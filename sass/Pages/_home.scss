@@ -392,14 +392,14 @@ section.location{
           background-color: #000;
 
         @include mobile-Medium-screen{
-            margin-bottom: 5%;
+            margin-bottom: 6%;
         }
         @include mobile-Small-screen{
             height:22px;
             width: 22px;
         }
         @include tablette{
-            margin-top: -18%;
+            margin-top: -17%;
             margin-left: 67%;
             
         }
@@ -411,10 +411,12 @@ section.location{
         }
         @include desktop-M{
             font-size: 25px; 
+            margin-top: -20%;
         }
         @include desktop-L{
-            margin-top: -16%; 
-            font-size:30px;
+            margin-top: -17%; 
+            height: 32px;
+            width: 32px;
         }
       }
     
