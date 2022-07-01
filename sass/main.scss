@@ -232,6 +232,7 @@ a{
     font-size: 12px;
     display: flex;
     flex-direction: column;
+   
     @include mobile-Medium-screen{
         margin-top: 20px;
     }
@@ -263,7 +264,8 @@ a{
 .entrees{
     display: flex;
     flex-direction: column;
-    
+    animation: slidein-L 3s linear ;
+   
     @include desktop-S{
         margin-right: 3%;
         margin-left: 0%;
@@ -276,11 +278,15 @@ a{
         margin-right: 10%;
         margin-left: 2%;
     }
-    
+    &::after{
+        content:'';
+        visibility: visible;
+    }
 }
 .plats{
     display: flex;
     flex-direction: column;
+    animation: slidein-R  9s linear ;
     @include desktop-S{
         margin-right: 3%;
         margin-left: 0%;
@@ -297,6 +303,7 @@ a{
 .desserts{
     display: flex;
     flex-direction: column;
+    animation: slidein-L 18s linear ;
     @include desktop-S{
         margin-left: 0%;
         margin-right: 5%;
@@ -316,6 +323,7 @@ a{
     width: 9%;
     padding-bottom: 5px;
     font-size: 15px;
+    
     @include mobile-Medium-screen{
         margin-left: 20px;
     }
@@ -348,7 +356,24 @@ a{
     position: relative;
     overflow:hidden;
     cursor: pointer;
-    &:after{
+    &:before{/*iconebackground*/
+        content: "";
+        display:block;
+        position:absolute;
+        bottom:0;
+        top:30%;
+        left: 85%;
+        right:0;
+        width: 20px;
+        height: 20px;
+        background:$color-white;
+        padding: 1%;
+        border-radius: 50px;
+        z-index: 1;
+        transition :  0.35s ease-in;
+        transition-property : top, bottom, left,right, border-width;
+    }
+    &:after{/*checkbox*/
         content:'';
         display:block;
         position:absolute;
@@ -360,8 +385,12 @@ a{
         background-color: #99E2D0;
         transition :  0.35s ease-in;
         transition-property : top, bottom, left,right, border-width;
-      
     }
+    
+            
+        
+    
+    
  
 
 .legende{
@@ -504,20 +533,33 @@ font-size: 16.5px;
     }
     
 }
-
-.prix {
+.iconecheckprice{
     display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-right: -30px;
+    justify-content: space-between;
+    position: relative;
+    margin-right: 40px;
+}
+.prix {
+    display:flex;
+    margin-right: 25px;
     margin-bottom: -30px;
     font-weight: bold;
     font-size: $font-size-body;
-    transition :  0.35s ease-in;
-    &:active::after{
-        transform: translateX(-15px);
-    }
-    
+    position: absolute;
+}
+   
+.iconecheck{
+    display:block;
+    position:absolute;
+    bottom:0;
+    top:0;
+    left:0;
+    right:0;
+    z-index:-1;
+    font-size: 14px;
+    color: $color-tertiary;
+    animation: check 3s linear;
+}
     @include mobile-Medium-screen{
         font-size: 15px;
         margin-bottom: -20px;
@@ -539,37 +581,19 @@ font-size: 16.5px;
             margin-left: 5%;
             margin-bottom: -20px;
         }
+    @include desktop-M{
+            font-size: 20px;
+            margin-right: 0;
+        }
     @include desktop-L{
         font-size: 25px;
         margin-left: 30%;
     }
-}
-.iconecheck{
-        -webkit-appearance: none;
-        -moz-appearance: none;
-        -ms-appearance: none;
-        background: white;
-        color: #99E2D0;
-        border-radius: 50px;
-        padding: 1%;
-        font-size: 14px;
-        position: relative;
-        width: 20px;
-        height: 20px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        top: 0;
-        left:-25px;
-        z-index: -1;
-        &::after{
-        content:'';
-        z-index: 0;
-        position: absolute;
-        animation: check 3s  0s linear;
-        }
-        
-} 
+   
+
+
+
+
 @include mobile-Medium-screen{
     width: 92%;
    
@@ -606,10 +630,18 @@ font-size: 16.5px;
     
 }
 }
+.fa-check::after{
+    z-index: 1;
+}
+.iconebackground::before{
+     left: 100%;
+}
+.iconebackground:hover::before{
+    left:86%;
+}
 .checkbox::after{
     left:100%;
 }
-
 .checkbox:hover::after{
     left:80%;
 }

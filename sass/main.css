@@ -10,9 +10,8 @@
 
 .btn {
   font-size: 15.5px;
-  text-align-items: center;
-  text-font-weight: 500;
-  text-font-size: 15px;
+  text-align: center;
+  font-weight: 500;
   border-radius: 50px;
   margin-bottom: 50px;
   background: linear-gradient(356deg, #9356DC, #FF79DA);
@@ -25,9 +24,8 @@
 
 .btncommander {
   font-size: 15.5px;
-  text-align-items: center;
-  text-font-weight: 500;
-  text-font-size: 15px;
+  align-items: center;
+  font-weight: 500;
   border-radius: 50px;
   margin-bottom: 50px;
   background: linear-gradient(356deg, #9356DC, #FF79DA);

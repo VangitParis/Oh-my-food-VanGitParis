@@ -531,26 +531,40 @@ footer a {
     transform: rotateZ(360deg);
   }
 }
-@keyframes slidein {
-  from {
-    margin-left: 100%;
-  }
-  to {
-    margin-left: 0;
-  }
-}
-@keyframes Down {
+@keyframes slidein-L {
   0% {
-    left: 103%;
-  }
-  33% {
     left: 100%;
+    opacity: 0;
+    z-index: -1;
   }
-  66% {
-    left: 96%;
+  50% {
+    opacity: 0.5;
+    z-index: 0;
+    left: 0;
   }
   100% {
-    left: 90%;
+    opacity: 1;
+    z-index: 0;
+    left: 0;
+  }
+}
+@keyframes slidein-R {
+  0% {
+    top: 100%;
+    right: 0;
+    z-index: -1;
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.5;
+    z-index: 0;
+    right: 0;
+  }
+  100% {
+    top: 0;
+    right: 100%;
+    z-index: 0;
+    opacity: 1;
   }
 }
 body .description nav {
@@ -980,49 +994,51 @@ section.location .textacceuil {
 }
 
 /*TRANSITION COEUR*/
-button.coeur {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 22px;
-  width: 25px;
-  height: 25PX;
-  z-index: 0;
-  background: transparent;
+.btncoeur {
   border: none;
+  background: transparent;
+  height: 24px;
+  width: 24px;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   position: relative;
   margin-bottom: 7%;
   cursor: pointer;
   margin-top: -17%;
   margin-left: 78%;
-  transform: color;
-  transition-property: transform;
 }
-button.coeur:active {
-  background: linear-gradient(356deg, #9356DC, #FF79DA);
-  z-index: 0;
-  color: #9356DC;
+
+.coeur {
+  height: 27px;
+  width: 27px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  position: relative;
+  background-color: #000;
 }
 @media screen and (max-width: 424px) {
-  button.coeur {
+  .coeur {
     margin-bottom: 5%;
   }
 }
 @media screen and (max-width: 374px) {
-  button.coeur {
-    margin-top: -18%;
-    font-size: 19px;
-    margin-bottom: 3%;
+  .coeur {
+    height: 22px;
+    width: 22px;
   }
 }
 @media screen and (min-width: 768px) and (max-width: 991px) {
-  button.coeur {
+  .coeur {
     margin-top: -18%;
     margin-left: 67%;
   }
 }
 @media screen and (min-width: 992px) and (max-width: 1439px) {
-  button.coeur {
+  .coeur {
     margin-top: -27%;
     margin-bottom: 15%;
     margin-left: 100%;
@@ -1030,54 +1046,52 @@ button.coeur:active {
   }
 }
 @media screen and (min-width: 1440px) and (max-width: 2559px) {
-  button.coeur {
+  .coeur {
     font-size: 25px;
   }
 }
 @media screen and (min-width: 2560px) and (max-width: 3000px) {
-  button.coeur {
+  .coeur {
     margin-top: -16%;
     font-size: 30px;
   }
 }
-button.coeur .coeurplein {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: absolute;
-  background-clip: text;
-  color: transparent;
-  opacity: 1;
-  z-index: -1;
-  bottom: 0;
-  left: 0;
-  transition: all 5s linear;
-}
-button.coeur .coeurplein::after {
+
+.coeur::before {
+  opacity: 0;
+  transition: 0.5s;
   content: "";
+  background: linear-gradient(356deg, #9356dc, #ff79da);
+}
+
+.coeur:hover::before {
+  opacity: 1;
+}
+
+.coeur:before, .coeurplein, .coeurvide {
   position: absolute;
-  bottom: 6px;
-  left: 6px;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
 }
-@media screen and (max-width: 424px) {
-  button.coeur .coeurplein {
-    height: 1.4rem;
-  }
+
+.coeurplein, .coeurvide {
+  transition-duration: 0.55s;
+  background-color: #f6f6f6;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  mix-blend-mode: lighten;
+  font-size: 27px;
 }
-@media screen and (max-width: 374px) {
-  button.coeur .coeurplein {
-    height: 1.3rem;
-  }
+
+.coeurvide:hover {
+  opacity: 0;
 }
-@media screen and (min-width: 768px) and (max-width: 991px) {
-  button.coeur .coeurplein {
-    height: 1.4rem;
-  }
-}
-@media screen and (min-width: 992px) and (max-width: 1439px) {
-  button.coeur .coeurplein {
-    height: 23px;
-  }
+
+.fond_coeur {
+  background-color: #fff !important;
 }
 
 * {
@@ -1388,6 +1402,7 @@ ahover {
 .entrees {
   display: flex;
   flex-direction: column;
+  animation: slidein-L 3s linear;
 }
 @media screen and (min-width: 992px) and (max-width: 1439px) {
   .entrees {
@@ -1406,10 +1421,15 @@ ahover {
     margin-left: 2%;
   }
 }
+.entrees::after {
+  content: "";
+  visibility: visible;
+}
 
 .plats {
   display: flex;
   flex-direction: column;
+  animation: slidein-R 9s linear;
 }
 @media screen and (min-width: 992px) and (max-width: 1439px) {
   .plats {
@@ -1433,6 +1453,7 @@ ahover {
 .desserts {
   display: flex;
   flex-direction: column;
+  animation: slidein-L 18s linear;
 }
 @media screen and (min-width: 992px) and (max-width: 1439px) {
   .desserts {
@@ -1503,7 +1524,24 @@ ahover {
   overflow: hidden;
   cursor: pointer;
 }
-.button:after {
+.button:before { /*iconebackground*/
+  content: "";
+  display: block;
+  position: absolute;
+  bottom: 0;
+  top: 30%;
+  left: 85%;
+  right: 0;
+  width: 20px;
+  height: 20px;
+  background: white;
+  padding: 1%;
+  border-radius: 50px;
+  z-index: 1;
+  transition: 0.35s ease-in;
+  transition-property: top, bottom, left, right, border-width;
+}
+.button:after { /*checkbox*/
   content: "";
   display: block;
   position: absolute;
@@ -1705,77 +1743,71 @@ ahover {
     font-size: 21px;
   }
 }
+.button .iconecheckprice {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  margin-right: 40px;
+}
 .button .prix {
   display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-right: -30px;
+  margin-right: 25px;
   margin-bottom: -30px;
   font-weight: bold;
   font-size: 16px;
-  transition: 0.35s ease-in;
+  position: absolute;
 }
-.button .prix:active::after {
-  transform: translateX(-15px);
+.button .iconecheck {
+  display: block;
+  position: absolute;
+  bottom: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: -1;
+  font-size: 14px;
+  color: #99E2D0;
+  animation: check 3s linear;
 }
 @media screen and (max-width: 424px) {
-  .button .prix {
+  .button {
     font-size: 15px;
     margin-bottom: -20px;
     margin-right: 15px;
   }
 }
 @media screen and (max-width: 374px) {
-  .button .prix {
+  .button {
     font-size: 13px;
     margin-bottom: -10px;
     margin-right: 10px;
   }
 }
 @media screen and (min-width: 768px) and (max-width: 991px) {
-  .button .prix {
+  .button {
     font-size: 18px;
     margin-right: 23px;
     margin-bottom: -40px;
   }
 }
 @media screen and (min-width: 992px) and (max-width: 1439px) {
-  .button .prix {
+  .button {
     font-size: 13px;
     margin-left: 5%;
     margin-bottom: -20px;
   }
 }
+@media screen and (min-width: 1440px) and (max-width: 2559px) {
+  .button {
+    font-size: 20px;
+    margin-right: 0;
+  }
+}
 @media screen and (min-width: 2560px) and (max-width: 3000px) {
-  .button .prix {
+  .button {
     font-size: 25px;
     margin-left: 30%;
   }
-}
-.button .iconecheck {
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  -ms-appearance: none;
-  background: white;
-  color: #99E2D0;
-  border-radius: 50px;
-  padding: 1%;
-  font-size: 14px;
-  position: relative;
-  width: 20px;
-  height: 20px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  top: 0;
-  left: -25px;
-  z-index: -1;
-}
-.button .iconecheck::after {
-  content: "";
-  z-index: 0;
-  position: absolute;
-  animation: check 3s 0s linear;
 }
 @media screen and (max-width: 424px) {
   .button {
@@ -1816,6 +1848,18 @@ ahover {
     padding: 5% 1% 5% 1%;
     justify-content: center;
   }
+}
+
+.fa-check::after {
+  z-index: 1;
+}
+
+.iconebackground::before {
+  left: 100%;
+}
+
+.iconebackground:hover::before {
+  left: 86%;
 }
 
 .checkbox::after {
