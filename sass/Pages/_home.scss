@@ -420,9 +420,10 @@ section.location{
     
       .coeur::before{
           opacity: 0;
-          transition: .5s;
+          transition: 1.5s;
           content: "";
           background: linear-gradient(356deg,#9356dc,#ff79da);
+        
         }
     
       .coeur:hover::before{
@@ -435,10 +436,11 @@ section.location{
           left: 0;
           height: 100%;
           width: 100%;
+          
       }
     
       .coeurplein, .coeurvide{
-          transition-duration: .55s;
+          transition-duration: 1.5s;
           background-color: #f6f6f6;
           display: flex;
           align-items: center;
@@ -455,7 +457,7 @@ section.location{
         background-color:#fff!important;
       }
       
-    
+      
  
 
 
