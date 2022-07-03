@@ -344,101 +344,58 @@ a{
     }
 }
 .button{
-    background-color: white;
+    background-color:$color-white;
     display: flex;
-    justify-content: space-between;
-    flex-direction: row;
-    align-items: center;
-    border-color:transparent;
+    border-color: transparent;
     border-radius: 20px;
     margin: 10px 0px 10px 17px;
-    width: 93%;
-    position: relative;
-    overflow:hidden;
+    overflow: hidden;
     cursor: pointer;
-    &:before{/*iconebackground*/
-        content: "";
-        display:block;
-        position:absolute;
-        bottom:0;
-        top:25%;
-        left: 85%;
-        right:0;
-        width: 20px;
-        height: 20px;
-        background:$color-white;
-        padding: 1%;
-        border-radius: 50px;
-        z-index: 1;
-        transition :  0.35s ease-in;
-        transition-property : top, bottom, left,right, border-width;
-    }
-    &:after{/*checkbox*/
-        content:'';
-        display:block;
-        position:absolute;
-        bottom:0;
-        top:0;
-        left:0;
-        right:0;
-        z-index:0;
-        background-color: #99E2D0;
-        transition :  0.35s ease-in;
-        transition-property : top, bottom, left,right, border-width;
-    }
-    
-            
-    
-    
-    
- 
-
+    max-width: 93%;
+    padding: 0.5%;
+   
 .legende{
-    align-items: baseline;
-    display: flex;
-    flex-direction: column;
-    margin-top: -5px;
-    margin-bottom: 10px;
-    margin-left: 5px;
-    text-align: left;
-    font-size: $font-size-body;
+    font-size: 16px;
     text-overflow: ellipsis;
     overflow: hidden;
     white-space: nowrap;
-    
-    
-   
+    flex: 1;
+
+.titre_plat{
+text-overflow: ellipsis;
+overflow: hidden;
+white-space: nowrap;
 }
-.legende p{
-margin-bottom: 0px;
+
+.garniture_plat{
 margin-top: -12px;
 text-overflow: ellipsis;
 overflow: hidden;
 white-space: nowrap;
-width: 310px;
+
 font-size: 16.5px;
     @include mobile-Medium-screen{
-        width: 265px;
+       
         font-size: 14.3px;
     }
     @include mobile-Small-screen{
-        width: 227px;
+       
         font-size: 12.3px;
     }
     @include tablette{
-        width: 345px;
+       
         font-size: 18.5px;
     }
     @include desktop-S{
-        width: 226px;
+       
         font-size: 12px;
     }
     @include desktop-M{
-        width: 300px;
+      
         font-size: 15.4px;
     }
     @include desktop-L{
-        width: 405px;
+       
         font-size: 21.5px;
     }
 }
@@ -509,33 +466,51 @@ font-size: 16.5px;
     }
     
 }
-.iconecheckprice{
-    display: flex;
-    justify-content: space-between;
-    position: relative;
-    margin-right: 40px;
-}
-.prix {
-    display:flex;
-    margin-right: 25px;
-    margin-bottom: -30px;
-    font-weight: bold;
-    font-size: $font-size-body;
-    position: absolute;
-}
+
    
-.iconecheck{
-    display:block;
-    position:absolute;
-    bottom:0;
-    top:0;
-    left:0;
-    right:0;
-    z-index:-1;
-    font-size: 14px;
-    color: $color-tertiary;
-    animation: check 3s linear;
+} 
+
+.prix {
+    display: flex;
+    margin-right: 25px;
+    margin-bottom: 20px;
+    font-weight: bold; 
+    font-size: 16px;
+    justify-content: flex-end;
+    align-items: flex-end;
+   
 }
+
+.checkbox{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: -10px -95px -10px 0px;
+    width: 85px;
+    background-color: $color-tertiary;
+    transition: 0.5s ease-in;
+    height: 100px;
+    
+   
+    }
+
+
+.iconebackground{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    background-color: $color-white;
+    width: 25px;
+    height: 25px;
+    font-size: 18px;
+}
+.iconecheck{
+    color: $color-tertiary;
+}
+
+
+    
     @include mobile-Medium-screen{
         font-size: 15px;
         margin-bottom: 5px;
@@ -605,25 +580,17 @@ font-size: 16.5px;
     justify-content: center;
     
 }
-}
-.fa-check::after{
-    z-index: 1;
-}
-.iconebackground::before{
-     left: 100%;
-}
-.iconebackground:hover::before{
-    left:85%;
-}
-.checkbox::after{
-    left:100%;
-}
-.checkbox:hover::after{
-    left:80%;
-}
 
 
+}
+.button:hover .checkbox{
+   
+        margin-right: -5px;
     
+}
+.button:hover .iconecheck{
+    animation: check 1s linear;
+}
 
 article.button.buttonpadding{
     @include desktop-S{

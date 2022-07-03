@@ -525,10 +525,10 @@ footer a {
 }
 @keyframes check {
   0% {
-    transform: rotateZ(0deg);
+    transform: rotateZ(360deg);
   }
   100% {
-    transform: rotateZ(360deg);
+    transform: rotateZ(0deg);
   }
 }
 @keyframes slidein-L {
@@ -1515,226 +1515,190 @@ ahover {
 .button {
   background-color: white;
   display: flex;
-  justify-content: space-between;
-  flex-direction: row;
-  align-items: center;
   border-color: transparent;
   border-radius: 20px;
   margin: 10px 0px 10px 17px;
-  width: 93%;
-  position: relative;
   overflow: hidden;
   cursor: pointer;
-}
-.button:before { /*iconebackground*/
-  content: "";
-  display: block;
-  position: absolute;
-  bottom: 0;
-  top: 25%;
-  left: 85%;
-  right: 0;
-  width: 20px;
-  height: 20px;
-  background: white;
-  padding: 1%;
-  border-radius: 50px;
-  z-index: 1;
-  transition: 0.35s ease-in;
-  transition-property: top, bottom, left, right, border-width;
-}
-.button:after { /*checkbox*/
-  content: "";
-  display: block;
-  position: absolute;
-  bottom: 0;
-  top: 0;
-  left: 0;
-  right: 0;
-  z-index: 0;
-  background-color: #99E2D0;
-  transition: 0.35s ease-in;
-  transition-property: top, bottom, left, right, border-width;
+  max-width: 93%;
+  padding: 0.5%;
 }
 .button .legende {
-  align-items: baseline;
-  display: flex;
-  flex-direction: column;
-  margin-top: -5px;
-  margin-bottom: 10px;
-  margin-left: 5px;
-  text-align: left;
   font-size: 16px;
   text-overflow: ellipsis;
   overflow: hidden;
   white-space: nowrap;
+  flex: 1;
 }
-.button .legende p {
-  margin-bottom: 0px;
+.button .legende .titre_plat {
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+.button .legende .garniture_plat {
   margin-top: -12px;
   text-overflow: ellipsis;
   overflow: hidden;
   white-space: nowrap;
-  width: 310px;
   font-size: 16.5px;
 }
 @media screen and (max-width: 424px) {
-  .button .legende p {
-    width: 265px;
+  .button .legende .garniture_plat {
     font-size: 14.3px;
   }
 }
 @media screen and (max-width: 374px) {
-  .button .legende p {
-    width: 227px;
+  .button .legende .garniture_plat {
     font-size: 12.3px;
   }
 }
 @media screen and (min-width: 768px) and (max-width: 991px) {
-  .button .legende p {
-    width: 345px;
+  .button .legende .garniture_plat {
     font-size: 18.5px;
   }
 }
 @media screen and (min-width: 992px) and (max-width: 1439px) {
-  .button .legende p {
-    width: 226px;
+  .button .legende .garniture_plat {
     font-size: 12px;
   }
 }
 @media screen and (min-width: 1440px) and (max-width: 2559px) {
-  .button .legende p {
-    width: 300px;
+  .button .legende .garniture_plat {
     font-size: 15.4px;
   }
 }
 @media screen and (min-width: 2560px) and (max-width: 3000px) {
-  .button .legende p {
-    width: 405px;
+  .button .legende .garniture_plat {
     font-size: 21.5px;
   }
 }
-.button .desserts .legende p {
+.button .legende .desserts .legende p {
   font-size: 16.1px;
 }
 @media screen and (max-width: 424px) {
-  .button .desserts .legende p {
+  .button .legende .desserts .legende p {
     font-size: 14px;
   }
 }
 @media screen and (max-width: 374px) {
-  .button .desserts .legende p {
+  .button .legende .desserts .legende p {
     font-size: 12px;
   }
 }
 @media screen and (min-width: 768px) and (max-width: 991px) {
-  .button .desserts .legende p {
+  .button .legende .desserts .legende p {
     font-size: 18.1px;
   }
 }
 @media screen and (min-width: 992px) and (max-width: 1439px) {
-  .button .desserts .legende p {
+  .button .legende .desserts .legende p {
     font-size: 12.5px;
     width: 258px;
   }
 }
 @media screen and (min-width: 1440px) and (max-width: 2559px) {
-  .button .desserts .legende p {
+  .button .legende .desserts .legende p {
     font-size: 16px;
     width: 328px;
   }
 }
 @media screen and (min-width: 2560px) and (max-width: 3000px) {
-  .button .desserts .legende p {
+  .button .legende .desserts .legende p {
     font-size: 21.2px;
   }
 }
-.button .legende p.myrtilles {
+.button .legende .legende p.myrtilles {
   font-size: 17.8px;
 }
 @media screen and (max-width: 424px) {
-  .button .legende p.myrtilles {
+  .button .legende .legende p.myrtilles {
     font-size: 15.5px;
   }
 }
 @media screen and (max-width: 374px) {
-  .button .legende p.myrtilles {
+  .button .legende .legende p.myrtilles {
     font-size: 13.5px;
   }
 }
 @media screen and (min-width: 768px) and (max-width: 991px) {
-  .button .legende p.myrtilles {
+  .button .legende .legende p.myrtilles {
     font-size: 20px;
   }
 }
 @media screen and (min-width: 992px) and (max-width: 1439px) {
-  .button .legende p.myrtilles {
+  .button .legende .legende p.myrtilles {
     font-size: 13.8px;
   }
 }
 @media screen and (min-width: 1440px) and (max-width: 2559px) {
-  .button .legende p.myrtilles {
+  .button .legende .legende p.myrtilles {
     font-size: 18.8px;
   }
 }
 @media screen and (min-width: 2560px) and (max-width: 3000px) {
-  .button .legende p.myrtilles {
+  .button .legende .legende p.myrtilles {
     font-size: 23.8px;
   }
 }
-.button .noteenchantee p {
+.button .legende .noteenchantee p {
   font-size: 16px;
 }
 @media screen and (max-width: 424px) {
-  .button .noteenchantee p {
+  .button .legende .noteenchantee p {
     font-size: 14px;
   }
 }
 @media screen and (max-width: 374px) {
-  .button .noteenchantee p {
+  .button .legende .noteenchantee p {
     font-size: 12.3px;
   }
 }
 @media screen and (min-width: 768px) and (max-width: 991px) {
-  .button .noteenchantee p {
+  .button .legende .noteenchantee p {
     font-size: 19px;
   }
 }
 @media screen and (min-width: 992px) and (max-width: 1439px) {
-  .button .noteenchantee p {
+  .button .legende .noteenchantee p {
     font-size: 12.5px;
   }
 }
 @media screen and (min-width: 2560px) and (max-width: 3000px) {
-  .button .noteenchantee p {
+  .button .legende .noteenchantee p {
     font-size: 21px;
   }
-}
-.button .iconecheckprice {
-  display: flex;
-  justify-content: space-between;
-  position: relative;
-  margin-right: 40px;
 }
 .button .prix {
   display: flex;
   margin-right: 25px;
-  margin-bottom: -30px;
+  margin-bottom: 20px;
   font-weight: bold;
   font-size: 16px;
-  position: absolute;
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+.button .checkbox {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: -10px -95px -10px 0px;
+  width: 85px;
+  background-color: #99E2D0;
+  transition: 0.5s ease-in;
+  height: 100px;
+}
+.button .iconebackground {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  background-color: white;
+  width: 25px;
+  height: 25px;
+  font-size: 18px;
 }
 .button .iconecheck {
-  display: block;
-  position: absolute;
-  bottom: 0;
-  top: 0;
-  left: 0;
-  right: 0;
-  z-index: -1;
-  font-size: 14px;
   color: #99E2D0;
-  animation: check 3s linear;
 }
 @media screen and (max-width: 424px) {
   .button {
@@ -1817,24 +1781,12 @@ ahover {
   }
 }
 
-.fa-check::after {
-  z-index: 1;
+.button:hover .checkbox {
+  margin-right: -5px;
 }
 
-.iconebackground::before {
-  left: 100%;
-}
-
-.iconebackground:hover::before {
-  left: 85%;
-}
-
-.checkbox::after {
-  left: 100%;
-}
-
-.checkbox:hover::after {
-  left: 80%;
+.button:hover .iconecheck {
+  animation: check 1s linear;
 }
 
 @media screen and (min-width: 992px) and (max-width: 1439px) {
