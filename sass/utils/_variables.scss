@@ -20,13 +20,17 @@ $tablet-screen:"screen and (min-width:741px) and (max-width:991px)";
 $desktop-screen:"screen and (min-width:992px)" "screen and (min-width:1440px";
 //taille-polices
 $font-size-body:16px;
-$font-size-title:20px;
+$font-size-title_h2:21px;
+$font-size-p_h3:17.5px;
+$font-size_h4:20px;
 //taille-blocs
 $width-mobile-S:100%;
 $width-mobile-M:100%;
 $width-mobile-L:100%;
 $width-tablette:100%;
-$width-desktop:100%;
+$width-desktop-S:100%;
+$width-desktop-M:100%;
+$width-desktop-L:100%;
 //shadow
 $shadow:0px 2px 5px 2px #eaeaea;
 $shadow2X:5px 4px 10px 8px #eaeaea;

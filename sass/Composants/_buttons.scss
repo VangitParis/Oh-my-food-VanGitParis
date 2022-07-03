@@ -11,6 +11,9 @@
         @include hover-btn-accueil-menus;
        
     }
+    @include desktop-L{
+        font-size: 22px;
+    }
  
 }
 .btncommander{
@@ -27,15 +30,15 @@
         @include padding-button(18px 60px)
     }
     @include desktop-S{
-        font-size: 17px;
-        padding: 15px 55px;
+        font-size: 15px;
+        padding: 13px 55px;
     }
     @include desktop-M{
-        font-size: 22px;
-        padding: 17px 60px;
+        font-size: 18px;
+        padding: 12px 55px;
     }
     @include desktop-L{
-        font-size: 25px;
+        font-size: 28px;
         padding: 20px 65px;
     }
     
@@ -81,7 +84,7 @@
     }
     @include desktop-L{
         width: 295px;
-        font-size: 14px;
+        font-size: 19px;
     }
     
 }

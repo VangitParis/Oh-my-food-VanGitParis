@@ -68,6 +68,11 @@
   border: none;
   box-shadow: 0px 16px 20px -5px grey;
 }
+@media screen and (min-width: 2560px) and (max-width: 3000px) {
+  .btn {
+    font-size: 22px;
+  }
+}
 
 .btncommander {
   font-size: 16px;
@@ -96,19 +101,19 @@
 }
 @media screen and (min-width: 992px) and (max-width: 1439px) {
   .btncommander {
-    font-size: 17px;
-    padding: 15px 55px;
+    font-size: 15px;
+    padding: 13px 55px;
   }
 }
 @media screen and (min-width: 1440px) and (max-width: 2559px) {
   .btncommander {
-    font-size: 22px;
-    padding: 17px 60px;
+    font-size: 18px;
+    padding: 12px 55px;
   }
 }
 @media screen and (min-width: 2560px) and (max-width: 3000px) {
   .btncommander {
-    font-size: 25px;
+    font-size: 28px;
     padding: 20px 65px;
   }
 }
@@ -167,7 +172,7 @@
 @media screen and (min-width: 2560px) and (max-width: 3000px) {
   .btnfonctionnement {
     width: 295px;
-    font-size: 14px;
+    font-size: 19px;
   }
 }
 
@@ -337,8 +342,8 @@ footer .textfooter {
 }
 @media screen and (min-width: 2560px) and (max-width: 3000px) {
   footer .textfooter {
-    margin-left: 32%;
-    font-size: 30px;
+    margin-left: 31%;
+    font-size: 35px;
   }
 }
 footer ul {
@@ -408,8 +413,8 @@ footer li {
 }
 @media screen and (min-width: 2560px) and (max-width: 3000px) {
   footer li {
-    margin-right: 86px;
-    font-size: 18px;
+    margin-right: 30px;
+    font-size: 27px;
   }
 }
 footer .fa-utensils {
@@ -465,29 +470,18 @@ footer a {
     font-size: 18px;
   }
 }
+@media screen and (min-width: 2560px) and (max-width: 3000px) {
+  .form .formtext {
+    font-size: 22px;
+  }
+}
 .form .iconegeo {
   margin-right: 20px;
   font-size: 16px;
 }
-@media screen and (max-width: 424px) {
-  .form {
-    width: 100%;
-  }
-}
-@media screen and (max-width: 374px) {
-  .form {
-    width: 100%;
-  }
-}
-@media screen and (min-width: 768px) and (max-width: 991px) {
-  .form {
-    width: 100%;
-    margin-bottom: 10px;
-  }
-}
-@media screen and (min-width: 992px) and (max-width: 1439px) {
-  .form {
-    width: 100%;
+@media screen and (min-width: 2560px) and (max-width: 3000px) {
+  .form .iconegeo {
+    font-size: 22px;
   }
 }
 
@@ -536,6 +530,7 @@ footer a {
     left: 100%;
     opacity: 0;
     z-index: -1;
+    transform: scale(0.5) translateX(-100%);
   }
   50% {
     opacity: 0.5;
@@ -554,9 +549,10 @@ footer a {
     right: 0;
     z-index: -1;
     opacity: 0;
+    transform: scale(0.5) translateX(100%);
   }
   50% {
-    opacity: 0.5;
+    opacity: 0.7;
     z-index: 0;
     right: 0;
   }
@@ -565,6 +561,7 @@ footer a {
     right: 100%;
     z-index: 0;
     opacity: 1;
+    transform: transformX(100%);
   }
 }
 body .description nav {
@@ -588,6 +585,16 @@ body .description nav {
   display: inline-block;
   transition: all 3s;
   animation: loader 0.01s 3s both;
+}
+@media screen and (max-width: 374px) {
+  .loading-spinner {
+    font-size: 180%;
+  }
+}
+@media screen and (min-width: 2560px) and (max-width: 3000px) {
+  .loading-spinner {
+    font-size: 330%;
+  }
 }
 
 .loader { /*animation de fondu vers le site après chargement*/
@@ -616,6 +623,26 @@ body .description nav {
   height: 60px;
   width: 67px;
 }
+@media screen and (max-width: 374px) {
+  .cercle-chargement::before {
+    height: 50px;
+    width: 57px;
+    top: -5px;
+    left: 8px;
+    bottom: -6px;
+    right: 7px;
+  }
+}
+@media screen and (min-width: 2560px) and (max-width: 3000px) {
+  .cercle-chargement::before {
+    height: 80px;
+    width: 87px;
+    top: -5px;
+    left: 30px;
+    bottom: -5px;
+    right: 30px;
+  }
+}
 
 /*SECTION LOCATION*/
 section.location {
@@ -630,16 +657,31 @@ section.location {
   background-color: #F6F6F6;
   height: 270px;
 }
-section.location .textacceuil {
+@media screen and (min-width: 2560px) and (max-width: 3000px) {
+  section.location .textaccueil_h2 {
+    font-size: 30px;
+  }
+}
+section.location .textacceuil_p {
   font-size: 16px;
   margin-top: -10px;
   margin-bottom: 25px;
+}
+@media screen and (min-width: 2560px) and (max-width: 3000px) {
+  section.location .textacceuil_p {
+    font-size: 20px;
+  }
 }
 @media screen and (min-width: 768px) and (max-width: 991px) {
   section.location {
     height: 300px;
     margin-bottom: 0;
     font-size: 17px;
+  }
+}
+@media screen and (min-width: 2560px) and (max-width: 3000px) {
+  section.location {
+    height: 310px;
   }
 }
 
@@ -944,11 +986,6 @@ section.location .textacceuil {
     height: 75px;
   }
 }
-.restaurants a figcaption p {
-  font-weight: 100;
-  margin-bottom: 15px;
-  margin-top: -15px;
-}
 .restaurants a figcaption .legende {
   width: 90%;
   font-size: 17px;
@@ -971,16 +1008,10 @@ section.location .textacceuil {
     font-size: 15px;
     margin-top: 5px;
   }
-  .restaurants a figcaption .legende p {
-    font-size: 18px;
-  }
 }
 @media screen and (min-width: 992px) and (max-width: 1439px) {
   .restaurants a figcaption .legende {
     font-size: 16px;
-  }
-  .restaurants a figcaption .legende p {
-    font-size: 19.5px;
   }
 }
 @media screen and (min-width: 2560px) and (max-width: 3000px) {
@@ -988,8 +1019,36 @@ section.location .textacceuil {
     margin: 5px 0 15px 5px;
     font-size: 20px;
   }
-  .restaurants a figcaption .legende p {
-    font-size: 23px;
+}
+.restaurants a figcaption p {
+  font-weight: 100;
+  margin-bottom: 15px;
+  margin-top: -15px;
+  font-size: 20px;
+}
+@media screen and (max-width: 424px) {
+  .restaurants a figcaption p {
+    font-size: 18px;
+  }
+}
+@media screen and (max-width: 374px) {
+  .restaurants a figcaption p {
+    font-size: 16px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  .restaurants a figcaption p {
+    font-size: 18px;
+  }
+}
+@media screen and (min-width: 992px) and (max-width: 1439px) {
+  .restaurants a figcaption p {
+    font-size: 19px;
+  }
+}
+@media screen and (min-width: 2560px) and (max-width: 3000px) {
+  .restaurants a figcaption p {
+    font-size: 24px;
   }
 }
 
@@ -1053,7 +1112,6 @@ section.location .textacceuil {
 }
 @media screen and (min-width: 2560px) and (max-width: 3000px) {
   .coeur {
-    margin-top: -17%;
     height: 32px;
     width: 32px;
   }
@@ -1191,7 +1249,7 @@ ahover {
 
 .Titrepages {
   font-family: "Shrikhand", sans-serif;
-  font-size: 20px;
+  font-size: 21px;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -1236,20 +1294,20 @@ ahover {
   .Titrepages {
     font-size: 22px;
     padding-right: 20%;
-    padding-left: 25%;
+    padding-left: 19%;
   }
   .Titrepages .fa-heart {
     height: 2rem;
     margin-top: -0.6rem;
-    margin-right: 2rem;
+    margin-right: 0rem;
   }
 }
 @media screen and (min-width: 992px) and (max-width: 1439px) {
   .Titrepages {
-    font-size: 16px;
+    font-size: 17px;
     margin-top: -47px;
     padding-right: 0.7%;
-    padding-left: 2.3%;
+    padding-left: 1.3%;
   }
   .Titrepages .fa-heart {
     height: 1.5rem;
@@ -1270,14 +1328,14 @@ ahover {
 }
 @media screen and (min-width: 2560px) and (max-width: 3000px) {
   .Titrepages {
-    font-size: 37px;
+    font-size: 40px;
     margin-top: -98px;
     padding-right: 2.7%;
-    padding-left: 1%;
+    padding-left: 2.5%;
   }
   .Titrepages .fa-heart {
-    height: 2.5rem;
-    margin-right: 1rem;
+    height: 3.5rem;
+    margin-right: -2rem;
   }
 }
 
@@ -1359,7 +1417,6 @@ ahover {
 .menus {
   background-color: #F6F6F6;
   margin-top: 25px;
-  font-size: 12px;
   display: flex;
   flex-direction: column;
 }
@@ -1378,6 +1435,7 @@ ahover {
     margin-top: 40px;
     justify-content: center;
     align-items: center;
+    display: grid;
   }
 }
 @media screen and (min-width: 992px) and (max-width: 1439px) {
@@ -1401,26 +1459,62 @@ ahover {
   }
 }
 
+.titremenus { /*h3*/
+  margin-left: 15px;
+  font-weight: lighter;
+  border-bottom: 3px solid #99E2D0;
+  width: 9%;
+  padding-bottom: 5px;
+  font-size: 17.5px;
+}
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  .titremenus {
+    width: 12.5%;
+    margin-left: -10px;
+  }
+}
+@media screen and (min-width: 992px) and (max-width: 1439px) {
+  .titremenus {
+    width: 12.5%;
+  }
+}
+@media screen and (min-width: 1440px) and (max-width: 2559px) {
+  .titremenus {
+    font-size: 17px;
+    width: 12%;
+    margin-left: 23px;
+  }
+}
+@media screen and (min-width: 2560px) and (max-width: 3000px) {
+  .titremenus {
+    font-size: 30px;
+    width: 14%;
+  }
+}
+
 .entrees {
   display: flex;
   flex-direction: column;
-  animation: slidein-L 3s linear;
+  animation: slidein-L 2s linear;
 }
 @media screen and (min-width: 992px) and (max-width: 1439px) {
   .entrees {
     margin-right: 3%;
     margin-left: 0%;
+    animation: slidein-L 1.5s linear;
   }
 }
 @media screen and (min-width: 1440px) and (max-width: 2559px) {
   .entrees {
     margin-right: -6%;
+    animation: slidein-L 1.5s linear;
   }
 }
 @media screen and (min-width: 2560px) and (max-width: 3000px) {
   .entrees {
-    margin-right: 10%;
+    margin-right: 6%;
     margin-left: 2%;
+    animation: slidein-L 1.5s linear;
   }
 }
 .entrees::after {
@@ -1431,84 +1525,53 @@ ahover {
 .plats {
   display: flex;
   flex-direction: column;
-  animation: slidein-R 9s linear;
+  animation: slidein-R 4s linear;
 }
 @media screen and (min-width: 992px) and (max-width: 1439px) {
   .plats {
     margin-right: 3%;
     margin-left: 0%;
+    animation: slidein-R 3s linear;
   }
 }
 @media screen and (min-width: 1440px) and (max-width: 2559px) {
   .plats {
     margin-right: 0%;
     margin-left: 7.5%;
+    animation: slidein-R 3s linear;
   }
 }
 @media screen and (min-width: 2560px) and (max-width: 3000px) {
   .plats {
-    margin-right: 12%;
+    margin-right: 9%;
     margin-left: 4.5%;
+    animation: slidein-R 3s linear;
   }
 }
 
 .desserts {
   display: flex;
   flex-direction: column;
-  animation: slidein-L 18s linear;
+  animation: slidein-L 6s linear;
 }
 @media screen and (min-width: 992px) and (max-width: 1439px) {
   .desserts {
     margin-left: 0%;
     margin-right: 5%;
+    animation: slidein-R 4.5s linear;
   }
 }
 @media screen and (min-width: 1440px) and (max-width: 2559px) {
   .desserts {
     margin-left: 1.4%;
     margin-right: 7%;
+    animation: slidein-R 4.5s linear;
   }
 }
 @media screen and (min-width: 2560px) and (max-width: 3000px) {
   .desserts {
     margin-left: 2.2%;
-  }
-}
-
-.titremenus {
-  margin-left: 25px;
-  font-weight: lighter;
-  border-bottom: 3px solid #99E2D0;
-  width: 9%;
-  padding-bottom: 5px;
-  font-size: 15px;
-}
-@media screen and (max-width: 424px) {
-  .titremenus {
-    margin-left: 20px;
-  }
-}
-@media screen and (max-width: 374px) {
-  .titremenus {
-    margin-left: 20px;
-  }
-}
-@media screen and (min-width: 768px) and (max-width: 991px) {
-  .titremenus {
-    font-size: 20px;
-    width: 6.5%;
-  }
-}
-@media screen and (min-width: 992px) and (max-width: 1439px) {
-  .titremenus {
-    font-size: 13px;
-    width: 7%;
-  }
-}
-@media screen and (min-width: 2560px) and (max-width: 3000px) {
-  .titremenus {
-    font-size: 25px;
-    width: 13%;
+    animation: slidein-R 4.5s linear;
   }
 }
 
@@ -1517,11 +1580,12 @@ ahover {
   display: flex;
   border-color: transparent;
   border-radius: 20px;
-  margin: 10px 0px 10px 17px;
+  margin: 10px 0px 10px 10px;
   overflow: hidden;
   cursor: pointer;
   max-width: 93%;
   padding: 0.5%;
+  /*MEDIA QUERIES ARTICLE CLASS="BUTTON"*/
 }
 .button .legende {
   font-size: 16px;
@@ -1529,42 +1593,34 @@ ahover {
   overflow: hidden;
   white-space: nowrap;
   flex: 1;
+  padding-left: 5px;
 }
-.button .legende .titre_plat {
+.button .legende .titre_plat { /*h4*/
   text-overflow: ellipsis;
   overflow: hidden;
   white-space: nowrap;
+  font-size: 20px;
 }
-.button .legende .garniture_plat {
+@media screen and (min-width: 992px) and (max-width: 1439px) {
+  .button .legende .titre_plat {
+    font-size: 16px;
+  }
+}
+@media screen and (min-width: 2560px) and (max-width: 3000px) {
+  .button .legende .titre_plat {
+    font-size: 25px;
+  }
+}
+.button .legende .garniture_plat { /*p*/
   margin-top: -12px;
   text-overflow: ellipsis;
   overflow: hidden;
   white-space: nowrap;
-  font-size: 16.5px;
-}
-@media screen and (max-width: 424px) {
-  .button .legende .garniture_plat {
-    font-size: 14.3px;
-  }
-}
-@media screen and (max-width: 374px) {
-  .button .legende .garniture_plat {
-    font-size: 12.3px;
-  }
-}
-@media screen and (min-width: 768px) and (max-width: 991px) {
-  .button .legende .garniture_plat {
-    font-size: 18.5px;
-  }
+  font-size: 17.5px;
 }
 @media screen and (min-width: 992px) and (max-width: 1439px) {
   .button .legende .garniture_plat {
-    font-size: 12px;
-  }
-}
-@media screen and (min-width: 1440px) and (max-width: 2559px) {
-  .button .legende .garniture_plat {
-    font-size: 15.4px;
+    font-size: 13.5px;
   }
 }
 @media screen and (min-width: 2560px) and (max-width: 3000px) {
@@ -1572,110 +1628,29 @@ ahover {
     font-size: 21.5px;
   }
 }
-.button .legende .desserts .legende p {
-  font-size: 16.1px;
-}
-@media screen and (max-width: 424px) {
-  .button .legende .desserts .legende p {
-    font-size: 14px;
-  }
-}
-@media screen and (max-width: 374px) {
-  .button .legende .desserts .legende p {
-    font-size: 12px;
-  }
-}
-@media screen and (min-width: 768px) and (max-width: 991px) {
-  .button .legende .desserts .legende p {
-    font-size: 18.1px;
-  }
-}
-@media screen and (min-width: 992px) and (max-width: 1439px) {
-  .button .legende .desserts .legende p {
-    font-size: 12.5px;
-    width: 258px;
-  }
-}
-@media screen and (min-width: 1440px) and (max-width: 2559px) {
-  .button .legende .desserts .legende p {
-    font-size: 16px;
-    width: 328px;
-  }
-}
-@media screen and (min-width: 2560px) and (max-width: 3000px) {
-  .button .legende .desserts .legende p {
-    font-size: 21.2px;
-  }
-}
-.button .legende .legende p.myrtilles {
-  font-size: 17.8px;
-}
-@media screen and (max-width: 424px) {
-  .button .legende .legende p.myrtilles {
-    font-size: 15.5px;
-  }
-}
-@media screen and (max-width: 374px) {
-  .button .legende .legende p.myrtilles {
-    font-size: 13.5px;
-  }
-}
-@media screen and (min-width: 768px) and (max-width: 991px) {
-  .button .legende .legende p.myrtilles {
-    font-size: 20px;
-  }
-}
-@media screen and (min-width: 992px) and (max-width: 1439px) {
-  .button .legende .legende p.myrtilles {
-    font-size: 13.8px;
-  }
-}
-@media screen and (min-width: 1440px) and (max-width: 2559px) {
-  .button .legende .legende p.myrtilles {
-    font-size: 18.8px;
-  }
-}
-@media screen and (min-width: 2560px) and (max-width: 3000px) {
-  .button .legende .legende p.myrtilles {
-    font-size: 23.8px;
-  }
-}
-.button .legende .noteenchantee p {
-  font-size: 16px;
-}
-@media screen and (max-width: 424px) {
-  .button .legende .noteenchantee p {
-    font-size: 14px;
-  }
-}
-@media screen and (max-width: 374px) {
-  .button .legende .noteenchantee p {
-    font-size: 12.3px;
-  }
-}
-@media screen and (min-width: 768px) and (max-width: 991px) {
-  .button .legende .noteenchantee p {
-    font-size: 19px;
-  }
-}
-@media screen and (min-width: 992px) and (max-width: 1439px) {
-  .button .legende .noteenchantee p {
-    font-size: 12.5px;
-  }
-}
-@media screen and (min-width: 2560px) and (max-width: 3000px) {
-  .button .legende .noteenchantee p {
-    font-size: 21px;
-  }
+.button .legende .garniture_plat.myrtilles {
+  font-size: 19px;
 }
 .button .prix {
   display: flex;
   margin-right: 25px;
-  margin-bottom: 20px;
+  margin-bottom: 14px;
   font-weight: bold;
-  font-size: 16px;
+  font-size: 17.5px;
   justify-content: flex-end;
   align-items: flex-end;
+}
+@media screen and (min-width: 992px) and (max-width: 1439px) {
+  .button .prix {
+    margin-bottom: 16px;
+    font-size: 14.5px;
+  }
+}
+@media screen and (min-width: 2560px) and (max-width: 3000px) {
+  .button .prix {
+    margin-bottom: 24px;
+    font-size: 24.5px;
+  }
 }
 .button .checkbox {
   display: flex;
@@ -1685,7 +1660,27 @@ ahover {
   width: 85px;
   background-color: #99E2D0;
   transition: 0.5s ease-in;
-  height: 100px;
+}
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  .button .checkbox {
+    margin-right: -21%;
+  }
+}
+@media screen and (min-width: 992px) and (max-width: 1439px) {
+  .button .checkbox {
+    margin-right: -32%;
+  }
+}
+@media screen and (min-width: 1440px) and (max-width: 2559px) {
+  .button .checkbox {
+    margin-right: -25%;
+  }
+}
+@media screen and (min-width: 2560px) and (max-width: 3000px) {
+  .button .checkbox {
+    margin-right: -15%;
+    width: 100px;
+  }
 }
 .button .iconebackground {
   display: flex;
@@ -1700,84 +1695,32 @@ ahover {
 .button .iconecheck {
   color: #99E2D0;
 }
-@media screen and (max-width: 424px) {
-  .button {
-    font-size: 15px;
-    margin-bottom: 5px;
-    margin-right: 15px;
-  }
-}
-@media screen and (max-width: 374px) {
-  .button {
-    font-size: 13px;
-    margin-bottom: 3px;
-    margin-right: 10px;
-  }
-}
 @media screen and (min-width: 768px) and (max-width: 991px) {
   .button {
-    font-size: 18px;
-    margin-right: 23px;
-    margin-bottom: -40px;
+    margin: 10px -15px 10px -15px;
+    width: 114%;
+    max-width: none;
   }
 }
 @media screen and (min-width: 992px) and (max-width: 1439px) {
   .button {
-    font-size: 13px;
-    margin-left: 5%;
-    margin-bottom: -20px;
+    margin: 10px -87px 10px 12px;
+    width: 95%;
+    max-width: none;
   }
 }
 @media screen and (min-width: 1440px) and (max-width: 2559px) {
   .button {
-    font-size: 20px;
-    margin-right: 0;
+    margin: 10px -100px 10px 19px;
+    width: 108%;
+    max-width: none;
   }
 }
 @media screen and (min-width: 2560px) and (max-width: 3000px) {
   .button {
-    font-size: 25px;
-    margin-left: 30%;
-  }
-}
-@media screen and (max-width: 424px) {
-  .button {
-    width: 92%;
-  }
-}
-@media screen and (max-width: 374px) {
-  .button {
-    width: 91%;
-  }
-}
-@media screen and (min-width: 768px) and (max-width: 991px) {
-  .button {
-    margin: 10px 0px 10px 14px;
-    width: 100%;
-  }
-}
-@media screen and (min-width: 992px) and (max-width: 1439px) {
-  .button {
-    margin: 10px 0 30px 17px;
-    width: 105%;
-    padding: 3% 1% 3% 0;
-    justify-content: center;
-  }
-}
-@media screen and (min-width: 1440px) and (max-width: 2559px) {
-  .button {
-    margin: 10px 0 30px 17px;
-    width: 120%;
-    padding: 5% 1% 5% 0;
-    justify-content: center;
-  }
-}
-@media screen and (min-width: 2560px) and (max-width: 3000px) {
-  .button {
-    margin: 10px 0 30px 17px;
-    width: 150%;
-    padding: 5% 1% 5% 1%;
-    justify-content: center;
+    margin: 10px 0px 10px 7px;
+    width: 137%;
+    max-width: none;
   }
 }
 

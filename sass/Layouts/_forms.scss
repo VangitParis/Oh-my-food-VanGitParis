@@ -18,24 +18,17 @@
             @include desktop-S{
                 font-size: 18px;
             }
+            @include desktop-L{
+                font-size: 22px;
+            }
             
     }
         .iconegeo{
     margin-right: 20px;
     font-size: 16px;
-    }
-    @include mobile-Medium-screen{
-        width: $width-mobile-M;
-    }
-    @include mobile-Small-screen{
-        width:$width-mobile-S;
-    }
-    @include tablette{
-        width: $width-tablette;
-        margin-bottom: 10px;
-        }
     
-    @include desktop-S{
-        width: $width-desktop;
+    @include desktop-L{
+        font-size: 22px;
     }
+}
 }

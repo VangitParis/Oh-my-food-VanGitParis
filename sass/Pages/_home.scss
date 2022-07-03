@@ -23,6 +23,12 @@ body .description nav{
     display: inline-block;
     transition: all 3s;
     animation: loader .01s 3s both; 
+    @include mobile-Small-screen{
+        font-size: 180%;
+    }
+    @include desktop-L{
+        font-size: 330%;
+    }
 }
 .loader{/*animation de fondu vers le site après chargement*/
     
@@ -53,6 +59,22 @@ body .description nav{
         height: 60px;
         width: 67px;
 
+        @include mobile-Small-screen{
+            height: 50px;
+            width: 57px;
+            top: -5px;
+            left: 8px;
+            bottom: -6px;
+            right: 7px;
+        }
+        @include desktop-L{
+            height: 80px;
+            width: 87px;
+            top: -5px;
+            left: 30px;
+            bottom: -5px;
+            right: 30px;
+        }
     }
 }
 /*SECTION LOCATION*/
@@ -67,15 +89,26 @@ section.location{
     text-align: center;
     background-color: $color-background;
     height: 270px;
-    .textacceuil{
+    .textaccueil_h2{
+        @include desktop-L{
+            font-size: 30px;
+        }
+    }
+    .textacceuil_p{
         font-size: 16px;
         margin-top: -10px;
         margin-bottom: 25px;
+        @include desktop-L{
+            font-size: 20px;
+        }
     } 
     @include tablette{
         height: 300px;
         margin-bottom: 0;
         font-size: 17px;
+    }
+    @include desktop-L{
+        height: 310px;
     }
     
 }
@@ -301,6 +334,7 @@ section.location{
     justify-content: space-between;
     align-items: center;
     color: black;
+    
     @include mobile-Medium-screen{
         height:60px;
     }
@@ -319,12 +353,7 @@ section.location{
     @include desktop-L{
         height: 75px;
     }
-    p{
-        font-weight: 100;
-        margin-bottom: 15px;
-        margin-top: -15px;
-
-}
+    
     
     .legende{
         width: 90%;
@@ -341,25 +370,39 @@ section.location{
         @include tablette{
             font-size: 15px;
             margin-top: 5px;
-            p{
-                font-size: 18px;
-            }
         }
         @include desktop-S{
             font-size: 16px;
-            p{
-                font-size: 19.5px;
-            }
+            
         }
         @include desktop-L{
             margin: 5px 0 15px 5px;
             font-size: 20px;
-            p{
-                font-size: 23px;
-            }
         }
     }
-
+    p{
+        font-weight: 100;
+        margin-bottom: 15px;
+        margin-top: -15px;
+        font-size: 20px;
+        @include mobile-Medium-screen{
+            font-size: 18px;
+        }
+        @include mobile-Small-screen{
+            font-size: 16px;
+        }
+        @include tablette{
+            font-size: 18px;
+        }
+        @include desktop-S{
+            font-size: 19px;
+            
+        }
+        @include desktop-L{
+            font-size: 24px;
+            
+        }
+    }
 
 }
 /*TRANSITION COEUR*/
@@ -414,7 +457,6 @@ section.location{
             margin-top: -20%;
         }
         @include desktop-L{
-            margin-top: -17%; 
             height: 32px;
             width: 32px;
         }
