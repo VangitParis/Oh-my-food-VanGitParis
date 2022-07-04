@@ -13,7 +13,7 @@ body .description nav{
 .loading-spinner{
     background: $color-backgroundform;
     height: 100%;
-    line-height: 550px;
+    line-height: 650px;
     font-family: $title-font;
     font-size: 230%;
     text-align: center;
@@ -25,13 +25,14 @@ body .description nav{
     animation: loader .01s 3s both; 
     @include mobile-Small-screen{
         font-size: 180%;
+        line-height: 600px;
     }
     @include desktop-L{
         font-size: 330%;
+        line-height: 950px;
     }
 }
 .loader{/*animation de fondu vers le site après chargement*/
-    
     display: inline;
     vertical-align: middle;
     color:black;
@@ -77,6 +78,7 @@ body .description nav{
         }
     }
 }
+
 /*SECTION LOCATION*/
 section.location{
     width: 100%;
@@ -433,9 +435,10 @@ section.location{
           cursor: pointer;
           position: relative;
           background-color: #000;
+          margin-bottom: 8%;
 
         @include mobile-Medium-screen{
-            margin-bottom: 6%;
+            margin-bottom: 4%;
         }
         @include mobile-Small-screen{
             height:22px;
@@ -493,8 +496,19 @@ section.location{
           font-size:27px
       }
     
-      .coeurvide:hover{
+      .coeurvide:active{
          opacity:0;
+      }
+      .coeurvide:hover{
+        @include desktop-L{
+            opacity:0;
+        }
+        @include desktop-M{
+            opacity:0;
+        }
+        @include desktop-S{
+            opacity:0;
+        }
       }
     
     .fond_coeur{

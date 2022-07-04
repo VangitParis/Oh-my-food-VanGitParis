@@ -433,6 +433,7 @@ font-size: $font-size-p_h3;
     width: 85px;
     background-color: $color-tertiary;
     transition: 0.5s ease-in;
+    
     @include tablette{
         margin-right: -21%;
     }
@@ -447,8 +448,8 @@ font-size: $font-size-p_h3;
         width: 100px;
     }
    
-    }
-
+    
+}
 
 .iconebackground{
     display: flex;
@@ -500,13 +501,26 @@ font-size: $font-size-p_h3;
 
 
 }
-.button:hover .checkbox{
-   margin-right: -5px;
+.button:hover .checkbox {
+    @include desktop-L{
+        margin-right: -1%;
+    }
+    @include desktop-M{
+        margin-right: -1%;
+    }
+    @include desktop-S{
+        margin-right: -1%;
+}
+    
    
+}
+.button:active .checkbox{
+    margin-right: -5px;
 }
 .button:hover .iconecheck{
     animation: check 1s linear;
 }
+
 
 article.button.buttonpadding{
     @include desktop-S{

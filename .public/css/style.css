@@ -575,7 +575,7 @@ body .description nav {
 .loading-spinner {
   background: linear-gradient(180deg, #cbcbcb -1%, #eaeaea 7%);
   height: 100%;
-  line-height: 550px;
+  line-height: 650px;
   font-family: "Shrikhand", sans-serif;
   font-size: 230%;
   text-align: center;
@@ -589,11 +589,13 @@ body .description nav {
 @media screen and (max-width: 374px) {
   .loading-spinner {
     font-size: 180%;
+    line-height: 600px;
   }
 }
 @media screen and (min-width: 2560px) and (max-width: 3000px) {
   .loading-spinner {
     font-size: 330%;
+    line-height: 950px;
   }
 }
 
@@ -1078,10 +1080,11 @@ section.location .textacceuil_p {
   cursor: pointer;
   position: relative;
   background-color: #000;
+  margin-bottom: 8%;
 }
 @media screen and (max-width: 424px) {
   .coeur {
-    margin-bottom: 6%;
+    margin-bottom: 4%;
   }
 }
 @media screen and (max-width: 374px) {
@@ -1146,8 +1149,24 @@ section.location .textacceuil_p {
   font-size: 27px;
 }
 
-.coeurvide:hover {
+.coeurvide:active {
   opacity: 0;
+}
+
+@media screen and (min-width: 2560px) and (max-width: 3000px) {
+  .coeurvide:hover {
+    opacity: 0;
+  }
+}
+@media screen and (min-width: 1440px) and (max-width: 2559px) {
+  .coeurvide:hover {
+    opacity: 0;
+  }
+}
+@media screen and (min-width: 992px) and (max-width: 1439px) {
+  .coeurvide:hover {
+    opacity: 0;
+  }
 }
 
 .fond_coeur {
@@ -1724,7 +1743,23 @@ ahover {
   }
 }
 
-.button:hover .checkbox {
+@media screen and (min-width: 2560px) and (max-width: 3000px) {
+  .button:hover .checkbox {
+    margin-right: -1%;
+  }
+}
+@media screen and (min-width: 1440px) and (max-width: 2559px) {
+  .button:hover .checkbox {
+    margin-right: -1%;
+  }
+}
+@media screen and (min-width: 992px) and (max-width: 1439px) {
+  .button:hover .checkbox {
+    margin-right: -1%;
+  }
+}
+
+.button:active .checkbox {
   margin-right: -5px;
 }
 
