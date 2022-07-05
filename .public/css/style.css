@@ -581,7 +581,7 @@ body .description nav {
   text-align: center;
   position: fixed;
   width: 100%;
-  z-index: 10;
+  z-index: 10000;
   display: inline-block;
   transition: all 3s;
   animation: loader 0.01s 3s both;
@@ -616,8 +616,8 @@ body .description nav {
   position: absolute;
   top: -5px;
   left: 15px;
-  bottom: -5px;
-  right: -10px;
+  bottom: -10px;
+  right: 5px;
   border-top: 5px solid transparent;
   border-radius: 40px;
   border-top-color: #FF79DA;
@@ -1062,7 +1062,7 @@ section.location .textacceuil_p {
 /*TRANSITION COEUR*/
 .btncoeur {
   border: none;
-  background: transparent;
+  background: none;
   height: 24px;
   width: 24px;
   padding: 0;
