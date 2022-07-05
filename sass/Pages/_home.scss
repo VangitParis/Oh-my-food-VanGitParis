@@ -22,7 +22,11 @@ body .description nav{
     z-index: 10000;
     display: inline-block;
     transition: all 3s;
-    animation: loader .01s 3s both; 
+    animation: loader .01s 3s both;
+    @include mobile-Medium-screen{
+        font-size: 230%;
+        line-height: 600px;
+    }
     @include mobile-Small-screen{
         font-size: 180%;
         line-height: 600px;
@@ -50,7 +54,7 @@ body .description nav{
         top: -5px;
         left:15px;
         bottom: -10px;
-        right: 5px;
+        right: 15px;
         border-top: 5px solid transparent;
         border-radius: 40px;
         border-top-color: $color-secondary;
