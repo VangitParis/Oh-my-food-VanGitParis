@@ -1815,7 +1815,7 @@ ahover {
   animation: check 1s linear;
 }
 
-.button:hover:active .checkbox {
+.button:active .checkbox {
   margin-right: -5px;
 }
 
