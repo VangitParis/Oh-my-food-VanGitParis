@@ -147,27 +147,29 @@ section.location{
             display: flex;
             align-items: center;
             justify-content: center;
-            margin-right: 375px;
+            margin-left: -4%;
             position: absolute;
             @include mobile-Medium-screen{
                 margin-right: 325px;
                 
             }
             @include mobile-Small-screen{
-                margin-right: 275px;
+               
                 padding: 10px;
                 font-size:13px;
             }
-            
+            @include tablette{
+                margin-left: -2%;
+            }
             @include desktop-S{
-                margin-right: 235px;
+                margin-left: -2%;
             }
             @include desktop-M{
-                margin-right: 235px;
+                margin-left: -1.1%;
                 width: 1%;
             }
             @include desktop-L{
-                margin-right: 300px;
+                margin-left: -0.8%;
                 width: 1%;
             }
             

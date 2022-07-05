@@ -818,7 +818,7 @@ section.location .textacceuil_p {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-right: 375px;
+  margin-left: -4%;
   position: absolute;
 }
 @media screen and (max-width: 424px) {
@@ -828,25 +828,29 @@ section.location .textacceuil_p {
 }
 @media screen and (max-width: 374px) {
   .description span {
-    margin-right: 275px;
     padding: 10px;
     font-size: 13px;
   }
 }
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  .description span {
+    margin-left: -2%;
+  }
+}
 @media screen and (min-width: 992px) and (max-width: 1439px) {
   .description span {
-    margin-right: 235px;
+    margin-left: -2%;
   }
 }
 @media screen and (min-width: 1440px) and (max-width: 2559px) {
   .description span {
-    margin-right: 235px;
+    margin-left: -1.1%;
     width: 1%;
   }
 }
 @media screen and (min-width: 2560px) and (max-width: 3000px) {
   .description span {
-    margin-right: 300px;
+    margin-left: -0.8%;
     width: 1%;
   }
 }
@@ -1283,7 +1287,7 @@ main li {
   text-decoration: none;
   display: flex;
   margin-bottom: 8%;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
 }
 @media screen and (min-width: 992px) and (max-width: 1439px) {
@@ -1663,6 +1667,7 @@ ahover {
     margin-left: 7.5%;
     -webkit-animation: slidein-R 3s linear;
             animation: slidein-R 3s linear;
+    margin-top: -11px;
   }
 }
 @media screen and (min-width: 2560px) and (max-width: 3000px) {
@@ -1740,6 +1745,11 @@ ahover {
   .button .legende .titre_plat {
     font-size: 25px;
   }
+}
+.button .legende .titre_plat_SJ_HP {
+  margin-top: 12px;
+  padding-top: 17px;
+  padding-bottom: 11px;
 }
 .button .legende .garniture_plat {
   /*p*/

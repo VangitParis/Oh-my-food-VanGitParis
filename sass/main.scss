@@ -19,7 +19,7 @@ main li{
     text-decoration: none;
     display: flex;
     margin-bottom: 8%;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     @include desktop-S{
         margin-right: 30px;
@@ -326,6 +326,7 @@ a{
         margin-right: 0%;
         margin-left: 7.5%;
         animation: slidein-R  3s linear ;
+        margin-top: -11px;
     }
     @include desktop-L{
         margin-right: 9%;
@@ -384,7 +385,11 @@ font-size: $font-size_h4;
     font-size: 25px;
 }
 }
-
+.titre_plat_SJ_HP{
+    margin-top: 12px;
+    padding-top: 17px;
+    padding-bottom: 11px;
+}
 .garniture_plat{/*p*/
 margin-top: -12px;
 text-overflow: ellipsis;
