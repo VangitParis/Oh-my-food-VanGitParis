@@ -624,6 +624,7 @@ body .description nav {
   animation: spin 3s linear;
   height: 60px;
   width: 67px;
+  display: inline;
 }
 @media screen and (max-width: 374px) {
   .cercle-chargement::before {
@@ -1286,7 +1287,7 @@ ahover {
   width: 100%;
   margin-left: 0;
   padding-right: 45px;
-  padding-left: 20px;
+  padding-left: 13px;
 }
 .Titrepages .fa-heart {
   height: 1.5rem;
@@ -1368,6 +1369,7 @@ ahover {
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
+  width: 100%;
 }
 
 .choixrestaurants {

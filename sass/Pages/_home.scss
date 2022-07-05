@@ -41,8 +41,6 @@ body .description nav{
     
 }
     
-   
-
 .cercle-chargement{
     border-radius: 50px;
     border: 5px solid $color-primary;
@@ -59,7 +57,7 @@ body .description nav{
         animation: spin 3s linear ;
         height: 60px;
         width: 67px;
-
+        display: inline;
         @include mobile-Small-screen{
             height: 50px;
             width: 57px;
