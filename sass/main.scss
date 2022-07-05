@@ -525,13 +525,13 @@ font-size: $font-size-p_h3;
     
    
 }
-.button:active .checkbox{
-    margin-right: -5px;
-}
+
 .button:hover .iconecheck{
     animation: check 1s linear;
 }
-
+.button:active .checkbox{
+    margin-right: -5px;
+}
 
 article.button.buttonpadding{
     @include desktop-S{

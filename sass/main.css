@@ -1888,13 +1888,13 @@ ahover {
   }
 }
 
-.button:active .checkbox {
-  margin-right: -5px;
-}
-
 .button:hover .iconecheck {
   -webkit-animation: check 1s linear;
           animation: check 1s linear;
+}
+
+.button:active .checkbox {
+  margin-right: -5px;
 }
 
 @media screen and (min-width: 992px) and (max-width: 1439px) {
