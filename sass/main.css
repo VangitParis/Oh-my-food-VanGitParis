@@ -1570,6 +1570,7 @@ ahover {
     flex-direction: row;
     margin-top: 30px;
     justify-content: space-between;
+    align-items: center;
   }
 }
 @media screen and (min-width: 1440px) and (max-width: 2559px) {
@@ -1577,12 +1578,31 @@ ahover {
     flex-direction: row;
     margin-top: 40px;
     justify-content: space-between;
+    align-items: center;
   }
 }
 @media screen and (min-width: 2560px) and (max-width: 3000px) {
   .menus {
     flex-direction: row;
     margin-top: 60px;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+@media screen and (min-width: 992px) and (max-width: 1439px) {
+  .menus_alignitem {
+    align-items: baseline;
+  }
+}
+@media screen and (min-width: 1440px) and (max-width: 2559px) {
+  .menus_alignitem {
+    align-items: baseline;
+  }
+}
+@media screen and (min-width: 2560px) and (max-width: 3000px) {
+  .menus_alignitem {
+    align-items: baseline;
   }
 }
 
@@ -1618,6 +1638,10 @@ ahover {
     font-size: 30px;
     width: 14%;
   }
+}
+
+.plat_alafracaise {
+  padding-bottom: 0px;
 }
 
 .entrees {
@@ -1753,10 +1777,14 @@ ahover {
     font-size: 25px;
   }
 }
-.button .legende .titre_plat_SJ_HP {
-  margin-top: 12px;
-  padding-top: 17px;
-  padding-bottom: 11px;
+.button .legende .titre_plat_SJ {
+  margin-top: -7px;
+  padding-top: 29px;
+}
+.button .legende .titre_plat_PHP {
+  margin-top: -24px;
+  padding-top: 34px;
+  margin-bottom: 21px;
 }
 .button .legende .garniture_plat {
   /*p*/
@@ -1776,8 +1804,14 @@ ahover {
     font-size: 21.5px;
   }
 }
+.button .legende .garniture_plat.stjacques {
+  margin-top: -7px;
+}
 .button .legende .garniture_plat.myrtilles {
-  font-size: 19px;
+  font-size: 15.5px;
+}
+.button .legende .garniture_plat.pouletHP {
+  margin-top: -13px;
 }
 .button .prix {
   display: flex;
@@ -1816,7 +1850,7 @@ ahover {
 }
 @media screen and (min-width: 992px) and (max-width: 1439px) {
   .button .checkbox {
-    margin-right: -32%;
+    margin-right: -35%;
   }
 }
 @media screen and (min-width: 1440px) and (max-width: 2559px) {
@@ -1899,7 +1933,8 @@ ahover {
 
 @media screen and (min-width: 992px) and (max-width: 1439px) {
   article.button.buttonpadding {
-    padding: 0.4%;
+    margin: 10px -35px 12px 12px;
+    width: 96%;
   }
 }
 @media screen and (min-width: 1440px) and (max-width: 2559px) {
@@ -1911,6 +1946,10 @@ ahover {
   article.button.buttonpadding {
     padding: 2.5%;
   }
+}
+
+.buttondessertdds {
+  margin-right: -48px;
 }
 
 .commander {

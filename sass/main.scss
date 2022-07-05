@@ -255,18 +255,37 @@ a{
         flex-direction: row;
         margin-top: 30px;
         justify-content: space-between;
+        align-items: center;        
         
     }
     @include desktop-M{
         flex-direction: row;
         margin-top: 40px;
         justify-content: space-between;
+        align-items: center;
     }
     @include desktop-L{
         flex-direction: row;
         margin-top: 60px;
+        justify-content: space-between;
+        align-items: center;
     }
     
+}
+.menus_alignitem{
+    @include desktop-S{
+        align-items: baseline;
+               
+        
+    }
+    @include desktop-M{
+        align-items: baseline;
+       
+    }
+    @include desktop-L{
+        align-items: baseline;
+        
+    }
 }
 .titremenus{/*h3*/
     margin-left: 15px;
@@ -294,6 +313,9 @@ a{
         width: 14%;
         
     }
+}
+.plat_alafracaise{
+    padding-bottom: 0px;
 }
 .entrees{
     display: flex;
@@ -340,6 +362,7 @@ a{
         animation: slidein-R  3s linear ;
     }
 }
+
 .desserts{
     display: flex;
     flex-direction: column;
@@ -370,7 +393,7 @@ a{
     cursor: pointer;
     max-width: 93%;
     padding: 0.5%;
-   
+
 .legende{
     font-size: 16px;
     text-overflow: ellipsis;
@@ -391,10 +414,15 @@ font-size: $font-size_h4;
     font-size: 25px;
 }
 }
-.titre_plat_SJ_HP{
-    margin-top: 12px;
-    padding-top: 17px;
-    padding-bottom: 11px;
+.titre_plat_SJ{
+    margin-top: -7px;
+    padding-top: 29px;
+
+}
+.titre_plat_PHP{
+    margin-top: -24px;
+    padding-top: 34px;
+    margin-bottom: 21px;
 }
 .garniture_plat{/*p*/
 margin-top: -12px;
@@ -409,10 +437,15 @@ font-size: $font-size-p_h3;
     font-size: 21.5px;
 }
 }
-
+.garniture_plat.stjacques{
+    margin-top: -7px;
+}
 .garniture_plat.myrtilles{
-    font-size: 19px;
+    font-size: 15.5px;
     
+}
+.garniture_plat.pouletHP{
+    margin-top: -13px;
 }
 
 }
@@ -449,7 +482,7 @@ font-size: $font-size-p_h3;
         margin-right: -21%;
     }
     @include desktop-S{
-        margin-right: -32%;
+        margin-right: -35%;
     }
     @include desktop-M{
         margin-right: -25%;
@@ -535,7 +568,8 @@ font-size: $font-size-p_h3;
 
 article.button.buttonpadding{
     @include desktop-S{
-        padding: 0.4%;
+        margin: 10px -35px 12px 12px;
+        width: 96%;
     }
     @include desktop-M{
         padding: 2%;
@@ -544,7 +578,10 @@ article.button.buttonpadding{
         padding: 2.5%;
 
 }
-}    
+}  
+.buttondessertdds{
+    margin-right: -48px;
+}  
     
     
        
