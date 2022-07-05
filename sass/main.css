@@ -1241,6 +1241,10 @@ section.location .textacceuil_p {
   opacity: 1;
 }
 
+.coeur:active::before {
+  opacity: 1;
+}
+
 .coeur:before, .coeurplein, .coeurvide {
   position: absolute;
   top: 0;
@@ -1280,7 +1284,7 @@ section.location .textacceuil_p {
 }
 
 .fond_coeur {
-  background-color: #fff;
+  background-color: #fff !important;
 }
 
 * {
