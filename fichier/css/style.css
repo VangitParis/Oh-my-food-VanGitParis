@@ -1228,7 +1228,11 @@ ahover {
 
 .evenement {
   position: absolute;
-  padding: 4px 11px;
+  height: 20px;
+  width: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   background-color: #99E2D0;
   color: rgba(29, 130, 105, 0.8117647059);
   font-weight: bold;
@@ -1238,6 +1242,7 @@ ahover {
 }
 @media screen and (max-width: 424px) {
   .evenement {
+    width: 65px;
     font-size: 12px;
   }
 }
@@ -1245,12 +1250,12 @@ ahover {
   .evenement {
     font-size: 10px;
     margin: 33px 40px 0 0;
+    width: 60px;
   }
 }
 @media screen and (min-width: 768px) and (max-width: 991px) {
   .evenement {
     margin-top: 32px;
-    padding: 5px 7px;
     font-size: 13px;
   }
 }
@@ -1258,18 +1263,24 @@ ahover {
   .evenement {
     font-size: 15px;
     margin: 54px 35px 0 0;
+    height: 25px;
+    width: 75px;
   }
 }
 @media screen and (min-width: 1440px) and (max-width: 2559px) {
   .evenement {
     font-size: 15px;
     margin: 47px 40px 0 0;
+    height: 25px;
+    width: 80px;
   }
 }
 @media screen and (min-width: 2560px) and (max-width: 3000px) {
   .evenement {
     margin: 52px 50px 0 0;
     font-size: 18px;
+    height: 25px;
+    width: 95px;
   }
 }
 
