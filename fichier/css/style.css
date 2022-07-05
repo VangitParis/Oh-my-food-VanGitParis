@@ -1068,8 +1068,8 @@ section.location .textacceuil_p {
 
 /*TRANSITION COEUR*/
 .btncoeur {
-  border: none;
-  background: none;
+  border: transparent;
+  background: transparent;
   height: 24px;
   width: 24px;
   padding: 0;
@@ -1162,10 +1162,6 @@ section.location .textacceuil_p {
   font-size: 27px;
 }
 
-.coeurvide:active {
-  opacity: 0;
-}
-
 @media screen and (min-width: 2560px) and (max-width: 3000px) {
   .coeurvide:hover {
     opacity: 0;
@@ -1182,8 +1178,12 @@ section.location .textacceuil_p {
   }
 }
 
+.coeurvide:active {
+  opacity: 0;
+}
+
 .fond_coeur {
-  background-color: #fff !important;
+  background-color: #fff;
 }
 
 * {

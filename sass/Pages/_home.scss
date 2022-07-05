@@ -414,8 +414,8 @@ section.location{
 }
 /*TRANSITION COEUR*/
 .btncoeur{
-        border:none;
-        background:none;
+        border:transparent;
+        background:transparent;
           height: 24px;
           width: 24px;
           padding: 0;
@@ -481,6 +481,7 @@ section.location{
       .coeur:hover::before{
         opacity:1;
       }
+     
     
       .coeur:before, .coeurplein, .coeurvide{
           position: absolute;
@@ -501,9 +502,8 @@ section.location{
           font-size:27px
       }
     
-      .coeurvide:active{
-         opacity:0;
-      }
+  
+      
       .coeurvide:hover{
         @include desktop-L{
             opacity:0;
@@ -515,9 +515,13 @@ section.location{
             opacity:0;
         }
       }
+      .coeurvide:active{
+        opacity:0;
+     }
     
-    .fond_coeur{
-        background-color:#fff!important;
+     .fond_coeur{
+        background-color:#fff;
+      
       }
       
       
