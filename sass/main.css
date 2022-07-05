@@ -1330,7 +1330,7 @@ ahover {
   font-weight: bold;
   border-radius: 2px;
   font-size: 13px;
-  margin: 40px 48px 0 0;
+  margin: 40px 60px 0 0;
 }
 @media screen and (max-width: 424px) {
   .evenement {
