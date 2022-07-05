@@ -561,7 +561,7 @@ footer a {
     right: 100%;
     z-index: 0;
     opacity: 1;
-   
+    transform: transformX(100%);
   }
 }
 body .description nav {
@@ -1815,7 +1815,7 @@ ahover {
   animation: check 1s linear;
 }
 
-.button:active .checkbox {
+.button:hover:active .checkbox {
   margin-right: -5px;
 }
 
