@@ -1566,7 +1566,7 @@ ahover {
 }
 @media screen and (min-width: 2560px) and (max-width: 3000px) {
   .entrees {
-    margin-right: 6%;
+    margin-right: -3%;
     margin-left: 2%;
     animation: slidein-L 1.5s linear;
   }
@@ -1625,8 +1625,9 @@ ahover {
 }
 @media screen and (min-width: 2560px) and (max-width: 3000px) {
   .desserts {
-    margin-left: 2.2%;
+    margin-left: -6.8%;
     animation: slidein-R 4.5s linear;
+    margin-right: 9%;
   }
 }
 
@@ -1743,7 +1744,7 @@ ahover {
 }
 @media screen and (min-width: 1440px) and (max-width: 2559px) {
   .button .checkbox {
-    margin-right: -25%;
+    margin-right: -26%;
   }
 }
 @media screen and (min-width: 2560px) and (max-width: 3000px) {
@@ -1819,24 +1820,38 @@ ahover {
 }
 
 @media screen and (min-width: 992px) and (max-width: 1439px) {
-  article.button.buttonpadding {
+  article.button.buttonmarginwidth {
     margin: 10px -35px 12px 12px;
     width: 96%;
   }
 }
 @media screen and (min-width: 1440px) and (max-width: 2559px) {
-  article.button.buttonpadding {
-    padding: 2%;
+  article.button.buttonmarginwidth {
+    margin: 10px -35px 12px 12px;
+    width: 109%;
   }
 }
 @media screen and (min-width: 2560px) and (max-width: 3000px) {
-  article.button.buttonpadding {
-    padding: 2.5%;
+  article.button.buttonmarginwidth {
+    margin: 10px 21px 12px 12px;
+    width: 136%;
   }
 }
 
-.buttondessertdds {
-  margin-right: -48px;
+@media screen and (min-width: 992px) and (max-width: 1439px) {
+  .buttondessertdds {
+    margin-right: -48px;
+  }
+}
+@media screen and (min-width: 1440px) and (max-width: 2559px) {
+  .buttondessertdds {
+    margin-right: -15px;
+  }
+}
+@media screen and (min-width: 2560px) and (max-width: 3000px) {
+  .buttondessertdds {
+    margin-right: 53px;
+  }
 }
 
 .commander {

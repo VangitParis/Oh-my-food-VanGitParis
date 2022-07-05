@@ -332,7 +332,7 @@ a{
         animation: slidein-L  1.5s linear ;
     }
     @include desktop-L{
-        margin-right: 6%;
+        margin-right: -3%;
         margin-left: 2%;
         animation: slidein-L  1.5s linear ;
     }
@@ -378,8 +378,9 @@ a{
         animation: slidein-R 4.5s linear;
     }
     @include desktop-L{
-        margin-left: 2.2%;
+        margin-left: -6.8%;
         animation: slidein-R 4.5s linear;
+        margin-right: 9%;
     }
 }
 
@@ -485,7 +486,7 @@ font-size: $font-size-p_h3;
         margin-right: -35%;
     }
     @include desktop-M{
-        margin-right: -25%;
+        margin-right: -26%;
     }
     @include desktop-L{
         margin-right: -15%;
@@ -566,22 +567,33 @@ font-size: $font-size-p_h3;
     margin-right: -5px;
 }
 
-article.button.buttonpadding{
+article.button.buttonmarginwidth{
     @include desktop-S{
         margin: 10px -35px 12px 12px;
         width: 96%;
     }
     @include desktop-M{
-        padding: 2%;
+        margin: 10px -35px 12px 12px;
+        width: 109%;
     }
     @include desktop-L{
-        padding: 2.5%;
+        margin: 10px 21px 12px 12px;
+        width: 136%;
 
 }
 }  
 .buttondessertdds{
-    margin-right: -48px;
+    @include desktop-S{
+        margin-right: -48px;
+
 }  
+@include desktop-M{
+    margin-right: -15px;
+}
+@include desktop-L{
+    margin-right: 53px;
+}
+}
     
     
        
