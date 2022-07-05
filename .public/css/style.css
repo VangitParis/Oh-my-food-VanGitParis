@@ -1363,6 +1363,12 @@ ahover {
   }
 }
 
+.titre_Titrepages {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
 .choixrestaurants {
   background-color: #F6F6F6;
   display: flow-root;
