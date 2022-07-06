@@ -6,7 +6,7 @@ footer {
     padding: 1px 30px;
 
     nav {
-        margin-left: 10px;
+        margin-left: 0px;
         @include tablette{
             display: flex;
                 flex-direction: column;
@@ -25,7 +25,7 @@ footer {
     .textfooter {
         color: white;
         font-family: $title-font;
-
+        font-size: 21px;
         @include tablette{
             margin-left: -45px;
             margin-bottom: 0;
