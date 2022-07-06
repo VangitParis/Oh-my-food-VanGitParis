@@ -561,7 +561,6 @@ footer a {
     right: 100%;
     z-index: 0;
     opacity: 1;
-    transform: transformX(100%);
   }
 }
 body .description nav {
