@@ -285,7 +285,7 @@
 }
 @media screen and (min-width: 992px) and (max-width: 1439px) {
   .titreheader {
-    font-size: 28px;
+    font-size: 35px;
     height: 24px;
   }
 }
@@ -859,36 +859,48 @@ section.location .textacceuil_p {
     width: 1%;
   }
 }
-.description .fa-mobile-screen-button, .description .fa-list, .description .fa-store {
+.description .fa-mobile-screen-button,
+.description .fa-list,
+.description .fa-store {
   margin-left: -50px;
   margin-right: -40px;
 }
 @media screen and (max-width: 424px) {
-  .description .fa-mobile-screen-button, .description .fa-list, .description .fa-store {
+  .description .fa-mobile-screen-button,
+.description .fa-list,
+.description .fa-store {
     margin-left: -20px;
     margin-right: -5px;
   }
 }
 @media screen and (max-width: 374px) {
-  .description .fa-mobile-screen-button, .description .fa-list, .description .fa-store {
+  .description .fa-mobile-screen-button,
+.description .fa-list,
+.description .fa-store {
     margin-left: -13px;
     margin-right: 0;
   }
 }
 @media screen and (min-width: 992px) and (max-width: 1439px) {
-  .description .fa-mobile-screen-button, .description .fa-list, .description .fa-store {
+  .description .fa-mobile-screen-button,
+.description .fa-list,
+.description .fa-store {
     margin-left: 0;
     margin-right: 7px;
   }
 }
 @media screen and (min-width: 1440px) and (max-width: 2559px) {
-  .description .fa-mobile-screen-button, .description .fa-list, .description .fa-store {
+  .description .fa-mobile-screen-button,
+.description .fa-list,
+.description .fa-store {
     margin-left: 0;
     margin-right: 7px;
   }
 }
 @media screen and (min-width: 2560px) and (max-width: 3000px) {
-  .description .fa-mobile-screen-button, .description .fa-list, .description .fa-store {
+  .description .fa-mobile-screen-button,
+.description .fa-list,
+.description .fa-store {
     margin-left: 0;
     margin-right: 5px;
   }
@@ -1243,7 +1255,9 @@ section.location .textacceuil_p {
   opacity: 1;
 }
 
-.coeur:before, .coeurplein, .coeurvide {
+.coeur:before,
+.coeurplein,
+.coeurvide {
   position: absolute;
   top: 0;
   left: 0;
@@ -1251,7 +1265,8 @@ section.location .textacceuil_p {
   width: 100%;
 }
 
-.coeurplein, .coeurvide {
+.coeurplein,
+.coeurvide {
   transition-duration: 1.5s;
   background-color: #f6f6f6;
   display: flex;
@@ -1261,23 +1276,7 @@ section.location .textacceuil_p {
   font-size: 27px;
 }
 
-@media screen and (min-width: 2560px) and (max-width: 3000px) {
-  .coeurvide:hover {
-    opacity: 0;
-  }
-}
-@media screen and (min-width: 1440px) and (max-width: 2559px) {
-  .coeurvide:hover {
-    opacity: 0;
-  }
-}
-@media screen and (min-width: 992px) and (max-width: 1439px) {
-  .coeurvide:hover {
-    opacity: 0;
-  }
-}
-
-.coeurvide:active {
+.coeurvide:hover {
   opacity: 0;
 }
 
