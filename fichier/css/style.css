@@ -485,6 +485,10 @@ footer a {
   }
 }
 
+input:disabled {
+  display: none;
+}
+
 @keyframes fadeInAnimation {
   0% {
     opacity: 1;

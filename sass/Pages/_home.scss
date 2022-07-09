@@ -67,18 +67,15 @@ body .description nav {
       }
        
     .point1{
-  
          animation: jump 1.25s linear alternate infinite;
        }
     .point2{
-        
          animation: jump 1.7s linear alternate infinite;
        }
        .point3{
-        
-        animation: jump 1.95s linear alternate infinite;}
-
+         animation: jump 1.95s linear alternate infinite;}
        }
+       
 .jump {
     transform-origin: 50% 50%;
     animation: jump 1s linear alternate infinite;
