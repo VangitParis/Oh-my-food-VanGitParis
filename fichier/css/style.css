@@ -485,14 +485,6 @@ footer a {
   }
 }
 
-@keyframes spin {
-  0% {
-    transform: rotate(0deg);
-  }
-  100% {
-    transform: rotate(360deg);
-  }
-}
 @keyframes fadeInAnimation {
   0% {
     opacity: 1;
@@ -563,6 +555,25 @@ footer a {
     opacity: 1;
   }
 }
+@keyframes jump {
+  0% {
+    transform: translate3d(0, 0, 0) scale3d(1, 1, 1);
+  }
+  40% {
+    transform: translate3d(0, -2%, 0) scale3d(1, 1.5, 1);
+  }
+  100% {
+    transform: translate3d(0, -3%, 0) scale3d(1, 0.7, 1);
+  }
+}
+@keyframes move {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(235%);
+  }
+}
 body .description nav {
   display: flex;
   flex-direction: column;
@@ -610,47 +621,45 @@ body .description nav {
   vertical-align: middle;
   color: black;
   position: relative;
+  border: 5px solid #9356DC;
+  border-radius: 50px;
   animation: fadeInAnimation 2.5s ease 1 forwards;
 }
-
-.cercle-chargement {
-  border-radius: 50px;
-  border: 5px solid #9356DC;
-}
-.cercle-chargement::before {
-  /*cercle qui tourne*/
+.loader:before {
   content: "";
   position: absolute;
+  border: 5px solid transparent;
+  border-bottom-color: #FF79DA;
+  bottom: 0px;
   top: -5px;
-  left: 15px;
-  bottom: -10px;
-  right: 15px;
-  border-top: 5px solid transparent;
-  border-radius: 40px;
-  border-top-color: #FF79DA;
-  animation: spin 3s linear;
-  height: 60px;
-  width: 67px;
-  display: inline;
+  width: 24%;
+  height: 100%;
+  border-radius: 0px;
+  left: 1%;
+  right: 0%;
+  animation: move 2s linear infinite;
+}
+.loader .point1 {
+  animation: jump 1.25s linear alternate infinite;
+}
+.loader .point2 {
+  animation: jump 1.7s linear alternate infinite;
+}
+.loader .point3 {
+  animation: jump 1.95s linear alternate infinite;
+}
+
+.jump {
+  transform-origin: 50% 50%;
+  animation: jump 1s linear alternate infinite;
+  display: inline-block;
+  margin-right: -10px;
+  font-size: 35px;
 }
 @media screen and (max-width: 374px) {
-  .cercle-chargement::before {
-    height: 50px;
-    width: 57px;
-    top: -5px;
-    left: 8px;
-    bottom: -6px;
-    right: 7px;
-  }
-}
-@media screen and (min-width: 2560px) and (max-width: 3000px) {
-  .cercle-chargement::before {
-    height: 80px;
-    width: 87px;
-    top: -5px;
-    left: 30px;
-    bottom: -5px;
-    right: 30px;
+  .jump {
+    margin-right: -5px;
+    font-size: 25px;
   }
 }
 

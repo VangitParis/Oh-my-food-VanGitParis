@@ -1,7 +1,7 @@
 @import "../utils/variables";
 @import "../utils/mixins";
 @import "../utils/keyframes";
-@import "../utils/functions";
+
 
 body .description nav {
     display: flex;
@@ -47,48 +47,49 @@ body .description nav {
     vertical-align: middle;
     color: black;
     position: relative;
-    animation: fadeInAnimation 2.5s ease 1 forwards;
-
-}
-
-.cercle-chargement {
+    border:5px solid $color-primary;
     border-radius: 50px;
-    border: 5px solid $color-primary;
-    &::before {
-        /*cercle qui tourne*/
-        content: '';
-        position: absolute;
-        top: -5px;
-        left: 15px;
-        bottom: -10px;
-        right: 15px;
-        border-top: 5px solid transparent;
-        border-radius: 40px;
-        border-top-color: $color-secondary;
-        animation: spin 3s linear;
-        height: 60px;
-        width: 67px;
-        display: inline;
+    animation: fadeInAnimation 2.5s ease 1 forwards;
+    &:before{
+        content:'';
+        position:absolute;
+        border:5px solid transparent;
+        border-bottom-color:$color-secondary;
+        bottom:0px;
+        top:-5px;
+        width:24%;
+        height:100%;
+        border-radius:0px;
+        left:1%;
+        right:0%;
+        animation :move 2s linear infinite;
+        
+      }
+       
+    .point1{
+  
+         animation: jump 1.25s linear alternate infinite;
+       }
+    .point2{
+        
+         animation: jump 1.7s linear alternate infinite;
+       }
+       .point3{
+        
+        animation: jump 1.95s linear alternate infinite;}
 
-        @include mobile-Small-screen {
-            height: 50px;
-            width: 57px;
-            top: -5px;
-            left: 8px;
-            bottom: -6px;
-            right: 7px;
-        }
-
-        @include desktop-L {
-            height: 80px;
-            width: 87px;
-            top: -5px;
-            left: 30px;
-            bottom: -5px;
-            right: 30px;
-        }
+       }
+.jump {
+    transform-origin: 50% 50%;
+    animation: jump 1s linear alternate infinite;
+    display:inline-block;
+    margin-right:-10px;
+    font-size:35px;
+    @include mobile-Small-screen{
+        margin-right:-5px;
+        font-size:25px;
     }
-}
+  }
 
 /*SECTION LOCATION*/
 section.location {
