@@ -98,8 +98,11 @@ footer {
             font-size: 16px;
         }
         @include desktop-M{
-            margin-right: 54px;
+            margin-right: 56px;
             font-size: 16px;
+        }
+        @include desktop-M-L{
+            margin-right: 130px;
         }
         @include desktop-L{
             margin-right: 30px;
