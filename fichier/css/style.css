@@ -457,8 +457,8 @@ footer a {
   background: linear-gradient(180deg, #cbcbcb -1%, #eaeaea 7%);
 }
 .form .formtext {
-  margin-right: 25px;
-  font-size: 15px;
+  margin-right: -37px;
+  font-size: 16px;
 }
 @media screen and (min-width: 768px) and (max-width: 991px) {
   .form .formtext {
@@ -486,7 +486,14 @@ footer a {
 }
 
 input:disabled {
-  display: none;
+  background: transparent;
+  border: transparent;
+  color: black;
+  text-decoration: none;
+}
+
+input::placeholder {
+  color: black;
 }
 
 @keyframes fadeInAnimation {
