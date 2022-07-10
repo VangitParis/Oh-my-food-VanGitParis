@@ -892,11 +892,6 @@ section.location .textacceuil_p {
     margin: 0% 0% 0% 5%;
   }
 }
-@media screen and (min-width: 768px) and (max-width: 991px) {
-  .restaurants {
-    margin: 0% 0% 0% -2%;
-  }
-}
 @media screen and (min-width: 992px) and (max-width: 1439px) {
   .restaurants {
     justify-content: space-between;
@@ -922,8 +917,8 @@ section.location .textacceuil_p {
 }
 @media screen and (min-width: 768px) and (max-width: 991px) {
   .cartesrestaurants {
-    width: 50%;
-    margin-right: -5%;
+    width: 55%;
+    margin-right: -3%;
   }
 }
 @media screen and (min-width: 992px) and (max-width: 1439px) {
@@ -1125,9 +1120,40 @@ section.location .textacceuil_p {
   position: relative;
   margin-bottom: 7%;
   cursor: pointer;
-  margin-top: -17%;
   margin-left: 78%;
   z-index: 3;
+  margin-top: -17%;
+}
+@media screen and (max-width: 374px) {
+  .btncoeur {
+    margin-top: -18%;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  .btncoeur {
+    margin-top: -16%;
+  }
+}
+@media screen and (min-width: 992px) and (max-width: 1439px) {
+  .btncoeur {
+    margin-top: -27%;
+  }
+}
+@media screen and (min-width: 1440px) and (max-width: 2559px) {
+  .btncoeur {
+    margin-top: -20%;
+  }
+}
+@media screen and (width: 2000px) {
+  .btncoeur {
+    margin-top: -15%;
+  }
+}
+@media screen and (min-width: 2560px) and (max-width: 3000px) {
+  .btncoeur {
+    height: 32px;
+    width: 32px;
+  }
 }
 
 .coeur {
@@ -1138,12 +1164,11 @@ section.location .textacceuil_p {
   justify-content: center;
   cursor: pointer;
   position: relative;
-  background-color: #000;
   margin-bottom: 8%;
 }
 @media screen and (max-width: 424px) {
   .coeur {
-    margin-bottom: 4%;
+    margin-bottom: 6%;
   }
 }
 @media screen and (max-width: 374px) {
@@ -1154,13 +1179,11 @@ section.location .textacceuil_p {
 }
 @media screen and (min-width: 768px) and (max-width: 991px) {
   .coeur {
-    margin-top: -17%;
     margin-left: 67%;
   }
 }
 @media screen and (min-width: 992px) and (max-width: 1439px) {
   .coeur {
-    margin-top: -27%;
     margin-bottom: 15%;
     margin-left: 100%;
     font-size: 23px;
@@ -1169,7 +1192,6 @@ section.location .textacceuil_p {
 @media screen and (min-width: 1440px) and (max-width: 2559px) {
   .coeur {
     font-size: 25px;
-    margin-top: -20%;
   }
 }
 @media screen and (min-width: 2560px) and (max-width: 3000px) {
@@ -1198,7 +1220,7 @@ section.location .textacceuil_p {
 .coeurplein,
 .coeurvide {
   position: absolute;
-  top: 0;
+  top: 0px;
   left: 0;
   height: 100%;
   width: 100%;

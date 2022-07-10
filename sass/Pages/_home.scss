@@ -278,12 +278,7 @@ section.location {
         margin: 0% 0% 0% 5%;
     }
 
-    @include tablette {
-
-        margin: 0% 0% 0% -2%;
-
-
-    }
+    
 
     @include desktop-S {
         justify-content: space-between;
@@ -310,8 +305,8 @@ section.location {
     margin-left: -20px;
 
     @include tablette {
-        width: 50%;
-        margin-right: -5%;
+        width: 55%;
+        margin-right: -3%;
     }
 
     @include desktop-S {
@@ -497,11 +492,29 @@ section.location {
     position: relative;
     margin-bottom: 7%;
     cursor: pointer;
-    margin-top: -17%;
     margin-left: 78%;
     z-index: 3;
-
-
+    margin-top: -17%;
+    @include mobile-Small-screen{
+        margin-top: -18%;
+    }
+    @include tablette{
+        margin-top: -16%;
+    }
+    @include desktop-S{
+        margin-top: -27%;
+    }
+    @include desktop-M {
+        margin-top: -20%;
+    }
+    @include desktop-M-L{
+        margin-top: -15%;
+    }
+    @include desktop-L {
+        height: 32px;
+        width: 32px;
+        
+    }
 }
 
 .coeur {
@@ -512,11 +525,10 @@ section.location {
     justify-content: center;
     cursor: pointer;
     position: relative;
-    background-color: #000;
     margin-bottom: 8%;
-
+   
     @include mobile-Medium-screen {
-        margin-bottom: 4%;
+        margin-bottom: 6%;
     }
 
     @include mobile-Small-screen {
@@ -525,13 +537,11 @@ section.location {
     }
 
     @include tablette {
-        margin-top: -17%;
         margin-left: 67%;
 
     }
 
     @include desktop-S {
-        margin-top: -27%;
         margin-bottom: 15%;
         margin-left: 100%;
         font-size: 23px;
@@ -539,12 +549,14 @@ section.location {
 
     @include desktop-M {
         font-size: 25px;
-        margin-top: -20%;
+       
     }
+
 
     @include desktop-L {
         height: 32px;
         width: 32px;
+        
     }
 }
 
@@ -567,11 +579,10 @@ section.location {
 .coeurplein,
 .coeurvide {
     position: absolute;
-    top: 0;
+    top: 0px;
     left: 0;
     height: 100%;
     width: 100%;
-
 }
 
 .coeurplein,
