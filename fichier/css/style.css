@@ -488,7 +488,6 @@ footer a {
 input:disabled {
   background: transparent;
   border: transparent;
-  color: black;
   text-decoration: none;
 }
 
