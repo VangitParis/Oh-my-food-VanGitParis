@@ -1275,6 +1275,8 @@ section.location .textacceuil_p {
 .fond_coeur {
   background-color: white !important;
   z-index: 1;
+  width: 100%;
+  height: 100%;
 }
 
 * {
