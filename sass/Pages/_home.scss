@@ -509,6 +509,7 @@ section.location {
     @include mobile-L-tablette{
         margin-top: -11%;
     }
+    
     @include tablette{
         margin-top: -16%;
     }
@@ -532,15 +533,13 @@ section.location {
 }
 
 .coeur {
-    height: 27px;
-    width: 27px;
+    
     display: flex;
     align-items: center;
     justify-content: center;
     cursor: pointer;
     position: relative;
     margin-bottom: 8%;
-   
     @include mobile-Medium-screen {
         margin-bottom: 6%;
     }
@@ -549,7 +548,9 @@ section.location {
         height: 22px;
         width: 22px;
     }
-
+    @include mobile-L-tablette{
+        margin-bottom: 7%;
+    }
     @include tablette {
         margin-left: 67%;
 
