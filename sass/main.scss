@@ -98,84 +98,57 @@ a{
     font-size: $font-size-title_h2;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
     background-color:$color-background;
     border: 1px solid $color-background;
     border-radius: 50px 50px 0 0px;
-    margin-top: -65px;
+    margin-top: -64px;
     position: absolute;
     width: 100%;
     margin-left: 0;
     padding-right: 45px;
-    padding-left: 13px;
-    .fa-heart{
-        height: 1.5rem;
-        margin-top: -0.6rem;
-        margin-right: 0;
-    }
+    
+    
     @include mobile-Medium-screen{
         width: 100%;
         font-size: 18px;
         margin-top: -60px;
-        .fa-heart{
-            margin-top: -0.7rem;
-            margin-right: -0.2rem;
-        }
+        
     }
     @include mobile-Small-screen{
         font-size: 15.5px;
         margin-top: -50px;
-        .fa-heart{
-            margin-right: -0.8rem;
-            height: 1.2rem;
-            margin-top: -0.2rem;
-        }
+        
     }
     @include tablette{
         font-size: 22px;
-        padding-right: 20%;
-        padding-left: 19%;
-        .fa-heart{
-            height: 2rem;
-            margin-top: -0.6rem;
-            margin-right: 0rem;
-
-        }
+        padding-right: 19%;
+       
+        
     }
     @include desktop-S{
         font-size: 17px;
         margin-top: -47px;
         padding-right: 0.7%;
-        padding-left: 1.3%;
        
-        
-        .fa-heart{
-            height: 1.5rem;
-            margin-right: 3rem;
-        }
+       
+       
     }
     @include desktop-M{
         font-size: 23px;
         margin-top: -68px;
         padding-right: 0;
-        padding-left: 1.5%;
         
-        .fa-heart{
-            height: 2rem;
-            margin-right: 4rem;
-        }
+        
+        
     }
     @include desktop-L{
         font-size: 40px;
         margin-top: -98px;
         padding-right: 2.7%;
-        padding-left: 2.5%;
+       
         
-        .fa-heart{ 
-        height: 3.5rem;
-        margin-right: -2rem;
-
-        }
+       
     }
     
 }
@@ -184,6 +157,115 @@ a{
     white-space: nowrap;
     text-overflow: ellipsis;
     width: 100%;
+    padding-left: 15px;
+    @include tablette{
+        padding-left: 24%;
+    }
+    @include desktop-M{
+        padding-left: 1.5%;
+    }
+    @include desktop-L{
+        padding-left: 2.5%;
+    }
+}
+.btncoeur-menu {
+    border: transparent;
+    background: transparent;
+    height: 30px;
+    width: 30px;
+    padding: 0;
+    cursor: pointer;
+    margin-top: 2%;
+   
+    @include mobile-Medium-screen{
+        margin-top: -1%;
+        height: 26px;
+        width: 26px;
+    }
+    @include mobile-Small-screen{
+        margin-top: -1%;
+        height: 24px;
+        width: 24px;
+    }
+    @include tablette{
+        margin-top: 0;
+        
+    }
+    @include desktop-L{
+       height: 45px;
+       width: 45px;
+    }
+    
+}
+.coeur-menu {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    position: relative;
+    margin-bottom: 4%;
+    margin-right: 0;
+    z-index: 1;
+    @include mobile-Medium-screen{
+       margin-right: -3%;
+       margin-bottom: 1%;
+    }
+    @include tablette{
+        margin-bottom: 1%;
+    }
+    @include desktop-S{
+        margin-right: 4%;
+        margin-bottom: 2%;
+    }
+    @include desktop-M{
+        margin-right: 5%;
+        margin-bottom: 3%;
+    }
+    @include desktop-L{
+        margin-right: -1.5%;
+        margin-bottom: 3%;
+    }
+}
+.coeur-menu::before {
+    opacity: 0;
+    transition: 1.5s;
+    content: "";
+    background: linear-gradient(356deg, #9356dc, #ff79da);
+}
+.coeur-menu:hover::before {
+    opacity: 1;
+}
+
+.coeur-menu:active::before {
+    opacity: 1;
+}
+.coeur-menu:before,
+.coeurplein-menu,
+.coeurvide-menu {
+    position: absolute;
+    top: 0px;
+    left: 0;
+    height: 100%;
+    width: 100%;
+}
+.coeurplein-menu,
+.coeurvide-menu {
+    transition-duration: 1.5s;
+    background-color: #f6f6f6;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    mix-blend-mode: lighten;
+    font-size: 27px;
+    color: black;
+}
+
+.coeurvide-menu:hover {
+    opacity: 0;
+}
+
+.fond_coeur-menu {
+    background-color: #f6f6f6 !important;
 }
 
 .choixrestaurants{
@@ -324,6 +406,7 @@ a{
         
     }
 }
+
 .plat_alafracaise{
     padding-bottom: 0px;
 }
@@ -521,7 +604,7 @@ font-size: $font-size-p_h3;
 }
 
 
-    /*MEDIA QUERIES ARTICLE CLASS="BUTTON"*/
+/*MEDIA QUERIES ARTICLE CLASS="BUTTON"*/
 @include mobile-Medium-screen{
    
    
@@ -532,7 +615,7 @@ font-size: $font-size-p_h3;
 }
 @include tablette{
     margin: 10px -15px 10px -15px;
-    width: 114%;
+    width: 110%;
     max-width: none;
 }
 @include desktop-S{

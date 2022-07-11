@@ -1385,21 +1385,15 @@ ahover {
   font-size: 21px;
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
   background-color: #F6F6F6;
   border: 1px solid #F6F6F6;
   border-radius: 50px 50px 0 0px;
-  margin-top: -65px;
+  margin-top: -64px;
   position: absolute;
   width: 100%;
   margin-left: 0;
   padding-right: 45px;
-  padding-left: 13px;
-}
-.Titrepages .fa-heart {
-  height: 1.5rem;
-  margin-top: -0.6rem;
-  margin-right: 0;
 }
 @media screen and (max-width: 424px) {
   .Titrepages {
@@ -1407,32 +1401,17 @@ ahover {
     font-size: 18px;
     margin-top: -60px;
   }
-  .Titrepages .fa-heart {
-    margin-top: -0.7rem;
-    margin-right: -0.2rem;
-  }
 }
 @media screen and (max-width: 374px) {
   .Titrepages {
     font-size: 15.5px;
     margin-top: -50px;
   }
-  .Titrepages .fa-heart {
-    margin-right: -0.8rem;
-    height: 1.2rem;
-    margin-top: -0.2rem;
-  }
 }
 @media screen and (min-width: 768px) and (max-width: 991px) {
   .Titrepages {
     font-size: 22px;
-    padding-right: 20%;
-    padding-left: 19%;
-  }
-  .Titrepages .fa-heart {
-    height: 2rem;
-    margin-top: -0.6rem;
-    margin-right: 0rem;
+    padding-right: 19%;
   }
 }
 @media screen and (min-width: 992px) and (max-width: 1439px) {
@@ -1440,11 +1419,6 @@ ahover {
     font-size: 17px;
     margin-top: -47px;
     padding-right: 0.7%;
-    padding-left: 1.3%;
-  }
-  .Titrepages .fa-heart {
-    height: 1.5rem;
-    margin-right: 3rem;
   }
 }
 @media screen and (min-width: 1440px) and (max-width: 2559px) {
@@ -1452,11 +1426,6 @@ ahover {
     font-size: 23px;
     margin-top: -68px;
     padding-right: 0;
-    padding-left: 1.5%;
-  }
-  .Titrepages .fa-heart {
-    height: 2rem;
-    margin-right: 4rem;
   }
 }
 @media screen and (min-width: 2560px) and (max-width: 3000px) {
@@ -1464,11 +1433,6 @@ ahover {
     font-size: 40px;
     margin-top: -98px;
     padding-right: 2.7%;
-    padding-left: 2.5%;
-  }
-  .Titrepages .fa-heart {
-    height: 3.5rem;
-    margin-right: -2rem;
   }
 }
 
@@ -1477,6 +1441,142 @@ ahover {
   white-space: nowrap;
   text-overflow: ellipsis;
   width: 100%;
+  padding-left: 15px;
+}
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  .titre_Titrepages {
+    padding-left: 24%;
+  }
+}
+@media screen and (min-width: 1440px) and (max-width: 2559px) {
+  .titre_Titrepages {
+    padding-left: 1.5%;
+  }
+}
+@media screen and (min-width: 2560px) and (max-width: 3000px) {
+  .titre_Titrepages {
+    padding-left: 2.5%;
+  }
+}
+
+.btncoeur-menu {
+  border: transparent;
+  background: transparent;
+  height: 30px;
+  width: 30px;
+  padding: 0;
+  cursor: pointer;
+  margin-top: 2%;
+}
+@media screen and (max-width: 424px) {
+  .btncoeur-menu {
+    margin-top: -1%;
+    height: 26px;
+    width: 26px;
+  }
+}
+@media screen and (max-width: 374px) {
+  .btncoeur-menu {
+    margin-top: -1%;
+    height: 24px;
+    width: 24px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  .btncoeur-menu {
+    margin-top: 0;
+  }
+}
+@media screen and (min-width: 2560px) and (max-width: 3000px) {
+  .btncoeur-menu {
+    height: 45px;
+    width: 45px;
+  }
+}
+
+.coeur-menu {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  position: relative;
+  margin-bottom: 4%;
+  margin-right: 0;
+  z-index: 1;
+}
+@media screen and (max-width: 424px) {
+  .coeur-menu {
+    margin-right: -3%;
+    margin-bottom: 1%;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  .coeur-menu {
+    margin-bottom: 1%;
+  }
+}
+@media screen and (min-width: 992px) and (max-width: 1439px) {
+  .coeur-menu {
+    margin-right: 4%;
+    margin-bottom: 2%;
+  }
+}
+@media screen and (min-width: 1440px) and (max-width: 2559px) {
+  .coeur-menu {
+    margin-right: 5%;
+    margin-bottom: 3%;
+  }
+}
+@media screen and (min-width: 2560px) and (max-width: 3000px) {
+  .coeur-menu {
+    margin-right: -1.5%;
+    margin-bottom: 3%;
+  }
+}
+
+.coeur-menu::before {
+  opacity: 0;
+  transition: 1.5s;
+  content: "";
+  background: linear-gradient(356deg, #9356dc, #ff79da);
+}
+
+.coeur-menu:hover::before {
+  opacity: 1;
+}
+
+.coeur-menu:active::before {
+  opacity: 1;
+}
+
+.coeur-menu:before,
+.coeurplein-menu,
+.coeurvide-menu {
+  position: absolute;
+  top: 0px;
+  left: 0;
+  height: 100%;
+  width: 100%;
+}
+
+.coeurplein-menu,
+.coeurvide-menu {
+  transition-duration: 1.5s;
+  background-color: #f6f6f6;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  mix-blend-mode: lighten;
+  font-size: 27px;
+  color: black;
+}
+
+.coeurvide-menu:hover {
+  opacity: 0;
+}
+
+.fond_coeur-menu {
+  background-color: #f6f6f6 !important;
 }
 
 .choixrestaurants {
@@ -1880,7 +1980,7 @@ ahover {
 @media screen and (min-width: 768px) and (max-width: 991px) {
   .button {
     margin: 10px -15px 10px -15px;
-    width: 114%;
+    width: 110%;
     max-width: none;
   }
 }

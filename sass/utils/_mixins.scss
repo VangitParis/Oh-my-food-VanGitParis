@@ -67,6 +67,12 @@
         @content;
     }
 }
+@mixin tablette-desktop-S{
+    @media screen and (min-width:992px) and (max-width: 1023px) {
+        @content;
+    }
+}
+
 
 @mixin desktop-S {
     @media screen and (min-width: 992px) and (max-width:1439px) {
