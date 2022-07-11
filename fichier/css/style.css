@@ -1527,6 +1527,11 @@ ahover {
     margin-bottom: 3%;
   }
 }
+@media screen and (min-width: 1844px) and (max-width: 2559px) {
+  .coeur-menu {
+    margin-bottom: 1%;
+  }
+}
 @media screen and (min-width: 2560px) and (max-width: 3000px) {
   .coeur-menu {
     margin-right: -1.5%;
@@ -2052,6 +2057,7 @@ ahover {
 @media screen and (min-width: 992px) and (max-width: 1439px) {
   .buttondessertdds {
     margin-right: -48px;
+    width: 103%;
   }
 }
 @media screen and (min-width: 1440px) and (max-width: 2559px) {

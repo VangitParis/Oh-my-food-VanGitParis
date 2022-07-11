@@ -221,6 +221,9 @@ a{
         margin-right: 5%;
         margin-bottom: 3%;
     }
+    @include desktop-M-L{
+        margin-bottom: 1%;
+    }
     @include desktop-L{
         margin-right: -1.5%;
         margin-bottom: 3%;
@@ -678,6 +681,7 @@ article.button.buttonmarginwidth{
 .buttondessertdds{
     @include desktop-S{
         margin-right: -48px;
+        width: 103%;
 
 }  
 @include desktop-M{
