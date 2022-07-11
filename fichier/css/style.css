@@ -1273,7 +1273,8 @@ section.location .textacceuil_p {
 }
 
 .fond_coeur {
-  background-color: #fff !important;
+  background-color: white !important;
+  z-index: 1;
 }
 
 * {
