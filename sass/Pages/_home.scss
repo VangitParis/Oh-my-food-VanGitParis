@@ -3,13 +3,6 @@
 @import "../utils/keyframes";
 
 
-body .description nav {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-}
-
 /*SECTION LOADING-SPINNER*/
 .loading-spinner {
     background: $color-backgroundform;
@@ -138,8 +131,23 @@ section.location {
     align-items: baseline;
     width: 100%;
 
+    nav {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        @include mobile-L-tablette{
+            width: 100%;
+        }
+    }
     ol {
-
+        @include mobile-L-tablette {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
         @include desktop-S {
             display: flex;
             justify-content: center;
@@ -301,12 +309,12 @@ section.location {
 }
 
 .cartesrestaurants {
-    width: 110%;
+    width: 100%;
     margin-left: -20px;
 
     @include tablette {
-        width: 55%;
-        margin-right: -3%;
+        width: 54%;
+        margin-right: -2%;
     }
 
     @include desktop-S {
@@ -498,11 +506,17 @@ section.location {
     @include mobile-Small-screen{
         margin-top: -18%;
     }
+    @include mobile-L-tablette{
+        margin-top: -11%;
+    }
     @include tablette{
         margin-top: -16%;
     }
     @include desktop-S{
         margin-top: -27%;
+    }
+    @include desktop-S-M{
+        margin-top: -23%;
     }
     @include desktop-M {
         margin-top: -20%;
@@ -594,6 +608,7 @@ section.location {
     justify-content: center;
     mix-blend-mode: lighten;
     font-size: 27px;
+    
 }
 
 .coeurvide:hover {

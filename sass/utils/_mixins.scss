@@ -56,6 +56,11 @@
         @content;
     }
 }
+@mixin mobile-L-tablette {
+    @media screen and (min-width:481px) and (max-width: 767px) {
+        @content;
+    }
+}
 
 @mixin tablette {
     @media screen and (min-width:768px) and (max-width: 991px) {
@@ -68,6 +73,11 @@
         @content;
     }
 }
+@mixin desktop-S-M {
+    @media screen and (min-width:1120px) and (max-width:1438px){
+        @content;
+    }
+}
 
 @mixin desktop-M {
     @media screen and (min-width: 1440px) and (max-width:2559px) {
@@ -75,7 +85,7 @@
     }
 }
 @mixin desktop-M-L{
-    @media screen and (width: 2000px){
+    @media screen and (min-width: 1844px) and (max-width:2559px){
         @content;
     }
 }

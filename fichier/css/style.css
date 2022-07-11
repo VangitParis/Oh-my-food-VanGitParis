@@ -412,7 +412,7 @@ footer li {
     font-size: 16px;
   }
 }
-@media screen and (width: 2000px) {
+@media screen and (min-width: 1844px) and (max-width: 2559px) {
   footer li {
     margin-right: 130px;
   }
@@ -603,13 +603,6 @@ input::placeholder {
     transform: translateX(235%);
   }
 }
-body .description nav {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
-}
-
 /*SECTION LOADING-SPINNER*/
 .loading-spinner {
   background: linear-gradient(180deg, #cbcbcb -1%, #eaeaea 7%);
@@ -741,6 +734,26 @@ section.location .textacceuil_p {
   flex-direction: column;
   align-items: baseline;
   width: 100%;
+}
+.description nav {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+@media screen and (min-width: 481px) and (max-width: 767px) {
+  .description nav {
+    width: 100%;
+  }
+}
+@media screen and (min-width: 481px) and (max-width: 767px) {
+  .description ol {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
 }
 @media screen and (min-width: 992px) and (max-width: 1439px) {
   .description ol {
@@ -917,13 +930,13 @@ section.location .textacceuil_p {
 }
 
 .cartesrestaurants {
-  width: 110%;
+  width: 100%;
   margin-left: -20px;
 }
 @media screen and (min-width: 768px) and (max-width: 991px) {
   .cartesrestaurants {
-    width: 55%;
-    margin-right: -3%;
+    width: 54%;
+    margin-right: -2%;
   }
 }
 @media screen and (min-width: 992px) and (max-width: 1439px) {
@@ -1134,6 +1147,11 @@ section.location .textacceuil_p {
     margin-top: -18%;
   }
 }
+@media screen and (min-width: 481px) and (max-width: 767px) {
+  .btncoeur {
+    margin-top: -11%;
+  }
+}
 @media screen and (min-width: 768px) and (max-width: 991px) {
   .btncoeur {
     margin-top: -16%;
@@ -1144,12 +1162,17 @@ section.location .textacceuil_p {
     margin-top: -27%;
   }
 }
+@media screen and (min-width: 1120px) and (max-width: 1438px) {
+  .btncoeur {
+    margin-top: -23%;
+  }
+}
 @media screen and (min-width: 1440px) and (max-width: 2559px) {
   .btncoeur {
     margin-top: -20%;
   }
 }
-@media screen and (width: 2000px) {
+@media screen and (min-width: 1844px) and (max-width: 2559px) {
   .btncoeur {
     margin-top: -15%;
   }
