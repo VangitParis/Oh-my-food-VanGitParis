@@ -313,8 +313,8 @@ section.location {
     margin-left: -20px;
 
     @include tablette {
-        width: 54%;
-        margin-right: -2%;
+        width: 52%;
+        margin-right: -3%;
     }
 
     @include desktop-S {
@@ -533,7 +533,6 @@ section.location {
 }
 
 .coeur {
-    
     display: flex;
     align-items: center;
     justify-content: center;

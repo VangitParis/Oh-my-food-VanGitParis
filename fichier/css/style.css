@@ -935,8 +935,8 @@ section.location .textacceuil_p {
 }
 @media screen and (min-width: 768px) and (max-width: 991px) {
   .cartesrestaurants {
-    width: 54%;
-    margin-right: -2%;
+    width: 52%;
+    margin-right: -3%;
   }
 }
 @media screen and (min-width: 992px) and (max-width: 1439px) {
@@ -1535,6 +1535,7 @@ ahover {
 @media screen and (min-width: 768px) and (max-width: 991px) {
   .titreacceuil {
     font-size: 25px;
+    margin-left: 9%;
     margin-bottom: 35px;
   }
 }
