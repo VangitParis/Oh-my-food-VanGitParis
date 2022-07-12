@@ -1198,6 +1198,7 @@ section.location .textacceuil_p {
   cursor: pointer;
   position: relative;
   margin-bottom: 8%;
+  z-index: 0;
 }
 @media screen and (max-width: 424px) {
   .coeur {

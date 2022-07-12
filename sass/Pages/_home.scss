@@ -540,6 +540,7 @@ section.location {
     cursor: pointer;
     position: relative;
     margin-bottom: 8%;
+    z-index: 0;
     @include mobile-Medium-screen {
         margin-bottom: 6%;
     }
