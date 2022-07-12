@@ -1147,7 +1147,6 @@ section.location .textacceuil_p {
   margin-bottom: 7%;
   cursor: pointer;
   margin-left: 78%;
-  z-index: 3;
   margin-top: -17%;
 }
 @media screen and (max-width: 374px) {
