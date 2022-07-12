@@ -226,28 +226,31 @@
   .flechelogo {
     height: 80px;
     justify-content: space-evenly;
-    margin-left: -15%;
+    margin-right: 22%;
   }
 }
 @media screen and (min-width: 992px) and (max-width: 1439px) {
   .flechelogo {
     height: 50px;
     justify-content: space-evenly;
-    margin-left: -25%;
+    margin-left: -2%;
+    margin-right: 22%;
   }
 }
 @media screen and (min-width: 1440px) and (max-width: 2559px) {
   .flechelogo {
     height: 80px;
     justify-content: space-evenly;
-    margin-left: -30%;
+    margin-left: -15%;
+    margin-right: 15%;
   }
 }
 @media screen and (min-width: 2560px) and (max-width: 3000px) {
   .flechelogo {
     justify-content: space-evenly;
-    margin-left: -36%;
-    height: 90px;
+    height: 100px;
+    margin-left: -20%;
+    margin-right: 12%;
   }
 }
 
@@ -2009,7 +2012,7 @@ ahover {
 @media screen and (min-width: 2560px) and (max-width: 3000px) {
   .button {
     margin: 10px 0px 10px 7px;
-    width: 137%;
+    width: 138%;
     max-width: none;
   }
 }

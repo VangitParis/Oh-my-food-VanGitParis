@@ -6,22 +6,26 @@
     @include tablette{
         height: 80px;
         justify-content: space-evenly;
-        margin-left: -15%;
+        margin-right:22%;
     }
     @include desktop-S{
         height: 50px;
         justify-content: space-evenly;
-        margin-left: -25%;
+        margin-left: -2%;
+        margin-right: 22%;
     }
     @include desktop-M{
         height: 80px;
         justify-content: space-evenly;
-        margin-left: -30%;
+        margin-left: -15%;
+        margin-right: 15%;
+    
     }
     @include desktop-L{
         justify-content: space-evenly;
-        margin-left: -36%;
-        height: 90px;
+        height: 100px;
+        margin-left: -20%;
+        margin-right: 12%;
         
     }
 }
