@@ -621,3 +621,9 @@ section.location {
     opacity: 0;
 }
 
+
+
+svg:not(:host).svg-inline--fa, 
+svg:not(:root).svg-inline--fa {
+    overflow: hidden;
+}
