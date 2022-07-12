@@ -942,6 +942,11 @@ section.location .textacceuil_p {
     margin-right: -3%;
   }
 }
+@media screen and (min-width: 481px) and (max-width: 767px) {
+  .cartesrestaurants {
+    width: 65%;
+  }
+}
 @media screen and (min-width: 992px) and (max-width: 1439px) {
   .cartesrestaurants {
     width: 45%;
@@ -1147,12 +1152,12 @@ section.location .textacceuil_p {
 }
 @media screen and (max-width: 374px) {
   .btncoeur {
-    margin-top: -18%;
+    margin-top: -20%;
   }
 }
 @media screen and (min-width: 481px) and (max-width: 767px) {
   .btncoeur {
-    margin-top: -11%;
+    margin-top: -16%;
   }
 }
 @media screen and (min-width: 768px) and (max-width: 991px) {
@@ -1263,7 +1268,7 @@ section.location .textacceuil_p {
 .coeurplein,
 .coeurvide {
   transition-duration: 1.5s;
-  background-color: #f6f6f6;
+  background-color: white;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -1271,15 +1276,13 @@ section.location .textacceuil_p {
   font-size: 27px;
 }
 
-.coeurvide:hover {
-  opacity: 0;
-}
-
 .fond_coeur {
-  background-color: white !important;
-  z-index: 1;
   width: 100%;
   height: 100%;
+}
+
+.coeurvide:hover {
+  opacity: 0;
 }
 
 * {
