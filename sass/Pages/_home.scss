@@ -602,7 +602,7 @@ section.location {
 .coeurplein,
 .coeurvide {
     transition-duration: 1.5s;
-    background-color: #f6f6f6;
+    background-color: white;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -616,7 +616,6 @@ section.location {
 }
 
 .fond_coeur {
-    background-color: white !important;
     z-index: 1;
     width: 100%;
     height: 100%;
